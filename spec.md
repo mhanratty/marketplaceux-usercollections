@@ -35,6 +35,9 @@ Power users
 * Sharing with friends & family
 * Making list public
 
+SUCCESS METRICS
+* 20%
+
 USER STORIES
 * As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec](#addappexistingcollection)
 * As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec](#addappnewcollection)
