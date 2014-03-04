@@ -5,9 +5,11 @@ tags: test
 # User Collections Design Spec
 
 OVERVIEW
+
 Allow Marketplace community members to create collections of apps for themselves, to share with friends and family and to share with the Marketplace community.
 
 USER PROBLEM
+
 User collections…
 
 Why users want to consume collections
