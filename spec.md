@@ -36,8 +36,8 @@ Power users
 * Making list public
 
 USER STORIES
-* As a user I want to add an app to a new collection from the app details screen
 * As a user I want to add an app to an existing collection from the app details screen [spec](#addappexistingcollection)
+* As a user I want to add an app to a new collection from the app details screen [spec](#addappnewcollection)
 * As a user I want to create a new collection from the "My Collections" screen
 * As a user I want a place where I can view all of my collections
 * As a user I want an app wish list to store apps for later
@@ -49,7 +49,10 @@ USER STORIES
 * As a user I want to be able to edit my avatar and display name that appears on the collection
 * As a user I want a default avatar if I do not have a profile pic yet
 
+<a name="addappnewcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png)</a>
+
 <a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
+
 
 This is an [in-line link](http://www.mozilla.org).
 This is an [in-line link](http://www.mozilla.org "Link with title") with a title.
