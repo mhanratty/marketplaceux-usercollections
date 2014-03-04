@@ -49,9 +49,11 @@ USER STORIES
 * As a user I want to be able to edit my avatar and display name that appears on the collection
 * As a user I want a default avatar if I do not have a profile pic yet
 
+<a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
+
 <a name="addappnewcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png)</a>
 
-<a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
+
 
 
 This is an [in-line link](http://www.mozilla.org).
