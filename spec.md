@@ -36,18 +36,20 @@ Power users
 * Making list public
 
 Here's a list
-* thing 1
-* thing 2
-* thing a
-* thing -1
+* As a user I want to add an app to a new collection from the app details screen
+* As a user I want to add an app to an existing collection from the app details screen
+* As a user I want to create a new collection from the "My Collections" screen
+* As a user I want a place where I can view all of my collections
+* As a user I want an app wish list to store apps for later
+* As a user I want to be able to remove an app from a collection
+* As a user I want to be able to delete a collection
+* As a user I want to be able to customize the background of my collection graphic
+* As a user with 0 collections I want to see a message about what the heck collections are! 
+* As a user I want to be able to see stats on my collections (number of shares, upvotes and views)
+* As a user I want to be able to edit my avatar and display name that appears on the collection
+* As a user I want a default avatar if I do not have a profile pic yet
 
-Here's another list
-1. first thing
-2. second thing
-3. third thing
-4. fourth thing
 
-and some links, 'cos why the hell not?
 
 This is an [in-line link](http://www.mozilla.org).
 This is an [in-line link](http://www.mozilla.org "Link with title") with a title.
