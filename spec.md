@@ -36,8 +36,8 @@ Power users
 * Making list public
 
 USER STORIES
-* As a user I want to add an app to an existing collection from the app details screen [spec](#addappexistingcollection)
-* As a user I want to add an app to a new collection from the app details screen [spec](#addappnewcollection)
+* As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec](#addappexistingcollection)
+* As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec](#addappnewcollection)
 * As a user I want to create a new collection from the "My Collections" screen
 * As a user I want a place where I can view all of my collections
 * As a user I want an app wish list to store apps for later
