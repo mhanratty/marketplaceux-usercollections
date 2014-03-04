@@ -35,7 +35,7 @@ Power users
 * Sharing with friends & family
 * Making list public
 
-Here's a list
+USER STORIES
 * As a user I want to add an app to a new collection from the app details screen
 * As a user I want to add an app to an existing collection from the app details screen
 * As a user I want to create a new collection from the "My Collections" screen
