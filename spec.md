@@ -59,6 +59,7 @@ USER STORIES
 
 <a name="createcollectionfromcollections">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionfromcollections.png)</a>
 
+
 <a name="communityscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png)</a>
 
 
