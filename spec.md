@@ -56,7 +56,7 @@ We conducted multiple usability studies of user collections on mobile and deskto
 
 **User Collections Mobile Prototype 1** (Study conducted on UserTesting.com on December 18, 2013)
 * *Purpose of Study*: Evaluate the experience and user understanding of creating a group of apps and sharing the group with the Marketplace community. The test will identify pain points with the user flow and usefulness of user collections. We also want to get feedback on potential names for the feature (collections, lists, etc.)
-* *Prototype tested*: (http://people.mozilla.org/~mhanratty/user_collections_prototype_v1/home.html)
+* *Prototype tested*: [http://people.mozilla.org/~mhanratty/user_collections_prototype_v1/home.html]
 * *Key takeways*:
     * Flow of creating groups, adding an app to a group and sharing the group made sense to participants
     * People had difficulty disambiguating between "Share" and "Share with the Community." 
