@@ -89,57 +89,57 @@ Study conducted on UserTesting.com on Febuary 06, 2014
 ## <a name="usercollectionfeatures">User Collection Features</a>
 
 **Collection Types**
-* **App Wishlist**. The app wish list is a default collection that every user has by default. The app wish list allows the user to save apps to install later or on another device and is intended for personal use. 
-* **Custom Collections**. Custom collections are all other collections that a user creates themselves. These collections can be shared with the Marketplace community.
+* *App Wishlist*. The app wish list is a default collection that every user has by default. The app wish list allows the user to save apps to install later or on another device and is intended for personal use. 
+* *Custom Collections*. Custom collections are all other collections that a user creates themselves. These collections can be shared with the Marketplace community.
 
 **Collection Elements**
 
-*App Wishlist*
-    * graphic 
-    * avatar of the user who created the collection
-    * collection title "My App Wishlist"
-    * app (app icon, name, developer, content rating, review rating, free button). 
+App Wishlist
+* graphic 
+* avatar of the user who created the collection
+* collection title "My App Wishlist"
+* app (app icon, name, developer, content rating, review rating, free button). 
 
-*Custom Collection*
-    * auto-generated graphic 
-    * display name of user who created the collection
-    * avatar of the user who created the collection
-    * collection title
-    * collection description [optional] 
-    * app (app icon, name, developer, content rating, review rating, free button). 
+Custom Collection
+* auto-generated graphic 
+* display name of user who created the collection
+* avatar of the user who created the collection
+* collection title
+* collection description [optional] 
+* app (app icon, name, developer, content rating, review rating, free button). 
     
 **Collection Features**
 
-*App wish list features*
+App wish list features
 * Ability to add apps from app details screen.
 * Ability to remove apps.
 
-*Custom collection features for collection creator*
+Custom collection features for collection creator
 * Ability to add apps.
 * Ability to make collection visible to all of Marketplace or keep hidden.
 * Ability to view statistics on a collection (shares, views, upvotes).
 * Ability to remove apps.
 * Ability to delete a collection.
 
-*Custom collection features for collection consumer*
+Custom collection features for collection consumer
 * Ability to share collection.
 * Ability to upvote the collection.
 * Ability to flag the collection for abuse.
 
 **Collection Visibility**
 
-*Collections that are made public by their creators will be visible on the following screens*
+Collections that are made public by their creators will be visible on the following screens
 * "Community" screen accessible via top level navigation 
 * As modules in the feed chosen by the curator
 * Category screens
 * Search result screens
 
-*Visibility rules*
+Visibility rules
 * A collection must have three or more apps to be publicly visible on the Marketplace
 * If an app in a collection is not available in the user’s region, by the user’s operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection.
 * If none of the apps in the collection are available in the user’s region, the user’s operator, or on their device (mobile use case) the user in will not see that collection.
  
-*Preventing/Handling spam and offensive content in visible collections*
+Preventing/Handling spam and offensive content in visible collections
 * Do not feature new collections prominently (i.e. on the homescreen.)  Make new collections available but only on collections screen, through search, etc. Once the collection receives a good reputation (many views, many installs from views, likes, etc.) allow it to be featured on the home screen.
 * Allow users to flag content for abuse
 * Do not allow users to post urls in titles/descriptions (main source of spam for AMO)
