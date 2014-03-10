@@ -8,6 +8,8 @@ tags: test
 
 [Success Metrics](#successmetrics)
 
+[User Collection Features](#usercollectionfeatures)
+
 [User Stories](#userstories)
 
 [Specs](#specs)
@@ -23,6 +25,7 @@ User collections allow Marketplace community members to create collections of ap
 Both consuming and creating collections improves the Marketplace experience for users.
 
 **Why users want to consume collections**
+
 *Discovery*. People want help finding great apps that are relevant to their interests and locale. Collections highlight the best apps. 
 
 **Why users want to create collections**
@@ -54,28 +57,97 @@ While user collections can be used by everyone on the Marketplace we believe tha
 
 We conducted multiple usability studies of user collections on mobile and desktop. 
 
-**User Collections Mobile Prototype 1** (Study conducted on UserTesting.com on December 18, 2013)
+**User Collections Mobile Prototype 1** 
+
+Study conducted on UserTesting.com on December 18, 2013
+
 * *Purpose of Study*: Evaluate the experience and user understanding of creating a group of apps and sharing the group with the Marketplace community. The test will identify pain points with the user flow and usefulness of user collections. We also want to get feedback on potential names for the feature (collections, lists, etc.)
-* *Prototype tested*: [http://people.mozilla.org/~mhanratty/user_collections_prototype_v1/home.html]
+* *Prototype tested*: [http://people.mozilla.org/~mhanratty/user_collections_prototype_v1/home.html](http://people.mozilla.org/~mhanratty/user_collections_prototype_v1/home.html)
 * *Key takeways*:
     * Flow of creating groups, adding an app to a group and sharing the group made sense to participants
     * People had difficulty disambiguating between "Share" and "Share with the Community." 
     * Participants did not come up with a consistent name for the feature
     * Participants talked about this feature in regards to organizing apps on their device 
-* Test results report: (https://docs.google.com/a/mozilla.com/document/d/10eGrgyuM2wRjPcfe49nA_OsQx9e1tPQwPcL028D1lzc/edit)
+* Test results report: [https://docs.google.com/a/mozilla.com/document/d/10eGrgyuM2wRjPcfe49nA_OsQx9e1tPQwPcL028D1lzc/edit](https://docs.google.com/a/mozilla.com/document/d/10eGrgyuM2wRjPcfe49nA_OsQx9e1tPQwPcL028D1lzc/edit)
 
-**User Collections Desktop Prototype 1** (Study conducted on UserTesting.com on Febuary 06, 2014)
+**User Collections Desktop Prototype 1** 
+
+Study conducted on UserTesting.com on Febuary 06, 2014
+
 * *Purpose of Study*: Evaluate the experience and user understanding of creating a group of apps and sharing the group with the Marketplace community on the desktop. The test will identify pain points with the user flow and discoverability of user collections. We also want to get feedback on potential names for the feature (collections, lists, etc.).
-* *Prototype tested*: http://people.mozilla.org/~mhanratty/User_Collections_Desktop_Prototype_02042014/home.html
+* *Prototype tested*: [http://people.mozilla.org/~mhanratty/User_Collections_Desktop_Prototype_02042014/home.html](http://people.mozilla.org/~mhanratty/User_Collections_Desktop_Prototype_02042014/home.html)
 * *Key takeways*:
     * Flow of creating groups, adding an app to a group and sharing the group made sense to participants.
     * People had difficulty finding the feature.
     * Participants preferred the name “collections” for the feature
     * Participants had difficulty finding the bottom toolbar to make the list public.
-* Test results report: https://docs.google.com/document/d/15mKGX52-weGQXV7USfBzickyko83x0QZvSGjxQC4vAU/edit?usp=sharing
+* Test results report: [https://docs.google.com/document/d/15mKGX52-weGQXV7USfBzickyko83x0QZvSGjxQC4vAU/edit?usp=sharing](https://docs.google.com/document/d/15mKGX52-weGQXV7USfBzickyko83x0QZvSGjxQC4vAU/edit?usp=sharing)
 
 ## <a name="successmetrics">Success Metrics</a>
 * 20%
+
+## <a name="usercollectionfeatures">User Collection Features</a>
+
+**Collection Types**
+* **App Wishlist**. The app wish list is a default collection that every user has by default. The app wish list allows the user to save apps to install later or on another device and is intended for personal use. 
+* **Custom Collections**. Custom collections are all other collections that a user creates themselves. These collections can be shared with the Marketplace community.
+
+**Collection Elements**
+
+*App Wishlist*
+    * graphic 
+    * avatar of the user who created the collection
+    * collection title "My App Wishlist"
+    * app (app icon, name, developer, content rating, review rating, free button). 
+
+*Custom Collection*
+    * auto-generated graphic 
+    * display name of user who created the collection
+    * avatar of the user who created the collection
+    * collection title
+    * collection description [optional] 
+    * app (app icon, name, developer, content rating, review rating, free button). 
+    
+**Collection Features**
+
+*App wish list features*
+* Ability to add apps from app details screen.
+* Ability to remove apps.
+
+*Custom collection features for collection creator*
+* Ability to add apps.
+* Ability to make collection visible to all of Marketplace or keep hidden.
+* Ability to view statistics on a collection (shares, views, upvotes).
+* Ability to remove apps.
+* Ability to delete a collection.
+
+*Custom collection features for collection consumer*
+* Ability to share collection.
+* Ability to upvote the collection.
+* Ability to flag the collection for abuse.
+
+**Collection Visibility**
+
+*Collections that are made public by their creators will be visible on the following screens*
+* "Community" screen accessible via top level navigation 
+* As modules in the feed chosen by the curator
+* Category screens
+* Search result screens
+
+*Visibility rules*
+* A collection must have three or more apps to be publicly visible on the Marketplace
+* If an app in a collection is not available in the user’s region, by the user’s operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection.
+* If none of the apps in the collection are available in the user’s region, the user’s operator, or on their device (mobile use case) the user in will not see that collection.
+ 
+*Preventing/Handling spam and offensive content in visible collections*
+* Do not feature new collections prominently (i.e. on the homescreen.)  Make new collections available but only on collections screen, through search, etc. Once the collection receives a good reputation (many views, many installs from views, likes, etc.) allow it to be featured on the home screen.
+* Allow users to flag content for abuse
+* Do not allow users to post urls in titles/descriptions (main source of spam for AMO)
+* Auto-flag suspicious collections that appear to be spam and have them added to a review queue
+* Filter for users creating many, many collections (100s of collections)
+* Filter for users frequency of collection making (100s of collection in small amount of time)
+* Filter for duplicate collections (often spam bot)
+* Create a black list of banned users
 
 
 ## <a name="userstories">User Stories</a>
@@ -104,15 +176,3 @@ We conducted multiple usability studies of user collections on mobile and deskto
 <a name="communityscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png)</a>
 
 
-This is an [in-line link](http://www.mozilla.org).
-This is an [in-line link](http://www.mozilla.org "Link with title") with a title.
-
-Here's some reference style links to [sites][1] that are really cool [sites][2] about the [sites][3] on the Internetweb.
-
-[1]: http://www.mozilla.com 
-[2]: http://www.twitter.com
-[3]: http://www.lolcatz.com
-
-and here's Geordi
-
-![he can see so much more](http://tsmuse.github.io/testMarketplaceDesignSpec/img/geordi.jpg)
