@@ -23,7 +23,7 @@ User collections allow Marketplace community members to create collections of ap
 Both consuming and creating collections improves the Marketplace experience for users.
 
 **Why users want to consume collections**
-* *Discovery*. People want help finding great apps that are relevant to their interests and locale. Collections highlight the best apps. 
+*Discovery*. People want help finding great apps that are relevant to their interests and locale. Collections highlight the best apps. 
 
 **Why users want to create collections**
 * *Saving apps for later installation*. People want to be able to save apps for later. They might be on data and want to save an app to download later when they have a wifi connection. Or a user might be deciding between many different types of apps and wants to bookmark them and review them before selecting one and downloading it.
@@ -56,13 +56,13 @@ We conducted multiple usability studies of user collections on mobile and deskto
 
 **User Collections Mobile Prototype 1** (Study conducted on UserTesting.com on December 18, 2013)
 * *Purpose of Study*: Evaluate the experience and user understanding of creating a group of apps and sharing the group with the Marketplace community. The test will identify pain points with the user flow and usefulness of user collections. We also want to get feedback on potential names for the feature (collections, lists, etc.)
-* *Prototype tested*: http://people.mozilla.org/~mhanratty/user_collections_prototype_v1/home.html
+* *Prototype tested*: (http://people.mozilla.org/~mhanratty/user_collections_prototype_v1/home.html)
 * *Key takeways*:
     * Flow of creating groups, adding an app to a group and sharing the group made sense to participants
     * People had difficulty disambiguating between "Share" and "Share with the Community." 
     * Participants did not come up with a consistent name for the feature
     * Participants talked about this feature in regards to organizing apps on their device 
-* Test results report: https://docs.google.com/a/mozilla.com/document/d/10eGrgyuM2wRjPcfe49nA_OsQx9e1tPQwPcL028D1lzc/edit
+* Test results report: (https://docs.google.com/a/mozilla.com/document/d/10eGrgyuM2wRjPcfe49nA_OsQx9e1tPQwPcL028D1lzc/edit)
 
 **User Collections Desktop Prototype 1** (Study conducted on UserTesting.com on Febuary 06, 2014)
 * *Purpose of Study*: Evaluate the experience and user understanding of creating a group of apps and sharing the group with the Marketplace community on the desktop. The test will identify pain points with the user flow and discoverability of user collections. We also want to get feedback on potential names for the feature (collections, lists, etc.).
