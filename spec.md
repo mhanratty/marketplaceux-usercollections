@@ -160,8 +160,8 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to be able to remove an app from a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/13) | [spec](#removeapp)
 * As a user I want to be able to delete a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/4) | [spec](#deletecollection)
 * As a user I want to be able to customize the background of my collection graphic [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/12)  | [spec](#changecollectionbackground)
-* As a user with 0 collections I want to see a message about what the heck collections are! [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/3)
-* As a user I want to be able to see stats on my collections (number of shares, upvotes and views)
+* As a user with 0 collections I want to see a message about what the heck collections are! [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/3) | [spec](#collectionsscreen)
+* As a user I want to be able to see stats on my collections (number of shares, upvotes and views) | [spec](#collectionsscreen)
 * As a user I want to be able to edit my avatar and display name that appears on the collection
 * As a user I want a default avatar if I do not have a profile pic yet
 
