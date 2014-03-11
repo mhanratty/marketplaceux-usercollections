@@ -153,7 +153,7 @@ Preventing/Handling spam and offensive content in visible collections
 ## <a name="userstories">User Stories</a>
 * As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec](#addappexistingcollection)
 * As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec](#addappnewcollection)
-* As a user I want to create a new collection from the "Collections" screen [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/11) | [spec](#createcollectionfromcollections)
+* As a user I want to create a new collection from the "Collections" screen [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/11) | [spec](#createcollection)
 * As a user I want a place where I can view all of my collections [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/19) | [spec](#collectionsscreen)
 * As a user I want a dedicated place to view user collections on the Marketplace [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/23) | [spec](#communityscreen)
 * As a user I want an app wish list to store apps for later [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/1) | [spec](#appwishlist)
@@ -170,7 +170,7 @@ Preventing/Handling spam and offensive content in visible collections
 
 <a name="addappnewcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png)</a>
 
-<a name="createcollectionfromcollections">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionfromcollections.png)</a>
+<a name="createcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollection.png)</a>
 
 <a name="collectionsscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png)</a>
 
