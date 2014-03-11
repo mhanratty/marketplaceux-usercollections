@@ -159,7 +159,7 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want an app wish list to store apps for later [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/1) | [spec](#appwishlist)
 * As a user I want to be able to remove an app from a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/13) | [spec](#removeapp)
 * As a user I want to be able to delete a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/4) | [spec](#deletecollection)
-* As a user I want to be able to customize the background of my collection graphic [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/12) 
+* As a user I want to be able to customize the background of my collection graphic [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/12)  | [spec](#changecollectionbackground)
 * As a user with 0 collections I want to see a message about what the heck collections are! [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/3)
 * As a user I want to be able to see stats on my collections (number of shares, upvotes and views)
 * As a user I want to be able to edit my avatar and display name that appears on the collection
@@ -181,5 +181,7 @@ Preventing/Handling spam and offensive content in visible collections
 <a name="removeapp">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_removeapp.png)</a>
 
 <a name="deletecollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_deletecollection.png)</a>
+
+<a name="changecollectionbackground">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_changecollectionbackground.png)</a>
 
 
