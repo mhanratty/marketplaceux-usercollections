@@ -136,13 +136,14 @@ Collections that are made public by their creators will be visible on the follow
 
 Visibility rules
 * A collection must have three or more apps to be publicly visible on the Marketplace
+* A collection must have a user created name to be publicly visible on the Marketplace
 * If an app in a collection is not available in the user’s region, by the user’s operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection.
 * If none of the apps in the collection are available in the user’s region, the user’s operator, or on their device (mobile use case) the user in will not see that collection.
  
 Preventing/Handling spam and offensive content in visible collections
-* Do not feature new collections prominently (i.e. on the homescreen.)  Make new collections available but only on collections screen, through search, etc. Once the collection receives a good reputation (many views, many installs from views, likes, etc.) allow it to be featured on the home screen.
-* Allow users to flag content for abuse
-* Do not allow users to post urls in titles/descriptions (main source of spam for AMO)
+* Do not feature new collections prominently (i.e. on the homescreen.)  Make new collections available but only on community screen, through search, etc. Once the collection receives a good reputation (many views, many installs from views, likes, etc.) allow it to be featured on the home screen.
+* Allow users to flag content for abuse. If collection receives 3 abuse flags remove it from "Community" screen.
+* If a user posts a url in titles or description it should not be clickable. (main source of spam for AMO)
 * Auto-flag suspicious collections that appear to be spam and have them added to a review queue
 * Filter for users creating many, many collections (100s of collections)
 * Filter for users frequency of collection making (100s of collection in small amount of time)
