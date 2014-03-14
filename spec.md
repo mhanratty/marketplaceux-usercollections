@@ -165,6 +165,7 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to be able to see stats on my collections (number of shares, upvotes and views) | [spec](#collectionsscreen)
 * As a user I want to be able to edit my avatar and display name that appears on the collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/18) | [spec](#editprofile)
 * As a user I want a default avatar if I do not have a profile pic yet
+* As a user I want to be able to flag a collection for abuse [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/27) | [spec](#flagabuse)
 
 ### Desktop
 * As a user I want to view my collections on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/28)
