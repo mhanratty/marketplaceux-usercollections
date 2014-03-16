@@ -153,8 +153,8 @@ Preventing/Handling spam and offensive content in visible collections
 
 ## <a name="userstories">User Stories</a>
 ### Mobile
-* As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec](#addappexistingcollection)
-* As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec](#addappnewcollection)
+* As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec](#addappexistingcollection) | [spec for modal](#addappmodal)
+* As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec](#addappnewcollection) | [spec for modal](#addappmodal)
 * As a user I want to create a new collection from the "Collections" screen [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/11) | [spec](#createcollection)
 * As a user I want a place where I can view all of my collections [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/19) | [spec](#collectionsscreen)
 * As a user I want a dedicated place to view user collections on the Marketplace [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/23) | [spec](#communityscreen)
@@ -176,7 +176,36 @@ Preventing/Handling spam and offensive content in visible collections
 ## <a name="specs">Specs</a>
 <a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
 
+Acceptance criteria for adding app to an existing collection
+* Icon to add an app to a collection appears on the app details screen.
+* A modal should open when user selects icon to add app to a collection.
+* If there is only one collection, that collection should be selected.
+* The user should have the ability to create a new collection.
+* When an app has been added to a collection, a confirmation should appear with the icon of the app, the name of the app, and the name of the collection it was added to.
+* In the confirmation screen the name of the collection should link to that collection's landing screen.
+* When the user dismisses the confirmation message the user should return to the app details screen.
+
 <a name="addappnewcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png)</a>
+
+Acceptance criteria for adding an app to a new collection
+* When the user selects create a new collection the user should be taken to a new screen.
+* Entering a name for the collection is required. The "Create" button should be disabled until the user has created the collection name.
+* When the user hits enter on the collection name field they should automatically be taken to the description field.
+* Entering a description for the collection is optional. 
+* If the user hits enter on the description field the keyboard should dismiss.
+* The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.
+* When the user selects "Create" the user should return to the add to collection screen. The collection they just created should be listed directly after the app wishlist and it should be selected.
+* The user can select additional collections to add the app to.
+
+<a name="appappmodal">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png)</a>
+
+Acceptance criteria for the add to collection modal
+* The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.
+* If the user only has one collection (the app wishlist) that collection should be selected.
+* If the user has more than one collection than no collections should be selected by default.
+* If no collection is selected the "Ok" button should be deactivated.
+* The entire collection line item should be a touch target
+* The app may be added to multiple collections.
 
 <a name="createcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollection.png)</a>
 
