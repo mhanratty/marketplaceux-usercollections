@@ -200,6 +200,7 @@ Preventing/Handling spam and offensive content in visible collections
 
 **Acceptance criteria for the add to collection modal**
 * The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.
+* All collections should include the number of apps currently in the collection.
 * If the user only has one collection (the app wishlist) that collection should be selected.
 * If the user has more than one collection than no collections should be selected by default.
 * If no collection is selected the "Ok" button should be deactivated.
@@ -257,20 +258,76 @@ Preventing/Handling spam and offensive content in visible collections
 * Apps should be listed underneath the add apps call-to-action. 
 * App listing should have a remove icon and icon that indicates that listing can be moved up in down in order.
 
-<a name="collectionsscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png)</a>
-
-<a name="communityscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png)</a>
-
-<a name="appwishlist">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_appwishlist.png)</a>
-
 <a name="removeapp">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_removeapp.png)</a>
+
+**Acceptance criteria for removing an app from a collection**
+* There should be an icon to remove the app from the collection.
+* After x seconds the app listing should fade to white. A message "App removed from collection" should appear and remain for x seconds.
+* After x seconds the apps below should animate up into the space the app that was removed once occupied.
 
 <a name="deletecollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_deletecollection.png)</a>
 
+**Acceptance criteria for deleting a collection**
+* The delete collection button should always be at the bottom of the collection.
+* The user must confirm that the collection should be deleted.
+* If the user delete's the collection she should return to My Apps > Collections where she will see feedback that the collection was successfully deleted. 
+
 <a name="changecollectionbackground">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_changecollectionbackground.png)</a>
+
+**Acceptance criteria for changing the background of a collection**
+* The user can only change the background of a collection if at least 1 app is added to the collection
+* The user clicks an icon in the upper right corner to access the choose background selector.
+* The current color/pattern combination should be selected in the choose background screen.
+* When user hits done she is taken back to create collection screen where the new color pattern combination has been applied to the graphic.
 
 <a name="editprofile">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_editprofile.png)</a>
 
+**Acceptance criteria for editing the avatar and display name for a collection**
+* Selecting the user's avatar will take the user to the edit profile screen.
+* To edit the avatar the user selects the avatar. The devices gallery app should open. The user can select a profile image from their gallery.
+* The new avatar should be displayed when the user returns to the edit profile screen.
+* When user selects done she returns to the create collection or edit collection screen with her new avatar displayed.
+
+<a name="collectionsscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png)</a>
+
+**Acceptance criteria for collections screen**
+* The collections screen is in under the main navigation item "My Apps" under at tab labeled "Collections"
+* The app wishlist is always listed first. It should include its title "My App Wishlist" and underneath the nubmer of apps it has currently
+* If the user has no custom collections show a message about collections directly above the create new collection call to action
+* The create collection call-to-action should appear above the list of collections
+* Collections should we listed in reverse chronological order from newest to oldest.
+* The collection creator should be able to view the stats for their collection including number of shares, number of views and number of upvotes.
+* If the user has more than 3 collections she should be able to search through her collections. The search box should only appear if the user has 3 or more collections.
+* The search box should appear just above the list of collections.
+
+<a name="appwishlist">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_appwishlist.png)</a>
+
+**Acceptance criteria for my app wish list**
+* The app wish list should have a graphic with the user's avatar and title "My App Wishlist"
+* The user should be able to share their collection.
+* If the user has no apps in their wishlist they should view a message telling them how to add apps to their wishlist using the "+" icon on the app details screen
+* The apps in the wish list should be listed in reverse chronological order from newest app added to oldest app added.
+* The user should be able to edit their wish list. 
+* In edit mode the user should be able to remove apps from the list by clicking the remove icon on the app listing.
+* If an app on the wish list is installed by the user the app should be automatically removed from the user's app wishlist.
+
+<a name="communityscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png)</a>
+
+**Acceptance criteria for the community screen**
+* "Community" is a main navigation item listed after "Categories"
+* User's can toggle between viewing user collections listed in order of most popular and new.
+* By default the user should view the most popular order of collections
+* Only show user collections that have 3 or more apps
+* If none of the apps in the collection are available in the user's region, the user's operator, or on their device (mobile use case) the user should not see that collection.
+* If an app in a collection is not available in the user's region, by the user's operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection
+* The user should be able to share a collection.
+* The user should be able to upvote a collection.
+
 <a name="reportcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_reportcollection.png)</a>
 
+**Acceptance criteria for flagging a collection for abuse**
+* There should be an icon on the collection landing screen that allows the user to report a collection. 
+* The creator of a collection should not be able to report their own collection.
+* When the report icon has been selected, an overlay should appear asking for the reason for the report. The three options are: spam, inappropriate language, and inappropriate avatar.
+* After the user has selected the reason for reporting the collection the user should return to the collection landing screen and view feedback that the collection was reported.
 
