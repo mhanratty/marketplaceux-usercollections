@@ -210,8 +210,7 @@ Preventing/Handling spam and offensive content in visible collections
 <a name="createcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollection.png)</a>
 
 **Acceptance criteria for creating a collection from the collections screen**
-* Collections screen
-    * There should be a prominent call to action for the user to create a new collection. When selected this call-to-action should take the user to the create collection screen.
+* There should be a prominent call to action for the user to create a new collection. When selected this call-to-action should take the user to the create collection screen.
 * Create collection screen
     * The create collection screen should have a "Done" link when the user is finished creating their collection.
     * The create collection screen should show a default graphic for the collection. 
