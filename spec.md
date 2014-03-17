@@ -153,19 +153,18 @@ Preventing/Handling spam and offensive content in visible collections
 
 ## <a name="userstories">User Stories</a>
 ### Mobile
-* As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec](#addappexistingcollection) | [spec for modal](#addappmodal)
-* As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec](#addappnewcollection) | [spec for modal](#addappmodal)
-* As a user I want to create a new collection from the "Collections" screen [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/11) | [spec](#createcollection)
-* As a user I want a place where I can view all of my collections [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/19) | [spec](#collectionsscreen)
-* As a user I want a dedicated place to view user collections on the Marketplace [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/23) | [spec](#communityscreen)
-* As a user I want an app wish list to store apps for later [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/1) | [spec](#appwishlist)
+* As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec for flow](#addappexistingcollection) | [spec for modal](#addappmodal)
+* As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec for flow](#addappnewcollection) | [spec for modal](#addappmodal)
+* As a user I want to create a new collection from the "Collections" screen [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/11) | [spec for flow](#createcollection)  | [spec for create collection screen](#createcollectionviews)
 * As a user I want to be able to remove an app from a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/13) | [spec](#removeapp)
 * As a user I want to be able to delete a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/4) | [spec](#deletecollection)
 * As a user I want to be able to customize the background of my collection graphic [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/12)  | [spec](#changecollectionbackground)
+* As a user I want to be able to edit my avatar and display name that appears on the collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/18) | [spec](#editprofile)
+* As a user I want a place where I can view all of my collections [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/19) | [spec](#collectionsscreen)
+* As a user I want an app wish list to store apps for later [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/1) | [spec](#appwishlist)
 * As a user with 0 collections I want to see a message about what the heck collections are! [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/3) | [spec](#collectionsscreen)
 * As a user I want to be able to see stats on my collections (number of shares, upvotes and views) | [spec](#collectionsscreen)
-* As a user I want to be able to edit my avatar and display name that appears on the collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/18) | [spec](#editprofile)
-* As a user I want a default avatar if I do not have a profile pic yet
+* As a user I want a dedicated place to view user collections on the Marketplace [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/23) | [spec](#communityscreen)
 * As a user I want to be able to report a collection for abuse [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/27) | [spec](#reportcollection)
 
 ### Desktop
@@ -176,7 +175,7 @@ Preventing/Handling spam and offensive content in visible collections
 ## <a name="specs">Specs</a>
 <a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
 
-Acceptance criteria for adding app to an existing collection
+**Acceptance criteria for adding app to an existing collection**
 * Icon to add an app to a collection appears on the app details screen.
 * A modal should open when user selects icon to add app to a collection.
 * If there is only one collection, that collection should be selected.
@@ -187,7 +186,7 @@ Acceptance criteria for adding app to an existing collection
 
 <a name="addappnewcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png)</a>
 
-Acceptance criteria for adding an app to a new collection
+**Acceptance criteria for adding an app to a new collection**
 * When the user selects create a new collection the user should be taken to a new screen.
 * Entering a name for the collection is required. The "Create" button should be disabled until the user has created the collection name.
 * When the user hits enter on the collection name field they should automatically be taken to the description field.
@@ -199,15 +198,65 @@ Acceptance criteria for adding an app to a new collection
 
 <a name="appappmodal">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png)</a>
 
-Acceptance criteria for the add to collection modal
+**Acceptance criteria for the add to collection modal**
 * The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.
 * If the user only has one collection (the app wishlist) that collection should be selected.
 * If the user has more than one collection than no collections should be selected by default.
 * If no collection is selected the "Ok" button should be deactivated.
 * The entire collection line item should be a touch target
 * The app may be added to multiple collections.
+* If there are 3+ collections a scroll bar should appear.
 
 <a name="createcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollection.png)</a>
+
+**Acceptance criteria for creating a collection from the collections screen**
+* Collections screen
+    * There should be a prominent call to action for the user to create a new collection. When selected this call-to-action should take the user to the create collection screen.
+* Create collection screen
+    * The create collection screen should have a "Done" link when the user is finished creating their collection.
+    * The create collection screen should show a default graphic for the collection. 
+    * The user's current Markeplace avatar should be visible on the graphic.
+    * The user's current Marketplace display name should be visilble on the graphic.
+    * Entering a name for the collection is required. 
+    * When the user enters the name of the collection, it should show up in real time on the graphic above the user's display name.
+    * When the user hits enter on the collection name field they should automatically be taken to the description field.
+    * If the user hits enter on the description field the keyboard should dismiss.
+    * There should be a call-to-action button that allows users to add apps to the collection. The add apps call to action should always appear after the "Make visible" toggle and before any apps on the create/edit collection screen.
+    * When the user selects the add to apps call-to-action a new screen should appear for the user to search for apps.
+* Add to apps screen
+    * On the add to apps screen there should be a search box for users to search for an app by name in the Marketplace. 
+    * On add to apps screen the search box should only return mobile apps available for that user's region and operator.
+    * The user must click enter to execute the search.
+    * Search results should appear with their icon, app name, developer name, content rating and review rating. Instead of an install button the listing should have a grey circle indicating the ability for the app to be selected.
+    * The entire line item for the app is a touch target that will select the app.
+    * When the app is selected, the icon should appear selected. 
+    * After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear.
+    * The user can select multiple apps from the search results to add to the collection.
+    * The user can delete their current search and execute multiple searches adding multiple apps.
+    * When user selects "Done" on add to apps screen the user should return to the create collection screen.
+* Create collections screen after an app is added
+    * If at least one app is selected the background of the graphic should change from grey to a color. 
+    * Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.
+    * Once a user adds an app an icon should appear allowing the user to change the background of the collection. 
+    * When the user selects "Done" and all the requirements of the collection are fulfilled (the collection has a name) then the user is taken to the collection landing screen.
+
+<a name="createcollectionviews">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionviews.png)</a>
+
+**Acceptance criteria for create collections screens**
+* The create collection screen should have a "Done" link when the user is finished creating their collection.
+* The create collection screen should show a default graphic for the collection that is grey with slots for icons for apps that are added.
+* The user's current Markeplace avatar should be visible on the graphic. 
+* The user's current Marketplace display name should be visible on the graphic.
+* The user should be able to click on the avatar and be taken to their profile to edit their avatar and display name.
+* Entering a name for the collection is required. 
+* Entering a description for the collection is optional. 
+* The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.
+* There should be a call-to-action button that allows users to add apps to the collection. The add apps call to action should always appear after the "Make visible" toggle and before any apps on the create/edit collection screen.
+* The user should be able to delete a collection. The button for deleting a collection should always appear at the bottom.
+* Once a user adds an app an icon should appear allowing the user to change the background of the collection. 
+* Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.
+* Apps should be listed underneath the add apps call-to-action. 
+* App listing should have a remove icon and icon that indicates that listing can be moved up in down in order.
 
 <a name="collectionsscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png)</a>
 
