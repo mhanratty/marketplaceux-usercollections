@@ -50,8 +50,8 @@ While user collections can be used by everyone on the Marketplace we believe tha
 
 **Power users will:**
 * Create new collections.
-* Sharecollections with friends & family.
-* Create collections to share with community.
+* Share collections with friends & family.
+* Create collections to share with the community.
 
 ### User Research
 
@@ -84,7 +84,14 @@ Study conducted on UserTesting.com on Febuary 06, 2014
 * Test results report: [https://docs.google.com/document/d/15mKGX52-weGQXV7USfBzickyko83x0QZvSGjxQC4vAU/edit?usp=sharing](https://docs.google.com/document/d/15mKGX52-weGQXV7USfBzickyko83x0QZvSGjxQC4vAU/edit?usp=sharing)
 
 ## <a name="successmetrics">Success Metrics</a>
-* 20%
+* User collections should increase successful app installs on Firefox OS by 5%.
+* User collections should... 
+* Acquisition - increase 
+* Activation - 
+* Retention
+* Revenue
+* Referral 
+* Engagement
 
 ## <a name="usercollectionfeatures">User Collection Features</a>
 
@@ -119,6 +126,7 @@ Custom collection features for collection creator
 * Ability to make collection visible to all of Marketplace or keep hidden.
 * Ability to view statistics on a collection (shares, views, upvotes).
 * Ability to remove apps.
+* Arrange the order of apps.
 * Ability to delete a collection.
 
 Custom collection features for collection consumer
@@ -130,18 +138,18 @@ Custom collection features for collection consumer
 
 Collections that are made public by their creators will be visible on the following screens
 * "Community" screen accessible via top level navigation 
-* As modules in the feed chosen by the curator
-* Category screens
+* As modules in the feed chosen by the editor
+* Category screens (P2)
 * Search result screens
 
 Visibility rules
 * A collection must have three or more apps to be publicly visible on the Marketplace
-* A collection must have a user created name to be publicly visible on the Marketplace
 * If an app in a collection is not available in the user’s region, by the user’s operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection.
-* If none of the apps in the collection are available in the user’s region, the user’s operator, or on their device (mobile use case) the user in will not see that collection.
+* If none or less than 3 of the apps in the collection are available in the user’s region, the user’s operator, or on their device (mobile use case) the user will not see that collection.
+* Proposal: Precompute visible collections by the common device profiles so the filtering doesn't have to be done in real time.
  
 Preventing/Handling spam and offensive content in visible collections
-* Do not feature new collections prominently (i.e. on the homescreen.)  Make new collections available but only on community screen, through search, etc. Once the collection receives a good reputation (many views, many installs from views, likes, etc.) allow it to be featured on the home screen.
+* Do not feature new collections prominently (i.e. on the homescreen.)  Make new collections available but only on community screen. Once the collection receives a good reputation (many views, many installs from views, likes, etc.) allow it to be featured on the home screen.
 * Allow users to flag content for abuse. If collection receives 3 abuse flags remove it from "Community" screen.
 * If a user posts a url in titles or description it should not be clickable. (main source of spam for AMO)
 * Auto-flag suspicious collections that appear to be spam and have them added to a review queue
