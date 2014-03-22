@@ -245,8 +245,10 @@ Preventing/Handling spam and offensive content in visible collections
 * Create collections screen after an app is added
     * If at least one app is selected the background of the graphic should change from grey to a color. 
     * Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.
-    * Once a user adds an app an icon should appear allowing the user to change the background of the collection. 
-    * When the user selects "Done" and all the requirements of the collection are fulfilled (the collection has a name) then the user is taken to the collection landing screen.
+    * Once a user adds an app an icon should appear allowing the user to change the background of the collection. The background color/graphic should be randomly generated.
+    * If the user selects "Done" and the collection requirements are fulfilled (the collection has a name) the user is taken to the collection landing screen.
+    * If the user selects "Done" and the user has added a description or an app but has not created a name, the user should see a warning scree (see: )
+    * If the user selects "Done" and has not inputted any data (no name, description, or apps) no collection is created. The user should be taken back to the "Collections" screen.
 
 <a name="createcollectionviews">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionviews.png)</a>
 
@@ -258,10 +260,11 @@ Preventing/Handling spam and offensive content in visible collections
 * The user should be able to click on the avatar and be taken to their profile to edit their avatar and display name.
 * Entering a name for the collection is required. 
 * Entering a description for the collection is optional. 
+* Adding an app to a collection is optional.
 * The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.
 * There should be a call-to-action button that allows users to add apps to the collection. The add apps call to action should always appear after the "Make visible" toggle and before any apps on the create/edit collection screen.
 * The user should be able to delete a collection. The button for deleting a collection should always appear at the bottom.
-* Once a user adds an app an icon should appear allowing the user to change the background of the collection. 
+* Once a user adds an app an icon should appear allowing the user to change the background of the collection. This background should be randomly generated.
 * Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.
 * Apps should be listed underneath the add apps call-to-action. 
 * App listing should have a remove icon and icon that indicates that listing can be moved up in down in order.
@@ -299,8 +302,8 @@ Preventing/Handling spam and offensive content in visible collections
 <a name="collectionsscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png)</a>
 
 **Acceptance criteria for collections screen**
-* The collections screen is in under the main navigation item "My Apps" under at tab labeled "Collections"
-* The app wishlist is always listed first. It should include its title "My App Wishlist" and underneath the nubmer of apps it has currently
+* The collections screen is in under the main navigation item "My Apps" under a tab labeled "Collections."
+* The app wishlist is in under the main navigation item "My Apps" under a tab labeled "Wishlist." 
 * If the user has no custom collections show a message about collections directly above the create new collection call to action
 * The create collection call-to-action should appear above the list of collections
 * Collections should we listed in reverse chronological order from newest to oldest.
@@ -311,8 +314,6 @@ Preventing/Handling spam and offensive content in visible collections
 <a name="appwishlist">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_appwishlist.png)</a>
 
 **Acceptance criteria for my app wish list**
-* The app wish list should have a graphic with the user's avatar and title "My App Wishlist"
-* The user should be able to share their collection.
 * If the user has no apps in their wishlist they should view a message telling them how to add apps to their wishlist using the "+" icon on the app details screen
 * The apps in the wish list should be listed in reverse chronological order from newest app added to oldest app added.
 * The user should be able to edit their wish list. 
