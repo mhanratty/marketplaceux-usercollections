@@ -216,7 +216,7 @@ Preventing/Handling spam and offensive content in visible collections
 * The app may be added to multiple collections.
 * If there are 3+ collections a scroll bar should appear.
 
-<a name="createcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollection.png)</a>
+<a name="createcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionfromcollections.png)</a>
 
 **Acceptance criteria for creating a collection from the collections screen**
 * There should be a prominent call to action for the user to create a new collection. When selected this call-to-action should take the user to the create collection screen.
