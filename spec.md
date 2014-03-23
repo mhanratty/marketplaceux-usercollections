@@ -164,6 +164,7 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec for flow](#addappexistingcollection) | [spec for modal](#addappmodal)
 * As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec for flow](#addappnewcollection) | [spec for modal](#addappmodal)
 * As a user I want to create a new collection from the "Collections" screen [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/11) | [spec for flow](#createcollection)  | [spec for create collection screen](#createcollectionviews)
+* As a user I want to see a warning if I try to save a collection without a name (required) [spec](#warning)
 * As a user I want to be able to remove an app from a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/13) | [spec](#removeapp)
 * As a user I want to be able to delete a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/4) | [spec](#deletecollection)
 * As a user I want to be able to customize the background of my collection graphic [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/12)  | [spec](#changecollectionbackground)
@@ -175,9 +176,16 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want a dedicated place to view user collections on the Marketplace [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/23) | [spec](#communityscreen)
 * As a user I want to be able to report a collection for abuse [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/27) | [spec](#reportcollection)
 
+### Tablet
+* As a user I want to view my collections on tablet.
+* As a user I want to create a collection on tablet.
+* As a user I want a dedicated place to view user collection on the Marketplace on tablet.
+
 ### Desktop
 * As a user I want to view my collections on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/28)
 * As a user I want to create a collection on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/29)
+* As a user I want a dedicated place to view user collection on the Marketplace on desktop.
+* As a user I want to view user collections in search results on desktop.
 
 
 ## <a name="specs">Specs</a>
