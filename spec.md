@@ -354,8 +354,16 @@ Preventing/Handling spam and offensive content in visible collections
 
 <a name="collectionsscreendesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreendesktop.png)</a>
 
-**Acceptance criteria for creating a user collection on desktop**
-
+**Acceptance criteria for viewing all of your user collections on desktop**
+* Collections are visible under “My Account” when the user is signed in. 
+* On desktop the user can see Collections, Wishlist and My Apps in one view.
+* On desktop the sections of the page have titles
+* If there are > 3 collections show a search bar so that the user can search through their collections.
+* Create new collection call-to-action should take user to the create a collection screen.
+* Collections are listed from most recently created to oldest in blocks of 6 moving left to right, up to down. 
+* The collection graphic should be the same as seen on mobile.
+* If the user has > 6 collections the collections should start being visible as overflow content. A right arrow control should allow the user to scroll through the overflow content.
+* If the user has 0 collections show text to let the user know what collections are. 
 
 <a name="collectioncreatedesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatedesktop.png)</a>
 
