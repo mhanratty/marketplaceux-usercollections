@@ -176,11 +176,6 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want a dedicated place to view user collections on the Marketplace [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/23) | [spec](#communityscreen)
 * As a user I want to be able to report a collection for abuse [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/27) | [spec](#reportcollection)
 
-### Tablet
-* As a user I want to view my collections on tablet.
-* As a user I want to create a collection on tablet.
-* As a user I want a dedicated place to view user collection on the Marketplace on tablet.
-
 ### Desktop
 * As a user I want to view all of my collections on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/28) | [spec](#appscollectionsdesktop)
 * As a user I want to create a collection on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/29) | [spec](#collectioncreatedesktop)
@@ -188,6 +183,13 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to edit a collection on desktop [spec](#collectioneditdesktop)
 * As a user I want a dedicated place to view user collections on the Marketplace on desktop.
 * As a user I want to view user collections in search results on desktop.
+
+### Tablet
+* As a user I want to create a collection on tablet [spec](#collectioncreatetablet)
+* * As a user I want to view my collection on tablet [spec](#collectionviewtablet)
+* As a user I want to edit a collection on tablet [spec](#collectionedittablet)
+* As a user I want a dedicated place to view user collection on the Marketplace on tablet.
+
 
 
 ## <a name="specs">Specs</a>
@@ -373,6 +375,7 @@ Preventing/Handling spam and offensive content in visible collections
 * After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear (see how apps are added on the [spec for creating a collection](#createcollection)
 * The user can select multiple apps from the search results to add to the collection.
 * Add apps in 3 columns. The most recently added app should appear first in the list. 
+* The "Cancel" and "Done" buttons should appear on the same level as the name of collection field.
 * If the user selects "Cancel" take the user back to the screen she was previously viewing.
 * If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
 * If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
@@ -381,7 +384,7 @@ Preventing/Handling spam and offensive content in visible collections
 
 **Acceptance criteria for viewing a user collection on desktop**
 * The collection should have a name.
-* The collection should have an edit button if the user is the creator of the collection.
+* The collection should have an edit button if the user is the creator of the collection. The edit button should appear on the same level as the name of the collection field.
 * If the user selects "Edit" take the user to the edit collection screen.
 * The graphic should be 6 columns and 264px tall on desktop.
 * If the collection does not have a description center the collection graphic in the center of the screen.
@@ -413,7 +416,31 @@ Preventing/Handling spam and offensive content in visible collections
 * Add apps in 3 columns. The most recently added app should appear first in the list. 
 * The apps should show a control to allow the user to move apps in order.
 * The apps should have a "x" icon so they can be removed. For remove interactions see [spec for removing an app](#removeapp) 
+* The "Done" and "Delete collection" buttons should appear on the same level as the name of the collection field.
 * If the user selects "Delete collection" require a confirmation. If the user confirms, take the user back to the collections screen with feedback that the collection was deleted (see [spec for deleting a collection](#deletecollection)) 
 * If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
 * If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
 
+<a name="collectioncreatetablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionecreatetablet.png)</a>
+
+**Acceptance criteria for creating a collection on tablet**
+Same as for desktop except...
+* "Cancel" and "Done" should appear above the name of the collection.
+* The description field should appear below the graphic.
+* Apps should appear in two columns.
+
+<a name="collectionviewtablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneviewtablet.png)</a>
+
+**Acceptance criteria for viewing a collection on tablet**
+Same as for desktop except...
+* "Edit" button should appear above the name of the collection.
+* The description field should appear below the graphic.
+* Apps should appear in two columns.
+
+<a name="collectionedittablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionedittablet.png)</a>
+
+**Acceptance criteria for editing a collection on tablet**
+Same as for desktop except...
+* "Delete collection" and "Done" should appear above the name of the collection.
+* The description field should appear below the graphic.
+* Apps should appear in two columns.
