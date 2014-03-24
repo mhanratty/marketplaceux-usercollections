@@ -185,12 +185,11 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to view user collections in search results on desktop.
 
 ### Tablet
+* As a user I want to view all of my collections on tablet [spec](#collectionsscreentablet)
 * As a user I want to create a collection on tablet [spec](#collectioncreatetablet)
 * As a user I want to view my collection on tablet [spec](#collectionviewtablet)
 * As a user I want to edit a collection on tablet [spec](#collectionedittablet)
 * As a user I want a dedicated place to view user collection on the Marketplace on tablet.
-
-
 
 ## <a name="specs">Specs</a>
 <a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
@@ -441,6 +440,16 @@ Preventing/Handling spam and offensive content in visible collections
 * If the user selects "Delete collection" require a confirmation. If the user confirms, take the user back to the collections screen with feedback that the collection was deleted (see [spec for deleting a collection](#deletecollection)) 
 * If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
 * If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
+
+#### Viewwing all of my user collections on tablet
+
+<a name="collectionscreentablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionscreentablet.png)</a>
+
+**Acceptance criteria for creating a collection on tablet**
+
+Same as for desktop except...
+* Collection search is below Collection title
+* Only 4 collections are visible at a time
 
 #### Creating a user collection on tablet
 
