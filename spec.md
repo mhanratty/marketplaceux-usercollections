@@ -177,7 +177,7 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to be able to report a collection for abuse [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/27) | [spec](#reportcollection)
 
 ### Desktop
-* As a user I want to view all of my collections on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/28) | [spec](#appscollectionsdesktop)
+* As a user I want to view all of my collections on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/28) | [spec](#collectionsscreendesktop)
 * As a user I want to create a collection on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/29) | [spec](#collectioncreatedesktop)
 * As a user I want to view my collection on desktop [spec](#collectionviewdesktop)
 * As a user I want to edit a collection on desktop [spec](#collectioneditdesktop)
@@ -351,6 +351,10 @@ Preventing/Handling spam and offensive content in visible collections
 * The creator of a collection should not be able to report their own collection.
 * When the report icon has been selected, an overlay should appear asking for the reason for the report. The three options are: spam, inappropriate language, and inappropriate avatar.
 * After the user has selected the reason for reporting the collection the user should return to the collection landing screen and view feedback that the collection was reported.
+
+<a name="collectionsscreendesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreendesktop.png)</a>
+
+**Acceptance criteria for creating a user collection on desktop**
 
 
 <a name="collectioncreatedesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatedesktop.png)</a>
