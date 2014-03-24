@@ -182,9 +182,11 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want a dedicated place to view user collection on the Marketplace on tablet.
 
 ### Desktop
-* As a user I want to view my collections on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/28)
-* As a user I want to create a collection on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/29)
-* As a user I want a dedicated place to view user collection on the Marketplace on desktop.
+* As a user I want to view all of my collections on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/28) | [spec](#appscollectionsdesktop)
+* As a user I want to create a collection on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/29) | [spec](#collectioncreatedesktop)
+* As a user I want to view my collection on desktop [spec](#collectionviewdesktop)
+* As a user I want to edit a collection on desktop [spec](#collectioneditdesktop)
+* As a user I want a dedicated place to view user collections on the Marketplace on desktop.
 * As a user I want to view user collections in search results on desktop.
 
 
@@ -347,4 +349,17 @@ Preventing/Handling spam and offensive content in visible collections
 * The creator of a collection should not be able to report their own collection.
 * When the report icon has been selected, an overlay should appear asking for the reason for the report. The three options are: spam, inappropriate language, and inappropriate avatar.
 * After the user has selected the reason for reporting the collection the user should return to the collection landing screen and view feedback that the collection was reported.
+
+
+<a name="collectioncreatedesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatedesktop.png)</a>
+
+**Acceptance criteria for creating a user collection on desktop**
+
+<a name="collectionviewdesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionviewdesktop.png)</a>
+
+**Acceptance criteria for viewing a user collection on desktop**
+
+<a name="collectioneditdesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneditdesktop.png)</a>
+
+**Acceptance criteria for editing a user collection on desktop**
 
