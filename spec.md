@@ -185,7 +185,7 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to view user collections in search results on desktop.
 
 ### Tablet
-* As a user I want to view all of my collections on tablet [spec](#collectionsscreentablet)
+* As a user I want to view all of my collections on tablet [spec](#collectionscreentablet)
 * As a user I want to create a collection on tablet [spec](#collectioncreatetablet)
 * As a user I want to view my collection on tablet [spec](#collectionviewtablet)
 * As a user I want to edit a collection on tablet [spec](#collectionedittablet)
