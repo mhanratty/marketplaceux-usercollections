@@ -164,7 +164,7 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to add an app to an existing collection from the app details screen [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/9) | [spec for flow](#addappexistingcollection) | [spec for modal](#addappmodal)
 * As a user I want to add an app to a new collection from the app details screen  [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/10) | [spec for flow](#addappnewcollection) | [spec for modal](#addappmodal)
 * As a user I want to create a new collection from the "Collections" screen [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/11) | [spec for flow](#createcollection)  | [spec for create collection screen](#createcollectionviews)
-* As a user I want to see a warning if I try to save a collection without a name (required) [spec](#warning)
+* As a user I want to see a warning if I try to save a collection without a name (required) [spec](#collectionnamewarning)
 * As a user I want to be able to remove an app from a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/13) | [spec](#removeapp)
 * As a user I want to be able to delete a collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/4) | [spec](#deletecollection)
 * As a user I want to be able to customize the background of my collection graphic [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/12)  | [spec](#changecollectionbackground)
@@ -280,6 +280,15 @@ Preventing/Handling spam and offensive content in visible collections
 * Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.
 * Apps should be listed underneath the add apps call-to-action. 
 * App listing should have a remove icon and icon that indicates that listing can be moved up in down in order.
+
+<a name="collectionnamewarning">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionnamewarning.png)</a>
+
+**Acceptance criteria for collection name warning**
+* When a user selects "Done" and the collection has description or added app (or both) without a name this warning should appear (if the collection has no data, do not show this warning and just take user back to the previous screen.)
+* The user should be able to decide whether to name the collection to save or not to save it. 
+* If the user chooses not to save the collection, take the user back to the previous screen she was on. 
+* If the user chooses to name her collection, take her to the name field. The cursor should be in the name field and the keyboard up (on mobile) so the user can immediately type in a name.
+
 
 <a name="removeapp">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_removeapp.png)</a>
 
