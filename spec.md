@@ -424,6 +424,7 @@ Preventing/Handling spam and offensive content in visible collections
 <a name="collectioncreatetablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionecreatetablet.png)</a>
 
 **Acceptance criteria for creating a collection on tablet**
+
 Same as for desktop except...
 * "Cancel" and "Done" should appear above the name of the collection.
 * The description field should appear below the graphic.
@@ -432,6 +433,7 @@ Same as for desktop except...
 <a name="collectionviewtablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneviewtablet.png)</a>
 
 **Acceptance criteria for viewing a collection on tablet**
+
 Same as for desktop except...
 * "Edit" button should appear above the name of the collection.
 * The description field should appear below the graphic.
@@ -440,6 +442,7 @@ Same as for desktop except...
 <a name="collectionedittablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionedittablet.png)</a>
 
 **Acceptance criteria for editing a collection on tablet**
+
 Same as for desktop except...
 * "Delete collection" and "Done" should appear above the name of the collection.
 * The description field should appear below the graphic.
