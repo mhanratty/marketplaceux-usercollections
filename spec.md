@@ -421,6 +421,8 @@ Preventing/Handling spam and offensive content in visible collections
 * If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
 * If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
 
+#### Creating a user collection on tablet
+
 <a name="collectioncreatetablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatetablet.png)</a>
 
 **Acceptance criteria for creating a collection on tablet**
@@ -430,6 +432,8 @@ Same as for desktop except...
 * The description field should appear below the graphic.
 * Apps should appear in two columns.
 
+#### User collection landing screen on tablet
+
 <a name="collectionviewtablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionviewtablet.png)</a>
 
 **Acceptance criteria for viewing a collection on tablet**
@@ -438,6 +442,8 @@ Same as for desktop except...
 * "Edit" button should appear above the name of the collection.
 * The description field should appear below the graphic.
 * Apps should appear in two columns.
+
+#### Editing a user collection on tablet
 
 <a name="collectionedittablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionedittablet.png)</a>
 
