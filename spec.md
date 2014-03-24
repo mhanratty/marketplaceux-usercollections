@@ -186,7 +186,7 @@ Preventing/Handling spam and offensive content in visible collections
 
 ### Tablet
 * As a user I want to create a collection on tablet [spec](#collectioncreatetablet)
-* * As a user I want to view my collection on tablet [spec](#collectionviewtablet)
+* As a user I want to view my collection on tablet [spec](#collectionviewtablet)
 * As a user I want to edit a collection on tablet [spec](#collectionedittablet)
 * As a user I want a dedicated place to view user collection on the Marketplace on tablet.
 
