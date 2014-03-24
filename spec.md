@@ -354,12 +354,66 @@ Preventing/Handling spam and offensive content in visible collections
 <a name="collectioncreatedesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatedesktop.png)</a>
 
 **Acceptance criteria for creating a user collection on desktop**
+* The user should view this screen when she clicks on "Create collection."
+* The name of the collection is required. 
+* When the user clicks on the "Name of collection" field she should be able to enter text. 
+* If the user hits the enter or tab button while editing the name field take the user to the "Add description" field.
+* The description field is optional. It should float to the right of the collection graphic.
+* The graphic should be 6 columns and 264px tall on desktop.
+* The user should be able to edit her profile. If the user clicks on their avatar on the collection graphic, take the user to the edit profile screen.
+* The user should be able to edit the background of a collection. If the user clicks on the edit background icon the change background screen should open in a modal.
+* The user should be able to decide whether to make a collection visible on dektop. By default the collection should be visible.
+* The user should be able to search for apps via a search box on desktop.
+* The user can search by an app name or the url of the app on Marketplace.
+* The user should be able to clear a search using the "x" icon in the search box.
+* After the user has entered a search the user should be able to filter their app search by all devices, desktop or mobile. By default it should filter by all devices.
+* Search results should appear below the search bar. The result should have the app icon, app name and a call-to-action to add the app to a collection.
+* The entire line item for the app is a touch target that will select the app.
+* When the app is selected, the icon should appear selected. 
+* After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear (see how apps are added on the [spec for creating a collection](#createcollection)
+* The user can select multiple apps from the search results to add to the collection.
+* Add apps in 3 columns. The most recently added app should appear first in the list. 
+* If the user selects "Cancel" take the user back to the screen she was previously viewing.
+* If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
+* If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
 
 <a name="collectionviewdesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionviewdesktop.png)</a>
 
 **Acceptance criteria for viewing a user collection on desktop**
+* The collection should have a name.
+* The collection should have an edit button if the user is the creator of the collection.
+* If the user selects "Edit" take the user to the edit collection screen.
+* The graphic should be 6 columns and 264px tall on desktop.
+* If the collection does not have a description center the collection graphic in the center of the screen.
+* If the collection has a description, make the graphic flush left with the collection name and float the description to the right of the graphic.
+* Show 3 columns of apps. 
+* Apps should be listed in reverse chronological order from newest to oldest. Apps should be listed in this order from right to left, up to down.
 
 <a name="collectioneditdesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneditdesktop.png)</a>
 
 **Acceptance criteria for editing a user collection on desktop**
+* The user should view this screen when she clicks "Edit" on the collection landing screen.
+* The name of the collection is required. 
+* When the user clicks on the "Name of collection" field she should be able to enter text. 
+* If the user hits the enter or tab button while editing the name field take the user to the "Add description" field.
+* The description field is optional. It should float to the right of the collection graphic.
+* The graphic should be 6 columns and 264px tall on desktop.
+* The user should be able to edit her profile. If the user clicks on their avatar on the collection graphic, take the user to the edit profile screen.
+* The user should be able to edit the background of a collection. If the user clicks on the edit background icon the change background screen should open in a modal.
+* The user should be able to decide whether to make a collection visible on dektop. By default the collection should be visible.
+* The user should be able to search for apps via a search box on desktop.
+* The user can search by an app name or the url of the app on Marketplace.
+* The user should be able to clear a search using the "x" icon in the search box.
+* After the user has entered a search the user should be able to filter their app search by all devices, desktop or mobile. By default it should filter by all devices.
+* Search results should appear below the search bar. The result should have the app icon, app name and a call-to-action to add the app to a collection.
+* The entire line item for the app is a touch target that will select the app.
+* When the app is selected, the icon should appear selected. 
+* After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear (see how apps are added on the [spec for creating a collection](#createcollection))
+* The user can select multiple apps from the search results to add to the collection.
+* Add apps in 3 columns. The most recently added app should appear first in the list. 
+* The apps should show a control to allow the user to move apps in order.
+* The apps should have a "x" icon so they can be removed. For remove interactions see [spec for removing an app](#removeapp) 
+* If the user selects "Delete collection" require a confirmation. If the user confirms, take the user back to the collections screen with feedback that the collection was deleted (see [spec for deleting a collection](#deletecollection)) 
+* If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
+* If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
 
