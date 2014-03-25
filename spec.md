@@ -85,18 +85,12 @@ Study conducted on UserTesting.com on Febuary 06, 2014
 
 ## <a name="successmetrics">Success Metrics</a>
 * User collections should increase successful app installs on Firefox OS by 5%.
-* User collections should... 
-* Acquisition - increase 
-* Activation - 
-* Retention
-* Revenue
-* Referral 
-* Engagement
+TBD by David Bialer
 
 ## <a name="usercollectionfeatures">User Collection Features</a>
 
 **Collection Types**
-* *App Wishlist*. The app wish list is a default collection that every user has by default. The app wish list allows the user to save apps to install later or on another device and is intended for personal use. 
+* *App Wishlist*. The app wish list is a collection that every user has by default. The app wish list allows the user to save apps to install later or on another device and is intended for personal use. 
 * *Custom Collections*. Custom collections are all other collections that a user creates themselves. These collections can be shared with the Marketplace community.
 
 **Collection Elements**
@@ -171,7 +165,6 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to be able to edit my avatar and display name that appears on the collection [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/18) | [spec](#editprofile)
 * As a user I want a place where I can view all of my collections [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/19) | [spec](#collectionsscreen)
 * As a user I want an app wish list to store apps for later [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/1) | [spec](#appwishlist)
-* As a user with 0 collections I want to see a message about what the heck collections are! [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/3) | [spec](#collectionsscreen)
 * As a user I want to be able to see stats on my collections (number of shares, upvotes and views) | [spec](#collectionsscreen)
 * As a user I want a dedicated place to view user collections on the Marketplace [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/23) | [spec](#communityscreen)
 * As a user I want to be able to report a collection for abuse [githhub issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/27) | [spec](#reportcollection)
@@ -190,6 +183,10 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to view my collection on tablet [spec](#collectionviewtablet)
 * As a user I want to edit a collection on tablet [spec](#collectionedittablet)
 * As a user I want a dedicated place to view user collection on the Marketplace on tablet.
+
+### Curation Tool
+* As a curator I want to be able to view collections made by the community.
+* As a curator I want to be able to publish user collections to the feed.
 
 ## <a name="specs">Specs</a>
 <a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
@@ -215,7 +212,7 @@ Preventing/Handling spam and offensive content in visible collections
 * When the user selects "Create" the user should return to the add to collection screen. The collection they just created should be listed directly after the app wishlist and it should be selected.
 * The user can select additional collections to add the app to.
 
-<a name="appappmodal">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png)</a>
+<a name="addappmodal">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png)</a>
 
 **Acceptance criteria for the add to collection modal**
 * The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.
@@ -258,7 +255,7 @@ Preventing/Handling spam and offensive content in visible collections
     * Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.
     * Once a user adds an app an icon should appear allowing the user to change the background of the collection. The background color/graphic should be randomly generated.
     * If the user selects "Done" and the collection requirements are fulfilled (the collection has a name) the user is taken to the collection landing screen.
-    * If the user selects "Done" and the user has added a description or an app but has not created a name, the user should see a warning scree (see: )
+    * If the user selects "Done" and the user has added a description or an app but has not created a name, the user should see a warning scree (see [spec](#collectionnamewarning))
     * If the user selects "Done" and has not inputted any data (no name, description, or apps) no collection is created. The user should be taken back to the "Collections" screen.
 
 <a name="createcollectionviews">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionviews.png)</a>
@@ -301,7 +298,7 @@ Preventing/Handling spam and offensive content in visible collections
 **Acceptance criteria for deleting a collection**
 * The delete collection button should always be at the bottom of the collection.
 * The user must confirm that the collection should be deleted.
-* If the user delete's the collection she should return to My Apps > Collections where she will see feedback that the collection was successfully deleted. 
+* If the user delete's the collection she should return to the Collections screen where she will see feedback that the collection was successfully deleted. 
 
 <a name="changecollectionbackground">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_changecollectionbackground.png)</a>
 
@@ -322,8 +319,8 @@ Preventing/Handling spam and offensive content in visible collections
 <a name="collectionsscreen">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png)</a>
 
 **Acceptance criteria for collections screen**
-* The collections screen is in under the main navigation item "My Apps" under a tab labeled "Collections."
-* The app wishlist is in under the main navigation item "My Apps" under a tab labeled "Wishlist." 
+* The collections screen is in under the main navigation item "Apps and Collections" under a tab labeled "Collections."
+* The app wishlist is in under the main navigation item "Apps and Collections" under a tab labeled "Wishlist." 
 * If the user has no custom collections show a message about collections directly above the create new collection call to action
 * The create collection call-to-action should appear above the list of collections
 * Collections should we listed in reverse chronological order from newest to oldest.
@@ -398,7 +395,7 @@ Preventing/Handling spam and offensive content in visible collections
 * The "Cancel" and "Done" buttons should appear on the same level as the name of collection field.
 * If the user selects "Cancel" take the user back to the screen she was previously viewing.
 * If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
-* If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
+* If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see [spec](#collectionnamewarning))
 
 <a name="collectionviewdesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionviewdesktop.png)</a>
 
