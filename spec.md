@@ -174,15 +174,14 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want to create a collection on desktop [github issue](https://github.com/mhanratty/marketplaceux-usercollections/issues/29) | [spec](#collectioncreatedesktop)
 * As a user I want to view my collection on desktop [spec](#collectionviewdesktop)
 * As a user I want to edit a collection on desktop [spec](#collectioneditdesktop)
-* As a user I want a dedicated place to view user collections on the Marketplace on desktop.
-* As a user I want to view user collections in search results on desktop.
+* As a user I want a dedicated place to view user collections on the Marketplace on desktop [spec](#communityscreendesktop)
 
 ### Tablet
 * As a user I want to view all of my collections on tablet [spec](#collectionscreentablet)
 * As a user I want to create a collection on tablet [spec](#collectioncreatetablet)
 * As a user I want to view my collection on tablet [spec](#collectionviewtablet)
 * As a user I want to edit a collection on tablet [spec](#collectionedittablet)
-* As a user I want a dedicated place to view user collection on the Marketplace on tablet.
+* As a user I want a dedicated place to view user collection on the Marketplace on tablet. [spec](#communityscreentablet)
 
 ### Curation Tool
 * As a curator I want to be able to view collections made by the community.
@@ -438,7 +437,18 @@ Preventing/Handling spam and offensive content in visible collections
 * If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.
 * If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)
 
-#### Viewwing all of my user collections on tablet
+<a name="communityscreendesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreendesktop.png)</a>
+
+**Acceptance criteria for the community screen on desktop**
+* Users Collections are visible under the “Community” tab in the main navigation
+* Only user collections that follow the visibility rules will be shown.
+* On desktop the sections of the page have titles
+* By default collections should be sorted by popular. The user can also sort collections by “new.”
+* The create new collection call-to-action will take user to the create a collection screen.
+* Collections are listed from most recently created to oldest in blocks of 5 moving left to right, up to down. The collection graphic is sometimes mobile size (4 columns wide) and sometimes desktop sized (6 columns wide)
+* A right arrow control should allow the user to scroll through the overflow content.
+
+#### Viewing all of my user collections on tablet
 
 <a name="collectionscreentablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionscreentablet.png)</a>
 
@@ -480,3 +490,13 @@ Same as for desktop except...
 * "Delete collection" and "Done" should appear above the name of the collection.
 * The description field should appear below the graphic.
 * Apps should appear in two columns.
+* 
+#### Community screen on tablet
+
+<a name="communityscreentablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreentablet.png)</a>
+
+**Acceptance criteria for community screen on tablet**
+
+Same as for desktop except...
+* Only 4 collections are shown at a time.
+* The collection graphic is always 4 columns wide.
