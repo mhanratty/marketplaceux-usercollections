@@ -85,7 +85,7 @@ Study conducted on UserTesting.com on Febuary 06, 2014
 
 ## <a name="successmetrics">Success Metrics</a>
 * User collections should increase successful app installs on Firefox OS by 5%.
-TBD by David Bialer
+* Other success metrics TBD by David Bialer
 
 ## <a name="usercollectionfeatures">User Collection Features</a>
 
