@@ -490,7 +490,7 @@ Same as for desktop except...
 * "Delete collection" and "Done" should appear above the name of the collection.
 * The description field should appear below the graphic.
 * Apps should appear in two columns.
-* 
+
 #### Community screen on tablet
 
 <a name="communityscreentablet">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreentablet.png)</a>
