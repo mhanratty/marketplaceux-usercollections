@@ -184,8 +184,8 @@ Preventing/Handling spam and offensive content in visible collections
 * As a user I want a dedicated place to view user collection on the Marketplace on tablet. [spec](#communityscreentablet)
 
 ### Curation Tool
-* As a curator I want to be able to view collections made by the community.
-* As a curator I want to be able to publish user collections to the feed.
+* As a curator I want to be able to view collections made by the community. [spec](#curationtoolsdesktop)
+* As a curator I want to be able to publish user collections to the feed. [spec](#curationtoolsdesktop)
 
 ## <a name="specs">Specs</a>
 <a name="addappexistingcollection">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png)</a>
@@ -500,3 +500,23 @@ Same as for desktop except...
 Same as for desktop except...
 * Only 4 collections are shown at a time.
 * The collection graphic is always 4 columns wide.
+
+#### Curation Tools Feed Builder on desktop
+
+<a name="curationtoolsdesktop">![he can see so much more](http://mhanratty.github.io/marketplaceux-usercollections/img/curationtool_feedbuilder_community_tab.png)</a>
+
+**View collections made by the community**
+* Go to Curation Tools
+* Click on “Feed Builder”
+* Click on the “Community” tab
+* The last 5 community-created collections and articles are displayed
+* Use the search bar to search for a specific module
+
+**Publish community-created collections to the feed**
+* Click “Show Regions” under the module that you’d like to publish
+* The country checkboxes appear
+* Check the feed regions that you’d like to add the module to
+* Use the feed region dropdown menu to select a region that you’d like to edit
+* The module you’ve added will appear down below, in the Feed Editor
+* Use the Feed Editor to reorder modules
+* To remove a module from a feed, simply uncheck the feed region’s checkbox
