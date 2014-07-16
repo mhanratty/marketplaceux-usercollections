@@ -1,0 +1,69 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: projectOverview.html
+multisequence: one
+---	
+
+<div class="container">
+	<h1>Overview</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+		<h3>What are user collections?</h3>
+		<p class="longText">
+			User collections allow Marketplace community members to create collections of apps for themselves, to share with friends and family and to share with the Marketplace community.
+		</p>
+
+		<h3>User problem</h3>
+		
+		<p class="longText">Both consuming and creating collections improves the Marketplace experience for users.</p>
+		
+		<p class="longText">Why users want to consume collections</p>
+		
+		<p class="longText"><em>Discovery</em>. People want help finding great apps that are relevant to their interests and locale. Collections highlight the best apps.</p>
+		
+    <p class="longText">Why users want to create collections</p>
+
+		
+		<ul class="longText">
+		 	<li><em>Saving apps for later installation</em>. People want to be able to save apps for later. They might be on data and want to save an app to download later when they have a wifi connection. Or a user might be deciding between many different types of apps and wants to bookmark them and review them before selecting one and downloading it.</li>
+		 	<li><em>Sharing with friends</em>. People want to help their friends find cool apps.</li>
+		 	<li><em>Sharing with the community</em>. People want to share their expertise of apps with others.</li>
+		</ul>
+
+		<h3>Business problem</h3>
+		
+		<p class="longText">User collections allow the Markeplace to scale content in the feed and help identify locally relevant content.</p>
+		
+		<ul class="longText">
+		 	<li><em>Scale</em>. Firefox Marketplace will always have a limited paid editorial staff. We need community members to create compelling content for Marketplace users to consume.</li>
+		 	<li><em>Local Content</em>. Firefox Marketplace needs to show locally relevant content. We need community members in each region to create locally relevant content for users to consume.</li>
+		</ul>
+
+		<h3>Target Audience</h3>
+		
+		<p class="longText">While user collections can be used by everyone on the Marketplace we believe that the average user and power users will use them in different ways.</p>
+		
+		<p class="longText">Average users will:</p>
+
+    <ul class="longText">
+      <li>Consume collections to discovery new apps</li>
+      <li>Add apps to the App Wishlist to download later</li>
+    </ul>
+
+		<p class="longText">Power users will:</p>
+
+    <ul class="longText">
+      <li>Create new collections</li>
+      <li>Share collections with friends and family</li>
+      <li>Create collections to share with the community</li>
+    </ul>
+		
+	</div>
+	
+		

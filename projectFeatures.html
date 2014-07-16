@@ -1,0 +1,110 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: projectFeatures.html
+multisequence: four
+---	
+
+<div class="container">
+	<h1>User Collection Features</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+
+		<h3>Collection Types</h3>
+				
+		<ul class="longText">
+      <li><em>App Wishlist</em>. The app wish list is a collection that every user has by default. The app wish list allows the user to save apps to install later or on another device and is intended for personal use.</li>
+      <li><em>Custom Collections</em>. Custom collections are all other collections that a user creates themselves. These collections can be shared with the Marketplace community.</li>
+		</ul>
+
+		<h3>Collection Elements</h3>
+				
+		<h4>App Wishlist</h4>
+		
+		<ul class="longText">
+      <li>Graphic</li>
+      <li>Avatar of the user who created the collection</li>
+      <li>Collection title “My App Wishlist”</li>
+      <li>App (app icon, name, developer, content rating, review rating, price button)</li>
+		</ul>
+
+  	<h4>Custom Collection</h4>
+		
+		<ul class="longText">
+      <li>Auto-generated graphic</li>
+      <li>Display name of user who created the collection</li>
+      <li>Avatar of the user who created the collection</li>
+      <li>Collection title</li>
+      <li>Collection description [optional]</li>
+      <li>App (app icon, name, developer, content rating, review rating, free button)</li>
+		</ul>
+
+    <h3>Collection Features</h3>
+    
+    <h4>App wish list features</h4>
+
+    <ul class="longText">
+      <li>Ability to add apps from app details screen</li>
+      <li>Ability to remove apps</li>
+    </ul>
+    
+    <h4>Custom collection features – for collection creator</h4>
+
+    <ul class="longText">
+      <li>Ability to add apps</li>
+      <li>Ability to make collection visible to all of Marketplace or keep hidden</li>
+      <li>Ability to view statistics on a collection (shares, views, upvotes)</li>
+      <li>Ability to remove apps</li>
+      <li>Arrange the order of apps</li>
+      <li>Ability to delete a collection</li>
+    </ul>
+    
+    <h4>Custom collection features – for collection consumer</h4>
+
+    <ul class="longText">
+      <li>Ability to share collection</li>
+      <li>Ability to upvote the collection</li>
+      <li>Ability to flag the collection for abuse</li>
+    </ul>
+    
+    <h3>Collection Visibility</h3>
+    
+    <p class="longText">Collections that are made public by their creators will be visible on the following screens</p>
+
+    <ul class="longText">
+      <li>"Community" screen accessible via top level navigation</li>
+      <li>As modules in the feed chosen by the editor</li>
+      <li>Category screens (P2)</li>
+      <li>Search result screens</li>
+    </ul>
+    
+    <h4>Visibility rules</h4>
+    
+    <ul class="longText">
+      <li>A collection must have three or more apps to be publicly visible on the Marketplace</li>
+      <li>If an app in a collection is not available in the user’s region, by the user’s operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection.</li>
+      <li>If none or less than 3 of the apps in the collection are available in the user’s region, the user’s operator, or on their device (mobile use case) the user will not see that collection.</li>
+      <li>Proposal: Precompute visible collections by the common device profiles so the filtering doesn't have to be done in real time.</li>
+    </ul>
+     
+    <h4>Preventing/Handling spam and offensive content in visible collections</h4>
+    
+    <ul class="longText">
+      <li>Do not feature new collections prominently (i.e. on the homescreen). Make new collections available but only on community screen. Once the collection receives a good reputation (many views, many installs from views, likes, etc.) allow it to be featured on the home screen.</li>
+      <li>Allow users to flag content for abuse. If collection receives 3 abuse flags remove it from "Community" screen.</li>
+      <li>If a user posts a url in titles or description it should not be clickable. (main source of spam for AMO)</li>
+      <li>Auto-flag suspicious collections that appear to be spam and have them added to a review queue</li>
+      <li>Filter for users creating many, many collections (100s of collections)</li>
+      <li>Filter for users frequency of collection making (100s of collection in small amount of time)</li>
+      <li>Filter for duplicate collections (often spam bot)</li>
+      <li>Create a black list of banned users</li>
+    </ul>
+
+	</div>
+	
+</div>

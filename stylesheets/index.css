@@ -1,0 +1,62 @@
+body {
+  /* fallback */
+  background-color: #9e1f63;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9e1f63), to(#262262));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #9e1f63, #262262);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #9e1f63, #262262);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #9e1f63, #262262);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #9e1f63, #262262);
+}
+
+.container {
+  color: #fff;
+}
+
+.btn-medium {
+  border: 0px;
+  display: inline-block;
+  position: relative;
+  height: 48px;
+  width: 150px;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Fira Sans OT';
+  font-weight: medium;
+  line-height: 48px;
+  font-size: 15px;
+  color: #fff;
+  background: #4cb1ff;
+  box-shadow: 0px 2px #3d86bd;
+    -moz-box-shadow: 0px 2px #3d86bd;
+    -webkit-box-shadow: 0px 2px #3d86bd;
+  border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.btn-medium:hover {
+  background: #42cafe;
+  text-decoration: none;
+}
+
+.btn-medium:active {
+  background: #3d86bd;
+  text-decoration: none;
+  transform: translate(0px, 2px);
+  box-shadow: 0px;
+    -moz-box-shadow: 0px;
+    -webkit-box-shadow: 0px;
+}
