@@ -1,10 +1,52 @@
-<!-- how the hell do I make this varriable... working on it, currently this is broken -->
-<div class="row"> 
-	<ul class="pagination col-sm-6 col-md-4 col-lg-4">
-		<li class="disabled"><a href="#">&laquo;</a></li>
-		<li class="active"><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">&raquo;</a></li>
-	</ul>
-</div>
+<!-- DONT FORGET TO ADD "multiURL" and "multisequence" tags to the page you're working with. Also change multipage to "true". -->
+
+<ul class="pagination col-sm-6 col-md-4 col-lg-4">		
+
+<!-- This part deals with disabled state of the BACK arrow. Disabled state is for the FIRST page of the multi pages. -->
+{% if page.multiURL == "projectOverview.html" %}
+	<li class="disabled"><a href="#">&laquo;</a></li>
+
+<!--  This part deals with the enabled state of the BACK arrow. The FIRST page is not included in this section b/c its included in the DISABLED state above. REMEMBER that the BACK arrow links to PREVIOUS page URLs. -->
+{% else %}
+	<li>
+		{% if page.multisequence == 'two' %}
+			<a href="projectOverview.html">
+		{% elsif page.multisequence == 'three' %}
+			<a href="projectMetrics.html">
+		{% elsif page.multisequence == 'four' %}
+			<a href="projectResearch.html">		
+		{% endif %}
+		
+		&laquo;</a>
+	</li>
+{% endif %}
+
+<!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->
+		<li {% if page.multiURL == 'projectOverview.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectOverview.html">1</a></li>
+		
+		<li {% if page.multiURL == 'projectMetrics.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectMetrics.html">2</a></li>
+		
+		<li {% if page.multiURL == 'projectResearch.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectResearch.html">3</a></li>
+
+		<li {% if page.multiURL == 'projectFeatures.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectFeatures.html">4</a></li>
+
+<!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
+{% if page.multiURL == "projectFeatures.html" %}
+	<li class="disabled"><a href="#">&raquo;</a></li>
+
+<!--  This part deals with the enabled state of the FORWARD arrow. The LAST page is not included in this section b/c its included in the DISABLED state above.  REMEMBER that the FORWARD arrow links to NEXT page URLs. -->
+{% else %}
+	<li>
+		{% if page.multisequence == 'one' %}
+			<a href="projectMetrics.html">
+		{% elsif page.multisequence == 'two' %}
+			<a href="projectResearch.html">
+		{% elsif page.multisequence == 'three' %}
+			<a href="projectFeatures">
+		{% endif %}
+		
+		&raquo;</a>
+	</li>
+{% endif %}
+
+</ul>
