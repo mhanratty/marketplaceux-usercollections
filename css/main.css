@@ -34,10 +34,6 @@ a:visited { color: #205caa; }
   zoom: 1;
 }
 
-td {
-  width: 190px;
-  height: 200px;
-}
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
@@ -258,7 +254,6 @@ td {
 }
 
 .post pre.terminal code { background-color: #333; }
-
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/

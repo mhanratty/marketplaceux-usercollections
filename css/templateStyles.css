@@ -1,0 +1,91 @@
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+body{
+	padding-top:70px;
+
+	background-color: #e7e7e7;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+h2{
+	font-size: 2em;
+}
+#wrapper{
+	min-height: 100%;
+	position: relative;
+}
+
+.marketplaceLogo{
+	width: 150px;
+	max-width: 150px;
+	background-image: url('../img/marketplace_logo.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center; 
+}
+
+.navbar-marketplace{
+	background-color: #fff;
+	border-bottom: 1px solid #D7D7D7;
+
+}
+
+.jumbotron{
+	background:none;
+}
+
+.modal-lg{
+	width:1100px;
+}
+.pagination > .active > a, .pagination > .active > a:hover {
+	background-color: #FF9500;
+	border-color: #FF9500;
+}
+div.modal-body{
+	text-align: center;
+}
+p.longText, ol.longText, ul.longText{
+	font-size: 1.2em;
+}
+ol.longText>li, ul.longText>li {
+	margin-bottom: .65em;
+}
+.menuHeading{
+	padding-bottom: 2px;
+	border-bottom: rgba(255,149,0,0.2) 1px solid;
+
+}
+.menuHeading em{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-left: 10px;
+	color: #FF9500;
+}
+h2.subhead{
+	font-size:1.4em;
+	font-weight: bold;
+	margin-top:-8px;
+}
+#content{
+	padding-bottom: 70px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  padding-top:15px;
+  margin-top: 10px;
+  border-top: 1px solid #d7d7d7;
+}
+footer p{
+	border-left: 1px dotted #ccc;
+	padding-left: 5px;
+	font-size: .9em;
+}

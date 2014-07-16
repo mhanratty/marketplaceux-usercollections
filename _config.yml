@@ -1,0 +1,12 @@
+# Site settings
+name: Firefox Marketplace Devpages Redesign Spec
+title: Firefox Marketplace Devpages Redesign Spec
+email: tsmuse@mozilla.com
+description: "Specifications for the eventual redesign of the Firefox Marketplace Developer Pages (devhub)"
+# these need to be changed for each project
+baseurl: "/FirefoxMarketplaceDevPagesDesign" #this is the github project name WITHOUT the trailing /
+url: "https://tsmuse.github.io"  #this the url of the GHPages account your project is hosted at
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
