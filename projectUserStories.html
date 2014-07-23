@@ -1,0 +1,63 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: projectUserStories.html
+multisequence: five
+---	
+
+<div class="container">
+	<h1>User Stories</h1>
+
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. -->
+	{% if page.multipage %}
+		{% include homePagination.html %}
+	{% endif %}
+
+	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+
+		<h3>Mobile</h3>
+				
+		<ul class="longText">
+      <li>As a user I want to add an app to an existing collection from the app details screen <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/9">GitHub issue</a> | <a href="#addappexistingcollection">spec for flow</a> | <a href="#addappmodal">spec for modal</a></li>
+      <li>As a user I want to add an app to a new collection from the app details screen  <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/10">GitHub issue</a> | <a href="#addappnewcollection">spec for flow</a> | <a href="#addappmodal">spec for modal</a></li>
+      <li>As a user I want to create a new collection from the "Collections" screen <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/11">GitHub issue</a> | <a href="#createcollection">spec for flow</a>  | <a href="#createcollectionviews">spec for create collection screen</a></li>
+      <li>As a user I want to see a warning if I try to save a collection without a name (required) <a href="#collectionnamewarning">spec</a></li>
+      <li>As a user I want to be able to remove an app from a collection <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/13">GitHub issue</a> | <a href="#removeapp">spec</a></li>
+      <li>As a user I want to be able to delete a collection <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/4">GitHub issue</a> | <a href="#deletecollection">spec</a></li>
+      <li>As a user I want to be able to customize the background of my collection graphic <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/12">GitHub issue</a>  | <a href="#changecollectionbackground">spec</a></li>
+      <li>As a user I want to be able to edit my avatar and display name that appears on the collection <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/18">GitHub issue</a> | <a href="#editprofile">spec</a></li>
+      <li>As a user I want a place where I can view all of my collections <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/19">GitHub issue</a> | <a href="#collectionsscreen">spec</a></li>
+      <li>As a user I want an app wish list to store apps for later <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/1">GitHub issue</a> | <a href="#appwishlist">spec</a></li>
+      <li>As a user I want to be able to see stats on my collections (number of shares, upvotes and views) | <a href="#collectionsscreen">spec</a></li>
+      <li>As a user I want a dedicated place to view user collections on the Marketplace <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/23">GitHub issue</a> | <a href="#communityscreen">spec</a></li>
+      <li>As a user I want to be able to report a collection for abuse <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/27">GitHub issue</a> | <a href="#reportcollection">spec</a></li>
+    </ul>
+    
+    <h3>Desktop</h3>
+
+    <ul class="longText">
+      <li>As a user I want to view all of my collections on desktop <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/28">GitHub issue</a> | <a href="#collectionsscreendesktop">spec</a></li>
+      <li>As a user I want to create a collection on desktop <a href="https://github.com/mhanratty/marketplaceux-usercollections/issues/29">GitHub issue</a> | <a href="#collectioncreatedesktop">spec</a></li>
+      <li>As a user I want to view my collection on desktop <a href="#collectionviewdesktop">spec</a></li>
+      <li>As a user I want to edit a collection on desktop <a href="#collectioneditdesktop">spec</a></li>
+      <li>As a user I want a dedicated place to view user collections on the Marketplace on desktop <a href="#communityscreendesktop">spec</a></li>
+    </ul>
+    
+    <h3>Tablet</h3>
+    
+    <ul class="longText">
+      <li>As a user I want to view all of my collections on tablet <a href="#collectionscreentablet">spec</a></li>
+      <li>As a user I want to create a collection on tablet <a href="#collectioncreatetablet">spec</a></li>
+      <li>As a user I want to view my collection on tablet <a href="#collectionviewtablet">spec</a></li>
+      <li>As a user I want to edit a collection on tablet <a href="#collectionedittablet">spec</a></li>
+      <li>As a user I want a dedicated place to view user collection on the Marketplace on tablet. <a href="#communityscreentablet">spec</a></li>
+    </ul>
+    
+    <h3>Curation Tool</h3>
+    
+    <ul>
+      <li>As a curator I want to be able to view collections made by the community. <a href="#curationtoolsdesktop">spec</a></li>
+      <li>As a curator I want to be able to publish user collections to the feed. <a href="#curationtoolsdesktop">spec</a></li>
+    </ul>
+
+	</div>

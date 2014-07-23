@@ -10,28 +10,40 @@
 {% else %}
 	<li>
 		{% if page.multisequence == 'two' %}
-			<a href="projectOverview.html">
-		{% elsif page.multisequence == 'three' %}
 			<a href="projectMetrics.html">
+		{% elsif page.multisequence == 'three' %}
+			<a href="projectResearch.html">
 		{% elsif page.multisequence == 'four' %}
-			<a href="projectResearch.html">		
+			<a href="projectFeatures.html">
+		{% if page.multisequence == 'five' %}
+			<a href="projectUserStories.html">
+		{% elsif page.multisequence == 'six' %}
+			<a href="projectSpecsMobile.html">
+		{% elsif page.multisequence == 'seven' %}
+			<a href="projectSpecsDesktop.html">
+		{% elsif page.multisequence == 'eight' %}
+			<a href="projectSpecsTablet.html">
 		{% endif %}
 		
 		&laquo;</a>
 	</li>
 {% endif %}
 
-<!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->
-		<li {% if page.multiURL == 'projectOverview.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectOverview.html">1</a></li>
-		
+<!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->		
 		<li {% if page.multiURL == 'projectMetrics.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectMetrics.html">2</a></li>
 		
 		<li {% if page.multiURL == 'projectResearch.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectResearch.html">3</a></li>
 
 		<li {% if page.multiURL == 'projectFeatures.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectFeatures.html">4</a></li>
 
+		<li {% if page.multiURL == 'projectUserStories.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectUserStories.html">5</a></li>
+		
+		<li {% if page.multiURL == 'projectSpecsMobile.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsMobile.html">6</a></li>
+
+		<li {% if page.multiURL == 'projectSpecsDesktop.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsDesktop.html">7</a></li>
+
 <!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
-{% if page.multiURL == "projectFeatures.html" %}
+{% if page.multiURL == "projectSpecsTablet.html" %}
 	<li class="disabled"><a href="#">&raquo;</a></li>
 
 <!--  This part deals with the enabled state of the FORWARD arrow. The LAST page is not included in this section b/c its included in the DISABLED state above.  REMEMBER that the FORWARD arrow links to NEXT page URLs. -->
@@ -43,8 +55,15 @@
 			<a href="projectResearch.html">
 		{% elsif page.multisequence == 'three' %}
 			<a href="projectFeatures">
+		{% elsif page.multisequence == 'four' %}
+			<a href="projectFeatures.html">
+		{% if page.multisequence == 'five' %}
+			<a href="projectUserStories.html">
+		{% elsif page.multisequence == 'six' %}
+			<a href="projectSpecsMobile.html">
+		{% elsif page.multisequence == 'seven' %}
+			<a href="projectSpecsDesktop.html">
 		{% endif %}
-		
 		&raquo;</a>
 	</li>
 {% endif %}
