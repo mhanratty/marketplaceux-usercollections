@@ -24,12 +24,13 @@
 		{% elsif page.multisequence == 'eight' %}
 			<a href="projectSpecsTablet.html">
 		{% endif %}
-		
 		&laquo;</a>
 	</li>
 {% endif %}
 
-<!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->		
+<!-- This part deals with the MIDDLE pages (not FIRST or LAST) of the multi page navigation. -->
+		<li {% if page.multiURL == 'projectOverview.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectOverview.html">1</a></li>
+	
 		<li {% if page.multiURL == 'projectMetrics.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectMetrics.html">2</a></li>
 		
 		<li {% if page.multiURL == 'projectResearch.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectResearch.html">3</a></li>
@@ -54,15 +55,15 @@
 		{% elsif page.multisequence == 'two' %}
 			<a href="projectResearch.html">
 		{% elsif page.multisequence == 'three' %}
-			<a href="projectFeatures">
-		{% elsif page.multisequence == 'four' %}
 			<a href="projectFeatures.html">
-		{% if page.multisequence == 'five' %}
+		{% elsif page.multisequence == 'four' %}
 			<a href="projectUserStories.html">
-		{% elsif page.multisequence == 'six' %}
+		{% if page.multisequence == 'five' %}
 			<a href="projectSpecsMobile.html">
-		{% elsif page.multisequence == 'seven' %}
+		{% elsif page.multisequence == 'six' %}
 			<a href="projectSpecsDesktop.html">
+		{% elsif page.multisequence == 'seven' %}
+			<a href="projectSpecsTablet.html">
 		{% endif %}
 		&raquo;</a>
 	</li>
