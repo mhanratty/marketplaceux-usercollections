@@ -15,7 +15,11 @@ h2{
 	font-size: 2em;
 }
 h3{
-  margin-top: 2em;
+  margin-top: 4em;
+  margin-bottom: 0.5em;
+}
+h4{
+  margin-top: 1em;
 }
 #wrapper{
 	min-height: 100%;
