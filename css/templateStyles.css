@@ -6,21 +6,23 @@ html,body{
 
 body{
 	padding-top:70px;
-
 	background-color: #e7e7e7;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
+
 h2{
 	font-size: 2em;
 }
+
 h3{
-  margin-top: 4em;
-  margin-bottom: 0.5em;
+  margin: 4em 0 .5em;
 }
+
 h4{
-  margin-top: 1em;
+  margin: 1em 0;
 }
+
 #wrapper{
 	min-height: 100%;
 	position: relative;
