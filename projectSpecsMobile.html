@@ -14,223 +14,229 @@ multisequence: six
 	{% endif %}
 
 	<div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
-
-    <a name="addappexistingcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png" alt="Adding app to an existing collection" /></a>
-
-		<h4>Acceptance criteria for adding app to an existing collection</h4>
-				
-    <ul class="longText">
-      <li>Icon to add an app to a collection appears on the app details screen.</li>
-      <li>A modal should open when user selects icon to add app to a collection.</li>
-      <li>If there is only one collection, that collection should be selected.</li>
-      <li>The user should have the ability to create a new collection.</li>
-      <li>When an app has been added to a collection, a confirmation should appear with the icon of the app, the name of the app, and the name of the collection it was added to.</li>
-      <li>In the confirmation screen the name of the collection should link to that collection's landing screen.</li>
-      <li>When the user dismisses the confirmation message the user should return to the app details screen.</li>
-    </ul>
-
-    <a name="addappnewcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png" alt="he can see so much more"/></a>
+	
+    <div class="row">
+    	<div class="col-sm-12 col-md-12 col-lg-12">
     
-    <h4>Acceptance criteria for adding an app to a new collection</h4>
+        <a name="addappexistingcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png" alt="Adding app to an existing collection" /></a>
     
-    <ul class="longText">
-      <li>When the user selects create a new collection the user should be taken to a new screen.</li>
-      <li>Entering a name for the collection is required. The "Create" button should be disabled until the user has created the collection name.</li>
-      <li>When the user hits enter on the collection name field they should automatically be taken to the description field.</li>
-      <li>Entering a description for the collection is optional.</li>
-      <li>If the user hits enter on the description field the keyboard should dismiss.</li>
-      <li>The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.</li>
-      <li>When the user selects "Create" the user should return to the add to collection screen. The collection they just created should be listed directly after the app wishlist and it should be selected.</li>
-      <li>The user can select additional collections to add the app to.</li>
-    </ul>
-
-    <a name="addappmodal"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png" alt="he can see so much more"/></a>
+    		<h4>Acceptance criteria for adding app to an existing collection</h4>
+    				
+        <ul class="longText">
+          <li>Icon to add an app to a collection appears on the app details screen.</li>
+          <li>A modal should open when user selects icon to add app to a collection.</li>
+          <li>If there is only one collection, that collection should be selected.</li>
+          <li>The user should have the ability to create a new collection.</li>
+          <li>When an app has been added to a collection, a confirmation should appear with the icon of the app, the name of the app, and the name of the collection it was added to.</li>
+          <li>In the confirmation screen the name of the collection should link to that collection's landing screen.</li>
+          <li>When the user dismisses the confirmation message the user should return to the app details screen.</li>
+        </ul>
     
-    <h4>Acceptance criteria for the add to collection modal</h4>
+        <a name="addappnewcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for adding an app to a new collection</h4>
+        
+        <ul class="longText">
+          <li>When the user selects create a new collection the user should be taken to a new screen.</li>
+          <li>Entering a name for the collection is required. The "Create" button should be disabled until the user has created the collection name.</li>
+          <li>When the user hits enter on the collection name field they should automatically be taken to the description field.</li>
+          <li>Entering a description for the collection is optional.</li>
+          <li>If the user hits enter on the description field the keyboard should dismiss.</li>
+          <li>The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.</li>
+          <li>When the user selects "Create" the user should return to the add to collection screen. The collection they just created should be listed directly after the app wishlist and it should be selected.</li>
+          <li>The user can select additional collections to add the app to.</li>
+        </ul>
     
-    <ul class="longText">
-    <li>The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.</li>
-    <li>All collections should include the number of apps currently in the collection.</li>
-    <li>If the user only has one collection (the app wishlist) that collection should be selected.</li>
-    <li>If the user has more than one collection than no collections should be selected by default.</li>
-    <li>If no collection is selected the "Ok" button should be deactivated.</li>
-    <li>The entire collection line item should be a touch target</li>
-    <li>The app may be added to multiple collections.</li>
-    <li>If there are 3+ collections a scroll bar should appear.</li>
-    </ul>
-    
-    <a name="createcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionfromcollections.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for creating a collection from the collections screen</h4>
-    
-    <ul class="longText">
-    <li>There should be a prominent call to action for the user to create a new collection. When selected this call-to-action should take the user to the create collection screen.</li>
-    <li>Create collection screen
-      <ul>
-        <li>The create collection screen should have a "Done" link when the user is finished creating their collection.</li>
-        <li>The create collection screen should show a default graphic for the collection. </li>
-        <li>The user's current Markeplace avatar should be visible on the graphic.</li>
-        <li>The user's current Marketplace display name should be visilble on the graphic.</li>
-        <li>Entering a name for the collection is required. </li>
-        <li>When the user enters the name of the collection, it should show up in real time on the graphic above the user's display name.</li>
-        <li>When the user hits enter on the collection name field they should automatically be taken to the description field.</li>
-        <li>If the user hits enter on the description field the keyboard should dismiss.</li>
-        <li>There should be a call-to-action button that allows users to add apps to the collection. The add apps call to action should always appear after the "Make visible" toggle and before any apps on the create/edit collection screen.</li>
-        <li>When the user selects the add to apps call-to-action a new screen should appear for the user to search for apps.</li>
-      </ul>
-    </li>
-    <li>Add to apps screen
-      <ul>
-        <li>On the add to apps screen there should be a search box for users to search for an app by name in the Marketplace. </li>
-        <li>On add to apps screen the search box should only return mobile apps available for that user's region and operator.</li>
-        <li>The user must click enter to execute the search.</li>
-        <li>Search results should appear with their icon, app name, developer name, content rating and review rating. Instead of an install button the listing should have a grey circle indicating the ability for the app to be selected.</li>
-        <li>The entire line item for the app is a touch target that will select the app.</li>
-        <li>When the app is selected, the icon should appear selected. </li>
-        <li>After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear.</li>
-        <li>The user can select multiple apps from the search results to add to the collection.</li>
-        <li>The user can delete their current search and execute multiple searches adding multiple apps.</li>
-        <li>When user selects "Done" on add to apps screen the user should return to the create collection screen.</li>
-      </ul>
-    </li>
-    <li>Create collections screen after an app is added
-      <ul>
-        <li>If at least one app is selected the background of the graphic should change from grey to a color. </li>
-        <li>Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.</li>
-        <li>Once a user adds an app an icon should appear allowing the user to change the background of the collection. The background color/graphic should be randomly generated.</li>
-        <li>If the user selects "Done" and the collection requirements are fulfilled (the collection has a name) the user is taken to the collection landing screen.</li>
-        <li>If the user selects "Done" and the user has added a description or an app but has not created a name, the user should see a warning scree (see <a href="#collectionnamewarning">spec</a>)</li>
-        <li>If the user selects "Done" and has not inputted any data (no name, description, or apps) no collection is created. The user should be taken back to the "Collections" screen.</li>
-      </ul>
-    </li>
-    </ul>
-    
-    <a name="createcollectionviews"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionviews.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for create collections screens</h4>
-    
-    <ul class="longText">
-      <li>The create collection screen should have a "Done" link when the user is finished creating their collection.</li>
-      <li>The create collection screen should show a default graphic for the collection that is grey with slots for icons for apps that are added.</li>
-      <li>The user's current Markeplace avatar should be visible on the graphic. </li>
-      <li>The user's current Marketplace display name should be visible on the graphic.</li>
-      <li>The user should be able to click on the avatar and be taken to their profile to edit their avatar and display name.</li>
-      <li>Entering a name for the collection is required. </li>
-      <li>Entering a description for the collection is optional. </li>
-      <li>Adding an app to a collection is optional.</li>
-      <li>The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.</li>
-      <li>There should be a call-to-action button that allows users to add apps to the collection. The add apps call to action should always appear after the "Make visible" toggle and before any apps on the create/edit collection screen.</li>
-      <li>The user should be able to delete a collection. The button for deleting a collection should always appear at the bottom.</li>
-      <li>Once a user adds an app an icon should appear allowing the user to change the background of the collection. This background should be randomly generated.</li>
-      <li>Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.</li>
-      <li>Apps should be listed underneath the add apps call-to-action. </li>
-      <li>App listing should have a remove icon and icon that indicates that listing can be moved up in down in order.</li>
-    </ul>
-    
-    <a name="collectionnamewarning"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionnamewarning.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for collection name warning</h4>
-    
-    <ul class="longText">
-      <li>When a user selects "Done" and the collection has description or added app (or both) without a name this warning should appear (if the collection has no data, do not show this warning and just take user back to the previous screen.)</li>
-      <li>The user should be able to decide whether to name the collection to save or not to save it. </li>
-      <li>If the user chooses not to save the collection, take the user back to the previous screen she was on. </li>
-      <li>If the user chooses to name her collection, take her to the name field. The cursor should be in the name field and the keyboard up (on mobile) so the user can immediately type in a name.</li>
-    </ul>
-    
-    <a name="removeapp"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_removeapp.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for removing an app from a collection</h4>
-    
-    <ul class="longText">
-      <li>There should be an icon to remove the app from the collection.</li>
-      <li>After x seconds the app listing should fade to white. A message "App removed from collection" should appear and remain for x seconds.</li>
-      <li>After x seconds the apps below should animate up into the space the app that was removed once occupied.</li>
-    </ul>
-    
-    <a name="deletecollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_deletecollection.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for deleting a collection</h4>
-    
-    <ul class="longText">
-      <li>The delete collection button should always be at the bottom of the collection.</li>
-      <li>The user must confirm that the collection should be deleted.</li>
-      <li>If the user delete's the collection she should return to the Collections screen where she will see feedback that the collection was successfully deleted. </li>
-    </ul>
-    
-    <a name="changecollectionbackground"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_changecollectionbackground.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for changing the background of a collection</h4>
-    
-    <ul class="longText">
-      <li>The user can only change the background of a collection if at least 1 app is added to the collection</li>
-      <li>The user clicks an icon in the upper right corner to access the choose background selector.</li>
-      <li>The current color/pattern combination should be selected in the choose background screen.</li>
-      <li>When user hits done she is taken back to create collection screen where the new color pattern combination has been applied to the graphic.</li>
-    </ul>
-    
-    <a name="editprofile"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_editprofile.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for editing the avatar and display name for a collection</h4>
-    
-    <ul class="longText">
-      <li>Selecting the user's avatar will take the user to the edit profile screen.</li>
-      <li>To edit the avatar the user selects the avatar. The devices gallery app should open. The user can select a profile image from their gallery.</li>
-      <li>The new avatar should be displayed when the user returns to the edit profile screen.</li>
-      <li>When user selects done she returns to the create collection or edit collection screen with her new avatar displayed.</li>
-    </ul>
-    
-    <a name="collectionsscreen"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for collections screen</h4>
-    
-    <ul class="longText">
-      <li>The collections screen is in under the main navigation item "Apps and Collections" under a tab labeled "Collections."</li>
-      <li>The app wishlist is in under the main navigation item "Apps and Collections" under a tab labeled "Wishlist." </li>
-      <li>If the user has no custom collections show a message about collections directly above the create new collection call to action</li>
-      <li>The create collection call-to-action should appear above the list of collections</li>
-      <li>Collections should we listed in reverse chronological order from newest to oldest.</li>
-      <li>The collection creator should be able to view the stats for their collection including number of shares, number of views and number of upvotes.</li>
-      <li>If the user has more than 3 collections she should be able to search through her collections. The search box should only appear if the user has 3 or more collections.</li>
-      <li>The search box should appear just above the list of collections.</li>
-    </ul>
-    
-    <a name="appwishlist"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_appwishlist.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for my app wish list</h4>
-    
-    <ul class="longText">
-      <li>If the user has no apps in their wishlist they should view a message telling them how to add apps to their wishlist using the "+" icon on the app details screen</li>
-      <li>The apps in the wish list should be listed in reverse chronological order from newest app added to oldest app added.</li>
-      <li>The user should be able to edit their wish list. </li>
-      <li>In edit mode the user should be able to remove apps from the list by clicking the remove icon on the app listing.</li>
-      <li>If an app on the wish list is installed by the user the app should be automatically removed from the user's app wishlist.</li>
-    </ul>
-    
-    <a name="communityscreen"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for the community screen</h4>
-    
-    <ul class="longText">
-      <li>"Community" is a main navigation item listed after "Categories"</li>
-      <li>User's can toggle between viewing user collections listed in order of most popular and new.</li>
-      <li>By default the user should view the most popular order of collections</li>
-      <li>Only show user collections that have 3 or more apps</li>
-      <li>If none of the apps in the collection are available in the user's region, the user's operator, or on their device (mobile use case) the user should not see that collection.</li>
-      <li>If an app in a collection is not available in the user's region, by the user's operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection</li>
-      <li>The user should be able to share a collection.</li>
-      <li>The user should be able to upvote a collection.</li>
-    </ul>
-    
-    <a name="reportcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_reportcollection.png" alt="he can see so much more"/></a>
-    
-    <h4>Acceptance criteria for flagging a collection for abuse</h4>
-    
-    <ul class="longText">
-      <li>There should be an icon on the collection landing screen that allows the user to report a collection. </li>
-      <li>The creator of a collection should not be able to report their own collection.</li>
-      <li>When the report icon has been selected, an overlay should appear asking for the reason for the report. The three options are: spam, inappropriate language, and inappropriate avatar.</li>
-      <li>After the user has selected the reason for reporting the collection the user should return to the collection landing screen and view feedback that the collection was reported.</li>
-    </ul>
+        <a name="addappmodal"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for the add to collection modal</h4>
+        
+        <ul class="longText">
+        <li>The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.</li>
+        <li>All collections should include the number of apps currently in the collection.</li>
+        <li>If the user only has one collection (the app wishlist) that collection should be selected.</li>
+        <li>If the user has more than one collection than no collections should be selected by default.</li>
+        <li>If no collection is selected the "Ok" button should be deactivated.</li>
+        <li>The entire collection line item should be a touch target</li>
+        <li>The app may be added to multiple collections.</li>
+        <li>If there are 3+ collections a scroll bar should appear.</li>
+        </ul>
+        
+        <a name="createcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionfromcollections.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for creating a collection from the collections screen</h4>
+        
+        <ul class="longText">
+        <li>There should be a prominent call to action for the user to create a new collection. When selected this call-to-action should take the user to the create collection screen.</li>
+        <li>Create collection screen
+          <ul>
+            <li>The create collection screen should have a "Done" link when the user is finished creating their collection.</li>
+            <li>The create collection screen should show a default graphic for the collection. </li>
+            <li>The user's current Markeplace avatar should be visible on the graphic.</li>
+            <li>The user's current Marketplace display name should be visilble on the graphic.</li>
+            <li>Entering a name for the collection is required. </li>
+            <li>When the user enters the name of the collection, it should show up in real time on the graphic above the user's display name.</li>
+            <li>When the user hits enter on the collection name field they should automatically be taken to the description field.</li>
+            <li>If the user hits enter on the description field the keyboard should dismiss.</li>
+            <li>There should be a call-to-action button that allows users to add apps to the collection. The add apps call to action should always appear after the "Make visible" toggle and before any apps on the create/edit collection screen.</li>
+            <li>When the user selects the add to apps call-to-action a new screen should appear for the user to search for apps.</li>
+          </ul>
+        </li>
+        <li>Add to apps screen
+          <ul>
+            <li>On the add to apps screen there should be a search box for users to search for an app by name in the Marketplace. </li>
+            <li>On add to apps screen the search box should only return mobile apps available for that user's region and operator.</li>
+            <li>The user must click enter to execute the search.</li>
+            <li>Search results should appear with their icon, app name, developer name, content rating and review rating. Instead of an install button the listing should have a grey circle indicating the ability for the app to be selected.</li>
+            <li>The entire line item for the app is a touch target that will select the app.</li>
+            <li>When the app is selected, the icon should appear selected. </li>
+            <li>After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear.</li>
+            <li>The user can select multiple apps from the search results to add to the collection.</li>
+            <li>The user can delete their current search and execute multiple searches adding multiple apps.</li>
+            <li>When user selects "Done" on add to apps screen the user should return to the create collection screen.</li>
+          </ul>
+        </li>
+        <li>Create collections screen after an app is added
+          <ul>
+            <li>If at least one app is selected the background of the graphic should change from grey to a color. </li>
+            <li>Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.</li>
+            <li>Once a user adds an app an icon should appear allowing the user to change the background of the collection. The background color/graphic should be randomly generated.</li>
+            <li>If the user selects "Done" and the collection requirements are fulfilled (the collection has a name) the user is taken to the collection landing screen.</li>
+            <li>If the user selects "Done" and the user has added a description or an app but has not created a name, the user should see a warning scree (see <a href="#collectionnamewarning">spec</a>)</li>
+            <li>If the user selects "Done" and has not inputted any data (no name, description, or apps) no collection is created. The user should be taken back to the "Collections" screen.</li>
+          </ul>
+        </li>
+        </ul>
+        
+        <a name="createcollectionviews"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionviews.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for create collections screens</h4>
+        
+        <ul class="longText">
+          <li>The create collection screen should have a "Done" link when the user is finished creating their collection.</li>
+          <li>The create collection screen should show a default graphic for the collection that is grey with slots for icons for apps that are added.</li>
+          <li>The user's current Markeplace avatar should be visible on the graphic. </li>
+          <li>The user's current Marketplace display name should be visible on the graphic.</li>
+          <li>The user should be able to click on the avatar and be taken to their profile to edit their avatar and display name.</li>
+          <li>Entering a name for the collection is required. </li>
+          <li>Entering a description for the collection is optional. </li>
+          <li>Adding an app to a collection is optional.</li>
+          <li>The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.</li>
+          <li>There should be a call-to-action button that allows users to add apps to the collection. The add apps call to action should always appear after the "Make visible" toggle and before any apps on the create/edit collection screen.</li>
+          <li>The user should be able to delete a collection. The button for deleting a collection should always appear at the bottom.</li>
+          <li>Once a user adds an app an icon should appear allowing the user to change the background of the collection. This background should be randomly generated.</li>
+          <li>Any apps that have been added should show up as icons on the graphic. The first app added should be added as the center app. The second app added should be in the 2nd slot (slot to the left of the center slot). The 3rd app added should be in the 4th slot (slot to the right of the center slot. The 4th app should be added to the 1st slot and the 5th app should be in 5th and final slot.</li>
+          <li>Apps should be listed underneath the add apps call-to-action. </li>
+          <li>App listing should have a remove icon and icon that indicates that listing can be moved up in down in order.</li>
+        </ul>
+        
+        <a name="collectionnamewarning"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionnamewarning.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for collection name warning</h4>
+        
+        <ul class="longText">
+          <li>When a user selects "Done" and the collection has description or added app (or both) without a name this warning should appear (if the collection has no data, do not show this warning and just take user back to the previous screen.)</li>
+          <li>The user should be able to decide whether to name the collection to save or not to save it. </li>
+          <li>If the user chooses not to save the collection, take the user back to the previous screen she was on. </li>
+          <li>If the user chooses to name her collection, take her to the name field. The cursor should be in the name field and the keyboard up (on mobile) so the user can immediately type in a name.</li>
+        </ul>
+        
+        <a name="removeapp"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_removeapp.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for removing an app from a collection</h4>
+        
+        <ul class="longText">
+          <li>There should be an icon to remove the app from the collection.</li>
+          <li>After x seconds the app listing should fade to white. A message "App removed from collection" should appear and remain for x seconds.</li>
+          <li>After x seconds the apps below should animate up into the space the app that was removed once occupied.</li>
+        </ul>
+        
+        <a name="deletecollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_deletecollection.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for deleting a collection</h4>
+        
+        <ul class="longText">
+          <li>The delete collection button should always be at the bottom of the collection.</li>
+          <li>The user must confirm that the collection should be deleted.</li>
+          <li>If the user delete's the collection she should return to the Collections screen where she will see feedback that the collection was successfully deleted. </li>
+        </ul>
+        
+        <a name="changecollectionbackground"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_changecollectionbackground.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for changing the background of a collection</h4>
+        
+        <ul class="longText">
+          <li>The user can only change the background of a collection if at least 1 app is added to the collection</li>
+          <li>The user clicks an icon in the upper right corner to access the choose background selector.</li>
+          <li>The current color/pattern combination should be selected in the choose background screen.</li>
+          <li>When user hits done she is taken back to create collection screen where the new color pattern combination has been applied to the graphic.</li>
+        </ul>
+        
+        <a name="editprofile"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_editprofile.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for editing the avatar and display name for a collection</h4>
+        
+        <ul class="longText">
+          <li>Selecting the user's avatar will take the user to the edit profile screen.</li>
+          <li>To edit the avatar the user selects the avatar. The devices gallery app should open. The user can select a profile image from their gallery.</li>
+          <li>The new avatar should be displayed when the user returns to the edit profile screen.</li>
+          <li>When user selects done she returns to the create collection or edit collection screen with her new avatar displayed.</li>
+        </ul>
+        
+        <a name="collectionsscreen"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for collections screen</h4>
+        
+        <ul class="longText">
+          <li>The collections screen is in under the main navigation item "Apps and Collections" under a tab labeled "Collections."</li>
+          <li>The app wishlist is in under the main navigation item "Apps and Collections" under a tab labeled "Wishlist." </li>
+          <li>If the user has no custom collections show a message about collections directly above the create new collection call to action</li>
+          <li>The create collection call-to-action should appear above the list of collections</li>
+          <li>Collections should we listed in reverse chronological order from newest to oldest.</li>
+          <li>The collection creator should be able to view the stats for their collection including number of shares, number of views and number of upvotes.</li>
+          <li>If the user has more than 3 collections she should be able to search through her collections. The search box should only appear if the user has 3 or more collections.</li>
+          <li>The search box should appear just above the list of collections.</li>
+        </ul>
+        
+        <a name="appwishlist"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_appwishlist.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for my app wish list</h4>
+        
+        <ul class="longText">
+          <li>If the user has no apps in their wishlist they should view a message telling them how to add apps to their wishlist using the "+" icon on the app details screen</li>
+          <li>The apps in the wish list should be listed in reverse chronological order from newest app added to oldest app added.</li>
+          <li>The user should be able to edit their wish list. </li>
+          <li>In edit mode the user should be able to remove apps from the list by clicking the remove icon on the app listing.</li>
+          <li>If an app on the wish list is installed by the user the app should be automatically removed from the user's app wishlist.</li>
+        </ul>
+        
+        <a name="communityscreen"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for the community screen</h4>
+        
+        <ul class="longText">
+          <li>"Community" is a main navigation item listed after "Categories"</li>
+          <li>User's can toggle between viewing user collections listed in order of most popular and new.</li>
+          <li>By default the user should view the most popular order of collections</li>
+          <li>Only show user collections that have 3 or more apps</li>
+          <li>If none of the apps in the collection are available in the user's region, the user's operator, or on their device (mobile use case) the user should not see that collection.</li>
+          <li>If an app in a collection is not available in the user's region, by the user's operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection</li>
+          <li>The user should be able to share a collection.</li>
+          <li>The user should be able to upvote a collection.</li>
+        </ul>
+        
+        <a name="reportcollection"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_reportcollection.png" alt="he can see so much more"/></a>
+        
+        <h4>Acceptance criteria for flagging a collection for abuse</h4>
+        
+        <ul class="longText">
+          <li>There should be an icon on the collection landing screen that allows the user to report a collection. </li>
+          <li>The creator of a collection should not be able to report their own collection.</li>
+          <li>When the report icon has been selected, an overlay should appear asking for the reason for the report. The three options are: spam, inappropriate language, and inappropriate avatar.</li>
+          <li>After the user has selected the reason for reporting the collection the user should return to the collection landing screen and view feedback that the collection was reported.</li>
+        </ul>
+        
+      </div>
+    </div>
 
 	</div>
