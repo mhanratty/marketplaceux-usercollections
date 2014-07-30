@@ -16,11 +16,13 @@ h2{
 }
 
 h3{
-  margin: 4em 0 .5em;
+  margin: 3em 0px 1.5em;
+  padding-top: 2em;
+  border-top: 1px solid #c7c7c7;
 }
 
 h4{
-  margin: 1em 0;
+  margin: 2em 0 1em;
 }
 
 #wrapper{
@@ -39,7 +41,7 @@ h4{
 
 .navbar-marketplace{
 	background-color: #fff;
-	border-bottom: 1px solid #D7D7D7;
+	border-bottom: 1px solid #d7d7d7;
 
 }
 
