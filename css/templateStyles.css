@@ -1,3 +1,4 @@
+/* base template styles */
 html,body{
 	margin:0;
 	padding:0;
@@ -6,28 +7,37 @@ html,body{
 
 body{
 	padding-top:70px;
+
 	background-color: #e7e7e7;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 }
 
-h2{
-	font-size: 2em;
-}
-
-h3{
-  margin: 3em 0px 1.5em;
-  padding-top: 2em;
-  border-top: 1px solid #c7c7c7;
-}
-
-h4{
-  margin: 2em 0 1em;
-}
-
 #wrapper{
 	min-height: 100%;
 	position: relative;
+}
+
+#content{
+	padding-bottom: 70px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  padding-top:15px;
+  margin-top: 10px;
+  border-top: 1px solid #d7d7d7;
+}
+
+footer p{
+	border-left: 1px dotted #ccc;
+	padding-left: 5px;
+	font-size: .9em;
 }
 
 .marketplaceLogo{
@@ -41,62 +51,90 @@ h4{
 
 .navbar-marketplace{
 	background-color: #fff;
-	border-bottom: 1px solid #d7d7d7;
+	border-bottom: 1px solid #D7D7D7;
 
 }
 
-.jumbotron{
-	background:none;
-}
-
-.modal-lg{
-	width:1100px;
-}
-.pagination > .active > a, .pagination > .active > a:hover {
-	background-color: #FF9500;
-	border-color: #FF9500;
-}
-div.modal-body{
-	text-align: center;
-}
-p.longText, ol.longText, ul.longText{
-	font-size: 1.2em;
-}
-ol.longText>li, ul.longText>li {
-	margin-bottom: .65em;
-}
 .menuHeading{
+	
 	padding-bottom: 2px;
 	border-bottom: rgba(255,149,0,0.2) 1px solid;
 
 }
+
 .menuHeading em{
 	font-size: 1.2em;
 	font-weight: bold;
 	padding-left: 10px;
 	color: #FF9500;
 }
-h2.subhead{
-	font-size:1.4em;
-	font-weight: bold;
-	margin-top:-8px;
+
+/* Title page */ 
+.jumbotron{
+	background:none;
 }
-#content{
-	padding-bottom: 70px;
+
+/* Image templates (1-up, 2-up, 3-up, 4up, etc) */
+.modal-lg{
+	width:1100px;
 }
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-  padding-top:15px;
-  margin-top: 10px;
-  border-top: 1px solid #d7d7d7;
+
+div.modal-body{
+	text-align: center;
 }
-footer p{
-	border-left: 1px dotted #ccc;
-	padding-left: 5px;
-	font-size: .9em;
+
+/* Pagination control include */
+.pagination > .active > a, .pagination > .active > a:hover {
+	background-color: #FF9500;
+	border-color: #FF9500;
+}
+
+/* Long form text templates */
+p.longText{
+	font-size: 1.2em;
+}
+
+/* Floating nav styles */
+.secondaryMenu{
+	list-style: none;
+	border-top: 1px solid #D7D7D7;
+	border-bottom: 1px solid #D7D7D7;
+	padding-top: 0.5em;
+	padding-bottom: 1.3em;
+}
+.secondaryMenu li a{
+	font-size: 1.3em;
+	line-height: 1.6em;
+	display:block;
+	width:100%;
+	text-decoration: none;
+}
+.secondaryMenu li a:focus, .secondaryMenu li a:hover {
+
+	border-right: 3px solid #428bca;
+	border-bottom:1px solid rgba(66,139,202,0.2);
+}
+.affix-top{
+	margin-top:5.5em;
+}
+.hiddenAnchor{
+	visibility: hidden;
+	position:relative;
+	top:-70px;
+}
+
+/* Specific style for User Collections Specs */
+
+h2{
+	font-size: 2em;
+}
+
+h3{
+  margin: 3em 0px 1.5em;
+  padding-top: 2em;
+  border-top: 1px solid #c7c7c7;
+}
+
+h4{
+  margin: 2em 0 1em;
 }
