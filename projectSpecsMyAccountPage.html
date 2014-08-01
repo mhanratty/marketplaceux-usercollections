@@ -1,0 +1,103 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+---	
+
+<div class="container">
+	<div class="col-sm-3 col-md-3 col-lg-3">
+	
+		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
+			<li>My Account Page</li>
+			<li>Collections, Wishlist & My Apps Screen</li>
+			<li>&emsp;Mobile</a>
+			  <ul>
+			    <li><a href="#collectionstabmobile">Collections Tab</a></li>
+			    <li><a href="#wishlisttabmobile">Wishlist Tab</a></li>
+			    <li><a href="#myappstabmobile">My Apps Tab</a></li>
+			  </ul>
+      </li>
+			<li>&emsp;<a href="#collectionsscreendesktop">Desktop</a></li>
+			<li>&emsp;<a href="#collectionsscreentablet">Tablet</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-9 col-md-9 col-lg-8">
+		
+		<h2>My Account Page</h2>
+		
+    <h3><a name="collectionstabmobile">Collections Tab: Mobile</a></h3>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png" alt="Collections Tab: Mobile"/>
+    
+    <h4>Acceptance criteria for viewing your user collections on mobile</h4>
+    
+    <ul class="longText">
+      <li>The collections screen is in under the main navigation item "Apps and Collections" under a tab labeled "Collections."</li>
+      <li>The app wishlist is in under the main navigation item "Apps and Collections" under a tab labeled "Wishlist." </li>
+      <li>If the user has no custom collections show a message about collections directly above the create new collection call to action</li>
+      <li>The create collection call-to-action should appear above the list of collections</li>
+      <li>Collections should we listed in reverse chronological order from newest to oldest.</li>
+      <li>The collection creator should be able to view the stats for their collection including number of shares, number of views and number of upvotes.</li>
+      <li>If the user has more than 3 collections she should be able to search through her collections. The search box should only appear if the user has 3 or more collections.</li>
+      <li>The search box should appear just above the list of collections.</li>
+    </ul>
+    
+    <h3><a name="wishlisttabmobile">Wishlist Tab: Mobile</a></h3>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_appwishlist.png" alt="Wishlist Tab: Mobile"/>
+    
+    <h4>Acceptance criteria for viewing your wishlist on mobile</h4>
+    
+    <ul class="longText">
+      <li>If the user has no apps in their wishlist they should view a message telling them how to add apps to their wishlist using the "+" icon on the app details screen</li>
+      <li>The apps in the wish list should be listed in reverse chronological order from newest app added to oldest app added.</li>
+      <li>The user should be able to edit their wish list. </li>
+      <li>In edit mode the user should be able to remove apps from the list by clicking the remove icon on the app listing.</li>
+      <li>If an app on the wish list is installed by the user the app should be automatically removed from the user's app wishlist.</li>
+    </ul>
+    
+    <h3><a name="myappstabmobile">My Apps Tab: Mobile</a></h3>
+    
+    <p>TBD</p>
+    
+    <h4>Acceptance criteria for viewing your installed apps on mobile</h4>
+    
+    <p>TBD</p>
+
+    <h3><a name="collectionsscreendesktop">Collections, Wishlist & My Apps Screen: Desktop</a></h3>   
+
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreendesktop.png" alt="Collections, Wishlist & My Apps Screen: Desktop"/>
+    
+    <h4>Acceptance criteria for viewing your user collections on desktop</h4>
+    
+    <ul class="longText">
+      <li>Collections are visible under “My Account” when the user is signed in. </li>
+      <li>On desktop the user can see Collections, Wishlist and My Apps in one view.</li>
+      <li>On desktop the sections of the page have titles</li>
+      <li>If there are > 3 collections show a search bar so that the user can search through their collections.</li>
+      <li>Create new collection call-to-action should take user to the create a collection screen.</li>
+      <li>Collections are listed from most recently created to oldest in blocks of 6 moving left to right, up to down. </li>
+      <li>The collection graphic should be the same as seen on mobile.</li>
+      <li>If the user has > 6 collections the collections should start being visible as overflow content. A right arrow control should allow the user to scroll through the overflow content.</li>
+      <li>If the user has 0 collections show text to let the user know what collections are. </li>
+    </ul>
+    
+    <h3>Collections, Wishlist & My Apps Screen: Tablet</h3>
+      
+    <a name="collectionscreentablet"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionscreentablet.png" alt="he can see so much more" title="" /></a>    
+
+    <h4>Acceptance criteria for viewing your user collections on tablet</h4>
+    
+    <p class="longText"><a href="projectSpecsDesktop.html#collectionspagescreendesktop">Same as for desktop</a>, except:</p>
+    
+    <ul class="longText">
+    <li>Collection search is below Collection title</li>
+    <li>Only 4 collections are visible at a time</li>
+    </ul>
+		
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}
