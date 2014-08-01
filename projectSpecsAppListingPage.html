@@ -1,0 +1,85 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+---	
+
+<div class="container">
+	<div class="col-sm-3 col-md-3 col-lg-3">
+	
+		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
+			<li>App Listing Page</li>
+			<li><a href="#addappexistingcollection">Add App To Existing Collection</a></li>
+			<li><a href="#addappnewcollection">Add App To New Collection</a></li>
+			<li><a href="#addappmodal">Add App To Collection Modal</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-9 col-md-9 col-lg-8">
+		
+		<h2>App Listing Page</h2>
+		
+    <h3><a name="addappexistingcollection">Add App To Existing Collection</a></h3>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png" alt="Add App To Existing Collection"/>
+    
+    <h4>Acceptance criteria for adding an app to a new collection</h4>
+    
+    <ul class="longText">
+      <li>When the user selects create a new collection the user should be taken to a new screen.</li>
+      <li>Entering a name for the collection is required. The "Create" button should be disabled until the user has created the collection name.</li>
+      <li>When the user hits enter on the collection name field they should automatically be taken to the description field.</li>
+      <li>Entering a description for the collection is optional.</li>
+      <li>If the user hits enter on the description field the keyboard should dismiss.</li>
+      <li>The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.</li>
+      <li>When the user selects "Create" the user should return to the add to collection screen. The collection they just created should be listed directly after the app wishlist and it should be selected.</li>
+      <li>The user can select additional collections to add the app to.</li>
+    </ul>
+    
+    
+    
+    
+
+    <h3><a name="addappnewcollection">Add App To New Collection</a></h3>
+
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png" alt="Add App To New Collection"/>
+
+		<h4>Acceptance criteria for adding app to an existing collection</h4>
+				
+    <ul class="longText">
+      <li>Icon to add an app to a collection appears on the app details screen.</li>
+      <li>A modal should open when user selects icon to add app to a collection.</li>
+      <li>If there is only one collection, that collection should be selected.</li>
+      <li>The user should have the ability to create a new collection.</li>
+      <li>When an app has been added to a collection, a confirmation should appear with the icon of the app, the name of the app, and the name of the collection it was added to.</li>
+      <li>In the confirmation screen the name of the collection should link to that collection's landing screen.</li>
+      <li>When the user dismisses the confirmation message the user should return to the app details screen.</li>
+    </ul>
+    
+    
+    
+    
+
+    <h3>Add App To Collection Modal</h3>
+
+    <a name="addappmodal"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png" alt="Add App To Collection Modal"/></a>
+    
+    <h4>Acceptance criteria for the add to collection modal</h4>
+    
+    <ul class="longText">
+    <li>The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.</li>
+    <li>All collections should include the number of apps currently in the collection.</li>
+    <li>If the user only has one collection (the app wishlist) that collection should be selected.</li>
+    <li>If the user has more than one collection than no collections should be selected by default.</li>
+    <li>If no collection is selected the "Ok" button should be deactivated.</li>
+    <li>The entire collection line item should be a touch target</li>
+    <li>The app may be added to multiple collections.</li>
+    <li>If there are 3+ collections a scroll bar should appear.</li>
+    </ul>
+
+		
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}
