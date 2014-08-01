@@ -1,0 +1,94 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: projectSpecsIndividualCollectionPage.html
+multisequence: seven
+---	
+
+<div class="container">
+	<div class="col-sm-3 col-md-3 col-lg-3">
+	
+		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
+			<li>Home Page</li>			
+			<li>Individual Collection Page</li>
+			<li>&emsp;<a href="#individualcollectionmobile">Mobile</a></li>
+			  <ul>
+			    <li><a href="#flagcollectionmobile">Flag Collection for Abuse</a></li>
+			  </ul>
+			<li>&emsp;<a href="#individualcollectiondesktop">Desktop</a></li>
+			<li>&emsp;<a href="#individualcollectiontablet">Tablet</a></li>
+      </ul>
+	</div>
+	<div class="col-sm-9 col-md-9 col-lg-8">
+		
+		<h2>Home Page</h2>
+		
+    <h3><a name="individualcollectionmobile">Individual Collection Page: Mobile</a></h3>
+    
+    <p>TBD</p>
+    
+    <h4>Acceptance criteria for viewing an individual user collection page on mobile</h4>
+    
+    <p>TBD</p>
+    
+    <h3>Collections landing page &rarr; Flagging Collection for Abuse: Mobile</h3>
+
+    <a name="flagcollectionmobile"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_reportcollection.png" alt="he can see so much more"/></a>
+    
+    <h4>Acceptance criteria for flagging a collection for abuse</h4>
+    
+    <ul class="longText">
+      <li>There should be an icon on the collection landing screen that allows the user to report a collection. </li>
+      <li>The creator of a collection should not be able to report their own collection.</li>
+      <li>When the report icon has been selected, an overlay should appear asking for the reason for the report. The three options are: spam, inappropriate language, and inappropriate avatar.</li>
+      <li>After the user has selected the reason for reporting the collection the user should return to the collection landing screen and view feedback that the collection was reported.</li>
+    </ul>
+
+    
+    
+    
+    
+
+    <h3><a name="individualcollectiondesktop">Individual Collection Page: Desktop</h3>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionviewdesktop.png" alt="he can see so much more" title="" /></a>
+    
+    <h4>Acceptance criteria for viewing an individual user collection page on desktop</h4>
+    
+    <ul class="longText">
+      <li>The collection should have a name.</li>
+      <li>The collection should have an edit button if the user is the creator of the collection. The edit button should appear on the same level as the name of the collection field.</li>
+      <li>If the user selects "Edit" take the user to the edit collection screen.</li>
+      <li>The graphic should be 6 columns and 264px tall on desktop.</li>
+      <li>If the collection does not have a description center the collection graphic in the center of the screen.</li>
+      <li>If the collection has a description, make the graphic flush left with the collection name and float the description to the right of the graphic.</li>
+      <li>Show 3 columns of apps. </li>
+      <li>Apps should be listed in reverse chronological order from newest to oldest. Apps should be listed in this order from right to left, up to down.</li>
+    </ul>
+    
+    
+    
+    
+
+    <h3><a name="individualcollectiontablet">Individual Collection Page: Tablet</h3>
+
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionviewtablet.png" alt="he can see so much more" title="" />
+  
+    <h4>Acceptance criteria for viewing an individual user collection page on tablet</h4>
+    
+    <p class="longText"><a href="projectSpecsDesktop.html#collectionlandingscreendesktop">Same as for desktop</a>, except:</p>
+    
+    <ul class="longText">
+      <li>"Edit" button should appear above the name of the collection.</li>
+      <li>The description field should appear below the graphic.</li>
+      <li>Apps should appear in two columns.</li>
+    </ul>
+
+		
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}

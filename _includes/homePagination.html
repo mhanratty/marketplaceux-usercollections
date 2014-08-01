@@ -20,9 +20,19 @@
 		{% elsif page.multisequence == 'six' %}
 			<a href="projectUserStories.html">
 		{% elsif page.multisequence == 'seven' %}
-			<a href="projectSpecsMobile.html">
+			<a href="projectSpecsCommunityPage.html">
 		{% elsif page.multisequence == 'eight' %}
-			<a href="projectSpecsDesktop.html">
+			<a href="projectSpecsIndividualCollectionPage.html">
+		{% elsif page.multisequence == 'nine' %}
+			<a href="projectSpecsAppListingPage.html">
+		{% elsif page.multisequence == 'ten' %}
+			<a href="projectSpecsMyAccountPage.html">
+		{% elsif page.multisequence == 'eleven' %}
+			<a href="projectSpecsCreateCollection.html">
+		{% elsif page.multisequence == 'twelve' %}
+			<a href="projectSpecsEditCollection.html">
+		{% elsif page.multisequence == 'thirteen' %}
+			<a href="projectSpecsRemoveAppFromCollection.html">
 		{% endif %}
 		&laquo;</a>
 	</li>
@@ -39,14 +49,24 @@
 
 		<li {% if page.multiURL == 'projectUserStories.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectUserStories.html">5</a></li>
 		
-		<li {% if page.multiURL == 'projectSpecsMobile.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsMobile.html">6</a></li>
+		<li {% if page.multiURL == 'projectSpecsCommunityPage.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsCommunityPage.html">6</a></li>
 
-		<li {% if page.multiURL == 'projectSpecsDesktop.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsDesktop.html">7</a></li>
+		<li {% if page.multiURL == 'projectSpecsIndividualCollectionPage.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsIndividualCollectionPage.html">7</a></li>
 		
-		<li {% if page.multiURL == 'projectSpecsTablet.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsTablet.html">8</a></li>
+		<li {% if page.multiURL == 'projectSpecsAppListingPage.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsAppListingPage.html">8</a></li>
+		
+		<li {% if page.multiURL == 'projectSpecsMyAccountPage.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsMyAccountPage.html">9</a></li>
+		
+		<li {% if page.multiURL == 'projectSpecsCreateCollection.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsCreateCollection.html">10</a></li>
+		
+		<li {% if page.multiURL == 'projectSpecsEditCollection.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsEditCollection.html">11</a></li>
+		
+		<li {% if page.multiURL == 'projectSpecsRemoveAppFromCollection.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsRemoveAppFromCollection.html">12</a></li>
+		
+		<li {% if page.multiURL == 'projectSpecsDeleteCollection.html' %}class="active"{% endif %}><a href="{{ site.baseurl }}/projectSpecsDeleteCollection.html">13</a></li>
 
 <!-- This part deals with disabled state of the FORWARD arrow. Disabled state is for the LAST page of the multi pages. -->
-{% if page.multiURL == "projectSpecsTablet.html" %}
+{% if page.multiURL == "projectSpecsDeleteCollection.html" %}
 	<li class="disabled"><a href="#">&raquo;</a></li>
 
 <!--  This part deals with the enabled state of the FORWARD arrow. The LAST page is not included in this section b/c its included in the DISABLED state above.  REMEMBER that the FORWARD arrow links to NEXT page URLs. -->
@@ -61,11 +81,21 @@
 		{% elsif page.multisequence == 'four' %}
 			<a href="projectUserStories.html">
 		{% elsif page.multisequence == 'five' %}
-			<a href="projectSpecsMobile.html">
+			<a href="projectSpecsCommunityPage.html">
 		{% elsif page.multisequence == 'six' %}
-			<a href="projectSpecsDesktop.html">
+			<a href="projectSpecsIndividualCollectionPage.html">
 		{% elsif page.multisequence == 'seven' %}
-			<a href="projectSpecsTablet.html">
+			<a href="projectSpecsAppListingPage.html">
+		{% elsif page.multisequence == 'eight' %}
+			<a href="projectSpecsMyAccountPage.html">
+		{% elsif page.multisequence == 'nine' %}
+			<a href="projectSpecsCreateCollection.html">
+		{% elsif page.multisequence == 'ten' %}
+			<a href="projectSpecsEditCollection.html">
+		{% elsif page.multisequence == 'eleven' %}
+			<a href="projectSpecsRemoveAppFromCollection.html">
+		{% elsif page.multisequence == 'twelve' %}
+			<a href="projectSpecsDeleteCollection.html">
 		{% endif %}
 		&raquo;</a>
 	</li>
