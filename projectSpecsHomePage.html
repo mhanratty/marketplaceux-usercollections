@@ -1,0 +1,73 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+---	
+
+<div class="container">
+	<div class="col-sm-3 col-md-3 col-lg-3">
+	
+		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
+			<li>Home Page</li>
+			<li>Community Tab</li>
+			<li>&emsp;<a href="#communitytabmobile">Mobile</a></li>
+			<li>&emsp;<a href="#communitytabdesktop">Desktop</a></li>
+			<li>&emsp;<a href="#communitytabtablet">Tablet</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-9 col-md-9 col-lg-8">
+		
+		<h2>Home Page</h2>
+		
+		<h3>Community Tab: Mobile</h3>
+  	
+	  <a name="communitytabmobile"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png" alt="he can see so much more"/></a>
+    
+    <h4>Acceptance criteria for the community tab on mobile</h4>
+    
+    <ul class="longText">
+      <li>"Community" is a main navigation item listed after "Categories"</li>
+      <li>User's can toggle between viewing user collections listed in order of most popular and new.</li>
+      <li>By default the user should view the most popular order of collections</li>
+      <li>Only show user collections that have 3 or more apps</li>
+      <li>If none of the apps in the collection are available in the user's region, the user's operator, or on their device (mobile use case) the user should not see that collection.</li>
+      <li>If an app in a collection is not available in the user's region, by the user's operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection</li>
+      <li>The user should be able to share a collection.</li>
+      <li>The user should be able to upvote a collection.</li>
+    </ul>
+		
+		<h3><a name="communitytabdesktop">Community Tab: Desktop</a></h3>
+  	
+  	<img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreendesktop.png" alt="Community tab: desktop" title="" />
+      
+    <h4>Acceptance criteria for the community tab on desktop</h4>
+    
+    <ul class="longText">
+      <li>Users Collections are visible under the “Community” tab in the main navigation</li>
+      <li>Only user collections that follow the visibility rules will be shown.</li>
+      <li>On desktop the sections of the page have titles</li>
+      <li>By default collections should be sorted by popular. The user can also sort collections by “new.”</li>
+      <li>The create new collection call-to-action will take user to the create a collection screen.</li>
+      <li>Collections are listed from most recently created to oldest in blocks of 5 moving left to right, up to down. The collection graphic is sometimes mobile size (4 columns wide) and sometimes desktop sized (6 columns wide)</li>
+      <li>A right arrow control should allow the user to scroll through the overflow content.</li>
+    </ul>
+
+    <h3><a name="communitytabtablet">Community Tab: Tablet</a></h3>
+      
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreentablet.png" alt="Community tab: tablet" title="" />
+    
+    <h4>Acceptance criteria for community tab on tablet</h4>
+    
+    <p class="longText"><a href="projectSpecsDesktop.html#communitytabscreendesktop">Same as for desktop</a>, except:</p>
+    
+    <ul class="longText">
+      <li>Only 4 collections are shown at a time.</li>
+      <li>The collection graphic is always 4 columns wide.</li>
+    </ul>
+		
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}
