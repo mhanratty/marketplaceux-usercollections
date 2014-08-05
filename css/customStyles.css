@@ -5,11 +5,15 @@ h2{
 }
 
 h3.specItem{
-  margin: 3em 0px 1.5em;
+  margin: 2.5em 0px 1.5em;
   padding-top: 2em;
   border-top: 1px solid #c7c7c7;
 }
 
 h4{
   margin: 2em 0 1em;
+}
+
+ol.letters{
+  list-style-type: upper-alpha;
 }
