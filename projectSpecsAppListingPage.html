@@ -9,8 +9,6 @@ multisequence: eight
 	<div class="col-sm-3 col-md-3 col-lg-3">
 	
 		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
-			<li>Home Page:</li>
-			<li>App Listing Page</li>
 			<li>&emsp;<a href="#addappexistingcollection">Add App To Existing Collection</a></li>
 			<li>&emsp;<a href="#addappnewcollection">Add App To New Collection</a></li>
 			<li>&emsp;<a href="#addappmodal">Add App To Collection Modal</a></li>
@@ -18,58 +16,116 @@ multisequence: eight
 	</div>
 	<div class="col-sm-9 col-md-9 col-lg-8">
 		
-		<h2>App Listing Page</h2>
+		<h2>Home Page &rarr; App Listing Page</h2>
 		
-    <h3><a name="addappexistingcollection">Add App To Existing Collection</a></h3>
+    <h3 class="specItem">Add To Collection Modal</h3>
     
-    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png" alt="Add App To New Collection"/>
-
-		<h4>Acceptance criteria for adding app to an existing collection</h4>
-				
-    <ul class="longText">
-      <li>Icon to add an app to a collection appears on the app details screen.</li>
-      <li>A modal should open when user selects icon to add app to a collection.</li>
-      <li>If there is only one collection, that collection should be selected.</li>
-      <li>The user should have the ability to create a new collection.</li>
-      <li>When an app has been added to a collection, a confirmation should appear with the icon of the app, the name of the app, and the name of the collection it was added to.</li>
-      <li>In the confirmation screen the name of the collection should link to that collection's landing screen.</li>
-      <li>When the user dismisses the confirmation message the user should return to the app details screen.</li>
-    </ul>    
-
-    <h3><a name="addappnewcollection">Add App To New Collection</a></h3>
-
-    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png" alt="Add App To Existing Collection"/>
-    
-    <h4>Acceptance criteria for adding an app to a new collection</h4>
-    
-    <ul class="longText">
-      <li>When the user selects create a new collection the user should be taken to a new screen.</li>
-      <li>Entering a name for the collection is required. The "Create" button should be disabled until the user has created the collection name.</li>
-      <li>When the user hits enter on the collection name field they should automatically be taken to the description field.</li>
-      <li>Entering a description for the collection is optional.</li>
-      <li>If the user hits enter on the description field the keyboard should dismiss.</li>
-      <li>The user can choose whether to make the collection visible for others to view on the Marketplace. Making the collection visible should be selected by default.</li>
-      <li>When the user selects "Create" the user should return to the add to collection screen. The collection they just created should be listed directly after the app wishlist and it should be selected.</li>
-      <li>The user can select additional collections to add the app to.</li>
-    </ul>    
-
-    <h3>Add App To Collection Modal</h3>
+    <p class="longText">The Add to collection modal appears when user clicks the "+" icon on the Individual app listing page, or the App block that will appear inside the feed.</p>
 
     <a name="addappmodal"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappmodal.png" alt="Add App To Collection Modal"/></a>
     
-    <h4>Acceptance criteria for the add to collection modal</h4>
+    <ol class="longText letters">
+      <li><strong>Add to collection modal</strong><br/>
+      Modal title should be vertically centered on the screen</li>
+      <li><strong>List of collections – one item</strong>
+      "My App Wishlist" should be selected by default.</li>
+      <li><strong>Create a Collection button</strong><br/>
+      Selecting this button opens the Create collection modal</li>
+      <li><strong>Make visible to all</strong><br/>
+      User can choose to make the collection publicly visible on the Marketplace. Visibility should be turned on by default.</li>
+      <li><strong>List of collections – multiple items</strong>
+        <ul>
+          <li>"My App Wishlist" should always be item #1 on the list.</li>
+          <li>Collections should be listed from most recently created to oldest.</li>
+          <li>No collection should be selected by default.</li>
+          <li>An app may be added to multiple collections.</li>
+        </ul>
+      </li>
+      <li><strong>Scroll Bar</strong><br/>
+      If there are more than 4 collections on the list, scroll bar should appear.</li>
+      <li><strong>OK Button</strong><br/>
+      If no collection is selected, the "OK" button should be deactivated.</li>
+    </ol>
+      
+    <p class="longText">List of collections – general behavior</p>
     
     <ul class="longText">
-    <li>The collections should be listed with "The App Wishlist" always on top by default. Other collections should be listed in reverse chronological order from newest to oldest.</li>
-    <li>All collections should include the number of apps currently in the collection.</li>
-    <li>If the user only has one collection (the app wishlist) that collection should be selected.</li>
-    <li>If the user has more than one collection than no collections should be selected by default.</li>
-    <li>If no collection is selected the "Ok" button should be deactivated.</li>
-    <li>The entire collection line item should be a touch target</li>
-    <li>The app may be added to multiple collections.</li>
-    <li>If there are 3+ collections a scroll bar should appear.</li>
+      <li>Every collection should include the number of apps currently inside it.</li>
+      <li>The entire collection line item should be a touch target</li>
+      <li>When a line item is selected, the box to the right should be checkmarked</li>
     </ul>
+		
+    <h3 class="specItem"><a name="addappexistingcollection">Add App To Existing Collection</a></h3>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappexistingcollection.png" alt="Add App To New Collection"/>
+				
+    <ol class="longText">
+      <li><strong>App listing page</strong><br/>
+        <ul>
+          <li>The add to collection icon appears on the app details screen alongside share, flag and upvote</li>
+          <li>When user selects the icon, a modal opens</li>
+        </ul>
+      </li>
+      <li><strong>Add to collection modal</strong><br/>
+      When user selects “OK”, the Collection selected confirmation appears.</li>
+      <li><strong>Confirmation</strong><br/>
+        <ul>
+          <li>The confirmation should contain:
+            <ul>
+              <li>App icon</li>
+              <li>App name</li>
+              <li>Name of collection the app was added to</li>
+            </ul>
+          </li>
+          <li>The confirmation should be “[App Name] was added to [Collection Name]”</li>
+          <li>[Collection Name] should be a link to the collection landing page</li>
+        </ul>
+      </li>
+      <li><strong>App listing page, with confirmation message</strong><br/>
+        <ul>
+          <li>When the confirmation message is dismissed by selecting “OK”, the user should return to the app details screen.</li>
+          <li>The confirmation message should be “Added to [Collection Name]!”</li>
+        </ul>
+      </li>
+     </ol>
 
+    <h3 class="specItem"><a name="addappnewcollection">Add App To New Collection</a></h3>
+
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_addappnewcollection.png" alt="Add App To Existing Collection"/>
+    
+    <ul class="longText">
+      <li>The first step is viewing the <strong>App details screen</strong> and clicking the Add to collection button. This step is detailed in the previous section.</li>
+    </ul>
+    <ol class="longText">
+      <li><strong>Add to collection modal</strong><br/>
+      Instead of selecting the name of a collection, user selects the Create a new collection button and is taken to Create collection.</li>
+      <li><strong>Create collection</strong><br/>
+        <ul>
+          <li>Collection name is required<br/>
+          While this field is selected, pressing the Return/Enter key on the phone keyboard is the equivalent of saying “go to the next field”. The next field is Collection Description.</li>
+          <li>Collection description is optional<br/>
+          While this field is selected, pressing the Return/Enter key on the phone keyboard is the equivalent of saying “dismiss the keyboard”.</li>
+          <li>Make visible to all<br/>
+          User can choose to make the collection publicly visible on the Marketplace. Visibility should be turned on by default.</li>
+        </ul>
+      </li>
+      <li><strong>Collection ready</strong><br/>
+        <ul>
+          <li>When the user has entered a Collection name, the "Create" button is enabled</li>
+          <li>When the user selects "Create" the user should return to the Add to collection modal.</li>
+        </ul>
+      </li>
+      <li><strong>Add to collection modal, with new collection added</strong><br/>
+        <ul>
+          <li>The newly added collection should be the second item on the page, listed directly after the app wish list.</li>
+          <li>The newly added collection should be selected by default.</li>
+          <li>The user can select multiple additional collections to add the app to.</li>
+          <li>User clicks "OK" to complete task</li>
+        </ul>
+      </li>
+      <li><strong>Confirmation</strong><br/>
+      The confirmation message is exactly the same as what was outlined in the previous section. However, if app was added to multiple collections, the confirmation message should be “[App Name] was added to [Collection Name 1], [Collection Name 2] and [Collection Name 3]”</li>
+    </ol>   
 		
 	</div>
 	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
