@@ -9,29 +9,34 @@ multisequence: thirteen
 	<div class="col-sm-3 col-md-3 col-lg-3">
 	
 		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
-			<li>My Account Page:</li>
-			<li>Delete Collection</li>
-			<li> </li>
 			<li><a href="#deletecollectionmobile">Mobile</a></li>
 		</ul>
 	</div>
 	<div class="col-sm-9 col-md-9 col-lg-8">
 		
-		<h2>My Account Page</h2>
+		<h2>My Account Page: Delete Collection</h2>
 		
-    <h3><a name="deletecollectionmobile">Delete Collection: Mobile</a></h3>      
+    <h3><a name="deletecollectionmobile">Mobile</a></h3>      
       
-    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_deletecollection.png" alt="he can see so much more"/></a>
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_deletecollection.png" alt="Delete collection: mobile"/></a>
     
     <h4>Acceptance criteria for deleting a collection</h4>
     
-    <ul class="longText">
-      <li>The delete collection button should always be at the bottom of the collection.</li>
-      <li>The user must confirm that the collection should be deleted.</li>
-      <li>If the user delete's the collection she should return to the Collections screen where she will see feedback that the collection was successfully deleted. </li>
-    </ul>
-
-
+    <ol class="longText">
+      <li><strong>Collection edit page</strong><br/>
+        <ul>
+          <li>The Delete collection button should always be at the bottom of the collection.</li>
+          <li>When the Delete collection button is selected, the delete confirmation appears.</li>
+        </ul>
+      </li>
+      <li><strong>Delete confirmation</strong><br/>
+        <ul>
+          <li>The user must confirm that the collection should be deleted.</li>
+          <li>Upon confirmation, return the user to the "My Collections" screen.</li>
+        </ul>
+      <li><strong>My collections screen, with confirmation message</strong><br/>
+      The confirmation message should be “Collection deleted”.</li>
+    </ol>
 		
 	</div>
 	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 

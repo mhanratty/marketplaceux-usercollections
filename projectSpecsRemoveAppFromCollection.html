@@ -9,28 +9,38 @@ multisequence: twelve
 	<div class="col-sm-3 col-md-3 col-lg-3">
 	
 		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
-			<li>My Account Page:</li>
-			<li>Remove App From Collection</li>
-			<li> </li>
 			<li><a href="#removeappmobile">Mobile</a></li>
 		</ul>
 	</div>
 	<div class="col-sm-9 col-md-9 col-lg-8">
 		
-		<h2>My Account Page</h2>
+		<h2>My Account Page: Remove App From Collection</h2>
 		
-    <h3><a name="removeappmobile">Remove App From Collection: Mobile</a></h3>
+    <h3><a name="removeappmobile">Mobile</a></h3>
     
-    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_removeapp.png" alt="he can see so much more"/>
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_removeapp.png" alt="Remove app from collection: mobile"/>
     
-    <h4>Acceptance criteria for removing an app from a collection</h4>
-    
-    <ul class="longText">
-      <li>There should be an icon to remove the app from the collection.</li>
-      <li>After x seconds the app listing should fade to white. A message "App removed from collection" should appear and remain for x seconds.</li>
-      <li>After x seconds the apps below should animate up into the space the app that was removed once occupied.</li>
-    </ul>
-
+    <ol class="longText">
+      <li><strong>App listing page</strong><br/>
+        <ul>
+          <li>There should be an icon to remove the app from the collection.</li>
+          <li>User selects the remove icon.</li>
+          <li>After x seconds, the app list item should fade to white.</li>
+          <li>The app removed feedback appears.</li>
+        </ul>
+      <li><strong>App removed feedback</strong><br/>
+        <ul>
+          <li>Feedback title should be "App removed from collection"</li>
+          <li>Feedback should appear in place of the app list item text</li>
+          <li>Feedback should remain for x seconds.</li>
+          <li>Feedback fades from view along with app container.</li>
+        </ul>
+      <li><strong>App container fades from view</strong>
+      For x seconds</li>
+      </li>
+      <li><strong>App disappears</strong><br/>
+      <li>After x seconds, the apps below should animate up into the space that’s just freed up.</li>
+    </ol>
 		
 	</div>
 	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
