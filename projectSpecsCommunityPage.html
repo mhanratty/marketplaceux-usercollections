@@ -20,24 +20,23 @@ multisequence: six
 		
 		<p class="longText">The Community page is where users can view collections created by community members who have chosen to make their collections public.</p>
 		
-		<h3 class="specItem"><a name="communityscreenmobile">Community Page: Mobile</a></h3>
+		<h3 class="specItem"><a name="communityscreenmobile">Mobile</a></h3>
   	
 	  <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreen.png" alt="Community screen: mobile"/>
     
     <ol class="longText letters">
       <li><strong>Main Navigation Bar</strong><br/>
       "Community" is a main navigation item listed after "Categories"</li>
-      <li><strong>Popular and New Tabs</strong><br/>
-      User can toggle between viewing user collections listed in order of most popular and new.</li>
-      <li><strong>User Collections – What To Show?</strong><br/>
+      <li><strong>Popular and New Tab</strong><br/>
+      By default, popular should be selected</li>
+      <li><strong>User Collections – What to Show?</strong>
         <ul>
-          <li>By default, the user should view the most popular order of collections</li>
           <li>Only show user collections that have 3 or more apps</li>
           <li>If none of the apps in the collection are available in the user's region, the user's operator, or on their device (mobile use case) the user should not see that collection.</li>
           <li>If an app in a collection is not available in the user's region, by the user's operator, or on their device (mobile use case), the user will not see that app though they will be able to see the rest of the apps in the collection</li>
         </ul>
       </li>
-      <li><strong>Sharing and Upvoting</strong><br/>
+      <li><strong>Sharing and Upvoting</strong>
         <ul>
           <li>The user should be able to share a collection.</li>
           <li>The user should be able to upvote a collection.</li>
@@ -45,34 +44,45 @@ multisequence: six
       </li>
     </ol>
 		
-		<h3 class="specItem"><a name="communityscreendesktop">Community Page: Desktop</a></h3>
+		<h3 class="specItem"><a name="communityscreendesktop">Desktop</a></h3>
   	
   	<img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreendesktop.png" alt="Community screen: desktop" title="" />
-      
-    <h4>Acceptance criteria for the community page on desktop</h4>
-    
+          
     <ol class="longText letters">
-      <li>Users Collections are visible under the “Community” tab in the main navigation</li>
-      <li>Only user collections that follow the visibility rules will be shown.</li>
-      <li>On desktop the sections of the page have titles</li>
-      <li>By default collections should be sorted by popular. The user can also sort collections by “new.”</li>
-      <li>The create new collection call-to-action will take user to the create a collection screen.</li>
-      <li>Collections are listed from most recently created to oldest in blocks of 5 moving left to right, up to down. The collection graphic is sometimes mobile size (4 columns wide) and sometimes desktop sized (6 columns wide)</li>
-      <li>A right arrow control should allow the user to scroll through the overflow content.</li>
+      <li><strong>Main Navigation Bar</strong><br/>
+      "Community" is a main navigation item listed after "Categories"</li>
+      <li><strong>Page Title</strong><br/>
+      Only shown on Desktop and Tablet layouts</li>
+      <li><strong>Popular and New Dropdown Menu: Sort By</strong><br/>
+        <ul>
+          <li>On Desktop and Tablet layouts, the Popular and New Tab is replaced by a Dropdown Menu.</li>
+          <li>By default, popular should be selected</li>
+        </ul>
+      <li><strong>Create New Collection Link</strong><br/>
+      The create new collection call-to-action will take user to the create a collection screen.</li>
+      <li><strong>User Collections – What to Show?</strong>
+        <ul>
+          <li><strong>Order:</strong> Collections are listed from most recently created to oldest in blocks of 5, moving left to right, top to bottom.</li>
+          <li><strong>Quantity:</strong> Show between 8–10 collections at a time, depending on the size of element.</li>
+          <li><strong>Size of element:</strong> The collection graphic is sometimes mobile sized (4 columns wide) and sometimes desktop sized (6 columns wide)</li>
+        </ul>
+      </li>
+      <li><strong>Horizontal Scrolling Control</strong><br/>
+      A right arrow control should allow the user to scroll through the overflow content.</li>
     </ol>
 
-    <h3 class="specItem"><a name="communitytabtablet">Community Page: Tablet</a></h3>
+    <h3 class="specItem"><a name="communitytabtablet">Tablet</a></h3>
       
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreentablet.png" alt="Community screen: tablet" title="" />
-    
-    <h4>Acceptance criteria for community page on tablet</h4>
-    
-    <p class="longText">Same as <a href="#communityscreendesktop">desktop</a>, except:</p>
-    
+        
     <ol class="longText letters">
-      <li>Only 4 collections are shown at a time.</li>
-      <li>The collection graphic is always 4 columns wide.</li>
+      <li><strong>User Collections – What to Show?</strong>
+        <ul>
+          <li><strong>Quantity:</strong> Only 4 collections are shown at a time.</li>
+          <li><strong>Size of Element:</strong> The collection graphic is always mobile sized (4 columns wide).</li>
     </ol>
+    
+    <p class="longText">The rest of the features are exactly the same as the <a href="#communityscreendesktop">Desktop Layout</a>.</p>
 		
 	</div>
 	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
