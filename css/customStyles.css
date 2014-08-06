@@ -21,3 +21,7 @@ h4{
 ol.letters{
   list-style-type: upper-alpha;
 }
+
+.warning{
+  color: #ff0000;
+}
