@@ -1,0 +1,199 @@
+---
+layout: MarketplaceUXSpec
+multipage: true
+multiURL: projectSpecsCollectionCreate.html
+multisequence: eleven
+---	
+
+<div class="container">
+	<div class="col-sm-3 col-md-3 col-lg-3">
+	
+		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
+			<li><a href="#createcollectionmobile">Mobile</a></a>
+			  <ul>
+			    <li><a href="#createcollectionflowmobile">Flow</a></li>
+			  </ul>
+      </li>
+			<li><a href="#createcollectiondesktop">Desktop</a></li>
+			<li><a href="#createcollectiontablet">Tablet</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-9 col-md-9 col-lg-8">
+		
+		<h2>My Account Page &rarr; Collections &rarr; Create a New Collection</h2>
+		
+    <h3><a name="createcollectionmobile">Mobile</a></h3>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionviews.png" alt="Create A New Collection: Mobile"/>
+    
+    <ol class="longText letters">
+      <li><strong>Done link</strong><br/>
+        <ul>
+          <li>If a collection has at least a name and one app, selecting the Done link will save the collection and allow user to view it.</li>
+          <li>If a collection doesn’t have at least both of those items, selecting the Done link will bring user back to the <a href="projectSpecsCollections.html#collectionsmobile">Collections Tab.</li>
+        </ul>
+      </li>
+      <li><strong>Avatar</strong><br/>
+        <ul>
+          <li>Show blank avatar when user doesn’t have one.</li>
+          <li>Show user’s avatar when user has one.</li>
+          <li>Selecting the edit button will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
+        </ul>
+      </li>
+      <li><strong>Collection name and byline</strong><br/>
+        <ul>
+          <li>When user haven’t typed a name, display “Collection name”.</li>
+          <li>After user has typed a name inside textbox Ⓕ, display the name the user has typed.</li>
+          <li>To edit byline, the edit button on the avatar is used. It will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
+        </ul>
+      </li>
+      <li><strong>Background image</strong><br/>
+        <ul>
+          <li>Show gray background when user has no app added.</li>
+          <li>When no app is added, it’s not possible to select a background.</li>
+          <li>As shown in Ⓚ, a random background is shown after user has at least one app added.</li>
+          <li>As shown in Ⓚ, the edit icon is shown after user has at least one app added.</li>
+          <li>Selecting the edit icon in Ⓚ will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionbackgroundmobile">Edit Background Image interface</a>.</li>
+        </ul>
+      </li>
+      <li><strong>Slots for app icons</strong><br/>
+        <ul>
+          <li>Show white dotted lines when no apps have been added.</li>
+          <li>Up to 5 apps can be shown on the preview area.</li>
+          <li>As shown in Ⓛ, app icon replaces the dotted lines as soon as it’s added.</li>
+          <li>Which image gets replaced first?<br/>
+          <img src="img/usercollections_createcollectionviews.png">
+          </li>
+        </ul>
+      </li>
+      <li><strong>Collection name textbox</strong><br/>
+      Name is mandatory. Inputted name is displayed in Ⓓ.</li>
+      <li><strong>Description textbox</strong><br/>
+      Description is optional. Inputted description is displayed after user selects done Ⓐ, and the interface returns to view mode.</li>
+      <li><strong>Visibility toggle</strong><br/>
+      Default value should be set to on (visible).</li>
+      <li><strong>Add apps button</strong><br/>
+        <ul>
+          <li>At least one app is mandatory.</li>
+          <li>As shown in Ⓜ, after adding an app, the app name and information should be shown below the button. An app that’s been added can be reordered and removed.</li>
+          <li>As shown in Ⓛ, after adding an app, the app icon should be shown in the slots up above.</li>
+          <li>Selecting the button will take user to the Add Apps Interface. This interface is combined with the <a href="#createcollectionflowmobile">How to Create a Collection flow</a>.</li> 
+        </ul>
+      </li>
+      <li><strong>Delete collection button</strong><br/>
+      <span class="warning">It’s unclear how the delete interface will work. We assume that there will be a confirmation message that says something like “Are you sure you want to delete [Collection name]?” followed by “Cancel” and “Delete” buttons.</span></li>
+    </ol>
+    
+    <h3><a name="createcollectionflowmobile">Mobile &rarr; How to Create a Collection</a></h3>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionfromcollections.png" alt="Create A New Collection Flow: Mobile"/>
+    
+    <ol class="longText">
+      <li><strong>My Collections</strong><br/>
+      Start here, then select the Create a new collection button.</li>
+      <li><strong>Create collections</strong><br/>
+        <ul>
+          <li>Let’s assume that user already has an avatar and a display name. If user would like to edit them, go to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
+          <li>Selecting the Collection name textbox will bring up the keyboard</li>
+        </ul>
+      </li>
+      <li><strong>Add collection name</strong><br/>
+        <ul>
+          <li>When the user type, the collection name preview area should update in real time.</li>
+          <li>When the user hits Return/Enter, they should automatically be taken to the Description textbox.</li>
+        </ul>
+      </li>
+      <li><strong>Add collection description</strong><br/>
+      When the user hits the Return/Enter on the keyboard, the keyboard should be dismissed.</li>
+      <li><strong>Add apps</strong><br/>
+      When the user selects this button, the Add apps screen should appear.</li>
+      <li><strong>Add to apps – empty</strong><br/>
+      When the user selects the search box, the keyboard appears.</li>
+      <li><strong>Add to apps – search</strong><br/>
+      When the user have inputted a search term on the keyboard and hit Return/Enter, the search result is loaded and the keyboard is dismissed.</li>
+      <li><strong>Add to apps – search result</strong><br/>
+      When the user taps the area of each search result listing, that app is selected. The entire line item is a touch target.</li>
+      <li><strong>Add to apps – app selected</strong><br/>
+        <ul>
+          <li>When an app has been selected, a checkbox should be displayed.</li>
+          <li>After x seconds, the app listing area fades to white</li>
+          <li>After the listing area fades, a confirmation message is displayed.</li>
+        </ul>
+      </li>
+      <li><strong>Add app confirmation</strong><br/>
+        <ul>
+          <li>The confirmation message should read “App added to collection”.</li>
+          <li>When user is finished, s/he selects done and returned to the Create a Collection screen.</li>
+        </ul>
+      </li>
+      <li><strong>Create collection – 1 app</strong><br/>
+        <ul>
+          <li>As noted above, if at least one app is added to the list, the graphic should change color and the apps are previewed.</li>
+          <li>To <a href="projectSpecsCollectionEdit.html#editcollectionbackgroundmobile">Edit Background Image</a>, user can select the pencil icon on the top-right corner.</li>
+          <li>Selecting the Done button will take user to the view mode.</li>
+        </ul>
+      </li>
+      <li><strong>Collection landing screen</strong><br/>
+        <ul>
+          <li>The background image shifts down a little bit.</li>
+          <li>The app slots disappear, replaced by a listing below the description.</li>
+          <li>The share, flag and upvote icons are shown.</li>
+          <li>The app description is shown below these icons.</li>
+          <li>Finally, tapping the Back button takes user to the <a href="projectSpecsCollections.html#collectionsmobile">Collections Tab</a>.</li>
+        </ul>
+      </li>
+    </ol>
+        
+    <h3><a name="createcollectiondesktop">Desktop</a></h3>
+      
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatedesktop.png" alt="Create A New Collection: Desktop"/>
+    
+    <h4>Acceptance criteria for creating a user collection on desktop</h4>
+    
+    <ul class="longText">
+      <li>The user should view this screen when she clicks on "Create collection."</li>
+      <li>The name of the collection is required. </li>
+      <li>When the user clicks on the "Name of collection" field she should be able to enter text. </li>
+      <li>If the user hits the enter or tab button while editing the name field take the user to the "Add description" field.</li>
+      <li>The description field is optional. It should float to the right of the collection graphic.</li>
+      <li>The graphic should be 6 columns and 264px tall on desktop.</li>
+      <li>The user should be able to edit her profile. If the user clicks on their avatar on the collection graphic, take the user to the edit profile screen.</li>
+      <li>The user should be able to edit the background of a collection. If the user clicks on the edit background icon the change background screen should open in a modal.</li>
+      <li>The user should be able to decide whether to make a collection visible on dektop. By default the collection should be visible.</li>
+      <li>The user should be able to search for apps via a search box on desktop.</li>
+      <li>The user can search by an app name or the url of the app on Marketplace.</li>
+      <li>The user should be able to clear a search using the "x" icon in the search box.</li>
+      <li>After the user has entered a search the user should be able to filter their app search by all devices, desktop or mobile. By default it should filter by all devices.</li>
+      <li>Search results should appear below the search bar. The result should have the app icon, app name and a call-to-action to add the app to a collection.</li>
+      <li>The entire line item for the app is a touch target that will select the app.</li>
+      <li>When the app is selected, the icon should appear selected. </li>
+      <li>After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear (see how apps are added on the <a href="projectSpecsMobile.html#createnewcollectionflow">spec for creating a collection</a></li>
+      <li>The user can select multiple apps from the search results to add to the collection.</li>
+      <li>Add apps in 3 columns. The most recently added app should appear first in the list. </li>
+      <li>The "Cancel" and "Done" buttons should appear on the same level as the name of collection field.</li>
+      <li>If the user selects "Cancel" take the user back to the screen she was previously viewing.</li>
+      <li>If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.</li>
+      <li>If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see <a href="projectSpecsMobile.html#collectionnamewarningscreen">spec</a>)</li>
+    </ul>
+    
+    <h3><a name="createcollectiontablet">Tablet</a></h3>
+      
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatetablet.png" alt="Create A New Collection: Tablet" title="" />    
+
+    <h4>Acceptance criteria for creating a collection on tablet</h4>
+    
+    <p class="longText"><a href="projectSpecsDesktop.html#createcollectionscreendesktop">Same as for desktop</a>, except:</p>
+    
+    <ul class="longText">
+      <li>"Cancel" and "Done" should appear above the name of the collection.</li>
+      <li>The description field should appear below the graphic.</li>
+      <li>Apps should appear in two columns.</li>
+    </ul>
+		
+	</div>
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+		NOTE: This is currently broken in the Jekyll ver of this template.
+		-->
+		{% if page.multipage %}
+			{% include homePagination.html %}
+		{% endif %}
