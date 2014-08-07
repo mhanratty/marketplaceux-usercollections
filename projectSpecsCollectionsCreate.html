@@ -22,17 +22,19 @@ multisequence: eleven
 		
 		<h2>My Account Page &rarr; Collections &rarr; Create a New Collection</h2>
 		
-    <h3><a name="createcollectionmobile">Mobile</a></h3>
+    <h3 class="specItem"<a name="createcollectionmobile">Mobile</a></h3>
     
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionviews.png" alt="Create A New Collection: Mobile"/>
     
     <ol class="longText letters">
+    
       <li><strong>Done link</strong><br/>
         <ul>
           <li>If a collection has at least a name and one app, selecting the Done link will save the collection and allow user to view it.</li>
           <li>If a collection doesn’t have at least both of those items, selecting the Done link will bring user back to the <a href="projectSpecsCollections.html#collectionsmobile">Collections Tab</a>.</li>
         </ul>
       </li>
+      
       <li><strong>Avatar</strong><br/>
         <ul>
           <li>Show blank avatar when user doesn’t have one.</li>
@@ -40,13 +42,7 @@ multisequence: eleven
           <li>Selecting the edit button will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
         </ul>
       </li>
-      <li><strong>Collection name and byline</strong><br/>
-        <ul>
-          <li>When user haven’t typed a name, display “Collection name”.</li>
-          <li>After user has typed a name inside textbox Ⓕ, display the name the user has typed.</li>
-          <li>To edit byline, the edit button on the avatar is used. It will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
-        </ul>
-      </li>
+      
       <li><strong>Background image</strong><br/>
         <ul>
           <li>Show gray background when user has no app added.</li>
@@ -56,22 +52,35 @@ multisequence: eleven
           <li>Selecting the edit icon in Ⓚ will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionbackgroundmobile">Edit Background Image interface</a>.</li>
         </ul>
       </li>
+      
+      <li><strong>Collection name and byline</strong><br/>
+        <ul>
+          <li>When user haven’t typed a name, display “Collection name”.</li>
+          <li>After user has typed a name inside textbox Ⓕ, display the name the user has typed.</li>
+          <li>To edit byline, the edit button on the avatar is used. It will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
+        </ul>
+      </li>
+      
       <li><strong>Slots for app icons</strong><br/>
         <ul>
           <li>Show white dotted lines when no apps have been added.</li>
           <li>Up to 5 apps can be shown on the preview area.</li>
-          <li>As shown in Ⓛ, app icon replaces the dotted lines as soon as it’s added.</li>
-          <li>Which image gets replaced first?<br/>
+          <li>As shown in Ⓛ, app icon replaces the dotted boxes as soon as it’s added.</li>
+          <li>Icon replace the dotted boxes in this order:<br/>
           <img src="img/usercollections_appslotorder.png">
           </li>
         </ul>
       </li>
+      
       <li><strong>Collection name textbox</strong><br/>
       Name is mandatory. Inputted name is displayed in Ⓓ.</li>
+      
       <li><strong>Description textbox</strong><br/>
       Description is optional. Inputted description is displayed after user selects done Ⓐ, and the interface returns to view mode.</li>
+      
       <li><strong>Visibility toggle</strong><br/>
       Default value should be set to on (visible).</li>
+      
       <li><strong>Add apps button</strong><br/>
         <ul>
           <li>At least one app is mandatory.</li>
@@ -80,39 +89,52 @@ multisequence: eleven
           <li>Selecting the button will take user to the Add Apps Interface. This interface is combined with the <a href="#createcollectionflowmobile">How to Create a Collection flow</a>.</li> 
         </ul>
       </li>
+      
       <li><strong>Delete collection button</strong><br/>
       <span class="warning">It’s unclear how the delete interface will work. We assume that there will be a confirmation message that says something like “Are you sure you want to delete [Collection name]?” followed by “Cancel” and “Delete” buttons.</span></li>
+      
     </ol>
-    
-    <h3><a name="createcollectionflowmobile">Mobile &rarr; How to Create a Collection</a></h3>
+
+
+
+    <h3 class="specItem"<a name="createcollectionflowmobile">Mobile &rarr; How to Create a Collection</a></h3>
     
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_createcollectionfromcollections.png" alt="Create A New Collection Flow: Mobile"/>
     
     <ol class="longText">
+    
       <li><strong>My Collections</strong><br/>
       Start here, then select the Create a new collection button.</li>
+      
       <li><strong>Create collections</strong><br/>
         <ul>
           <li>Let’s assume that user already has an avatar and a display name. If user would like to edit them, go to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
           <li>Selecting the Collection name textbox will bring up the keyboard</li>
         </ul>
       </li>
+      
       <li><strong>Add collection name</strong><br/>
         <ul>
           <li>When the user type, the collection name preview area should update in real time.</li>
           <li>When the user hits Return/Enter, they should automatically be taken to the Description textbox.</li>
         </ul>
       </li>
+      
       <li><strong>Add collection description</strong><br/>
       When the user hits the Return/Enter on the keyboard, the keyboard should be dismissed.</li>
+      
       <li><strong>Add apps</strong><br/>
       When the user selects this button, the Add apps screen should appear.</li>
+      
       <li><strong>Add to apps – empty</strong><br/>
       When the user selects the search box, the keyboard appears.</li>
+      
       <li><strong>Add to apps – search</strong><br/>
       When the user have inputted a search term on the keyboard and hit Return/Enter, the search result is loaded and the keyboard is dismissed.</li>
+      
       <li><strong>Add to apps – search result</strong><br/>
       When the user taps the area of each search result listing, that app is selected. The entire line item is a touch target.</li>
+      
       <li><strong>Add to apps – app selected</strong><br/>
         <ul>
           <li>When an app has been selected, a checkbox should be displayed.</li>
@@ -120,12 +142,14 @@ multisequence: eleven
           <li>After the listing area fades, a confirmation message is displayed.</li>
         </ul>
       </li>
+      
       <li><strong>Add app confirmation</strong><br/>
         <ul>
           <li>The confirmation message should read “App added to collection”.</li>
           <li>When user is finished, s/he selects done and returned to the Create a Collection screen.</li>
         </ul>
       </li>
+      
       <li><strong>Create collection – 1 app</strong><br/>
         <ul>
           <li>As noted above, if at least one app is added to the list, the graphic should change color and the apps are previewed.</li>
@@ -133,6 +157,7 @@ multisequence: eleven
           <li>Selecting the Done button will take user to the view mode.</li>
         </ul>
       </li>
+      
       <li><strong>Collection landing screen</strong><br/>
         <ul>
           <li>The background image shifts down a little bit.</li>
@@ -144,7 +169,7 @@ multisequence: eleven
       </li>
     </ol>
         
-    <h3><a name="createcollectiondesktop">Desktop</a></h3>
+    <h3 class="specItem"<a name="createcollectiondesktop">Desktop</a></h3>
       
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatedesktop.png" alt="Create A New Collection: Desktop"/>
     
@@ -176,7 +201,7 @@ multisequence: eleven
       <li>If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see <a href="projectSpecsMobile.html#collectionnamewarningscreen">spec</a>)</li>
     </ul>
     
-    <h3><a name="createcollectiontablet">Tablet</a></h3>
+    <h3 class="specItem"<a name="createcollectiontablet">Tablet</a></h3>
       
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatetablet.png" alt="Create A New Collection: Tablet" title="" />    
 
