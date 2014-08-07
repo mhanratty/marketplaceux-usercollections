@@ -20,7 +20,9 @@ multisequence: eleven
 	</div>
 	<div class="col-sm-9 col-md-9 col-lg-8">
 		
-		<h2>My Account Page &rarr; Collections &rarr; Create a New Collection</h2>
+		<h2>My Account &rarr; Collections &rarr; Create a New Collection</h2>
+		
+		<p class="longText">This interface should appear when user selects Create a collection button on the list of collections page.</p>
 		
     <h3 class="specItem"<a name="createcollectionmobile">Mobile</a></h3>
     
@@ -28,10 +30,10 @@ multisequence: eleven
     
     <ol class="longText letters">
     
-      <li><strong>Done link</strong><br/>
+      <li><strong>Done button</strong><br/>
         <ul>
-          <li>If a collection has at least a name and one app, selecting the Done link will save the collection and allow user to view it.</li>
-          <li>If a collection doesn’t have at least both of those items, selecting the Done link will bring user back to the <a href="projectSpecsCollections.html#collectionsmobile">Collections Tab</a>.</li>
+          <li>If a collection has at least a name and one app, selecting the Done button will save the collection and allow user to view it.</li>
+          <li>If a collection doesn’t have at least both of those items, selecting the Done button will bring user back to the <a href="projectSpecsCollections.html#collectionsmobile">Collections Tab</a>.</li>
         </ul>
       </li>
       
@@ -39,7 +41,7 @@ multisequence: eleven
         <ul>
           <li>Show blank avatar when user doesn’t have one.</li>
           <li>Show user’s avatar when user has one.</li>
-          <li>Selecting the edit button will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
+          <li>Selecting the edit icon on the avatar will take user to the <a href="projectSpecsCollectionEdit.html#editcollectionavatarmobile">Edit Avatar & Display Name interface</a>.</li>
         </ul>
       </li>
       
@@ -126,20 +128,20 @@ multisequence: eleven
       <li><strong>Add apps</strong><br/>
       When the user selects this button, the Add apps screen should appear.</li>
       
-      <li><strong>Add to apps – empty</strong><br/>
+      <li><strong>Add apps – empty</strong><br/>
       When the user selects the search box, the keyboard appears.</li>
       
-      <li><strong>Add to apps – search</strong><br/>
+      <li><strong>Add apps – search</strong><br/>
       When the user have inputted a search term on the keyboard and hit Return/Enter, the search result is loaded and the keyboard is dismissed.</li>
       
-      <li><strong>Add to apps – search result</strong><br/>
+      <li><strong>Add apps – search result</strong><br/>
       When the user taps the area of each search result listing, that app is selected. The entire line item is a touch target.</li>
       
-      <li><strong>Add to apps – app selected</strong><br/>
+      <li><strong>Add apps – app selected</strong><br/>
         <ul>
           <li>When an app has been selected, a checkbox should be displayed.</li>
-          <li>After x seconds, the app listing area fades to white</li>
-          <li>After the listing area fades, a confirmation message is displayed.</li>
+          <li>After x seconds, the list item fades to white</li>
+          <li>After it fades, a confirmation message is displayed.</li>
         </ul>
       </li>
       
@@ -170,50 +172,87 @@ multisequence: eleven
     </ol>
         
     <h3 class="specItem"<a name="createcollectiondesktop">Desktop</a></h3>
+    
+    <p class="longText">The behavior for many of these elements are exactly the same as those found on the <a name="createcollectionmobile">Mobile layout</a>.</p>
       
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatedesktop.png" alt="Create A New Collection: Desktop"/>
     
-    <h4>Acceptance criteria for creating a user collection on desktop</h4>
+    <ol class="longText letters">
     
-    <ul class="longText">
-      <li>The user should view this screen when she clicks on "Create collection."</li>
-      <li>The name of the collection is required. </li>
-      <li>When the user clicks on the "Name of collection" field she should be able to enter text. </li>
-      <li>If the user hits the enter or tab button while editing the name field take the user to the "Add description" field.</li>
-      <li>The description field is optional. It should float to the right of the collection graphic.</li>
-      <li>The graphic should be 6 columns and 264px tall on desktop.</li>
-      <li>The user should be able to edit her profile. If the user clicks on their avatar on the collection graphic, take the user to the edit profile screen.</li>
-      <li>The user should be able to edit the background of a collection. If the user clicks on the edit background icon the change background screen should open in a modal.</li>
-      <li>The user should be able to decide whether to make a collection visible on dektop. By default the collection should be visible.</li>
-      <li>The user should be able to search for apps via a search box on desktop.</li>
-      <li>The user can search by an app name or the url of the app on Marketplace.</li>
-      <li>The user should be able to clear a search using the "x" icon in the search box.</li>
-      <li>After the user has entered a search the user should be able to filter their app search by all devices, desktop or mobile. By default it should filter by all devices.</li>
-      <li>Search results should appear below the search bar. The result should have the app icon, app name and a call-to-action to add the app to a collection.</li>
-      <li>The entire line item for the app is a touch target that will select the app.</li>
-      <li>When the app is selected, the icon should appear selected. </li>
-      <li>After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear (see how apps are added on the <a href="projectSpecsMobile.html#createnewcollectionflow">spec for creating a collection</a></li>
-      <li>The user can select multiple apps from the search results to add to the collection.</li>
-      <li>Add apps in 3 columns. The most recently added app should appear first in the list. </li>
-      <li>The "Cancel" and "Done" buttons should appear on the same level as the name of collection field.</li>
-      <li>If the user selects "Cancel" take the user back to the screen she was previously viewing.</li>
-      <li>If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.</li>
-      <li>If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see <a href="projectSpecsMobile.html#collectionnamewarningscreen">spec</a>)</li>
-    </ul>
+      <li><strong>Collection name</strong><br/>
+        <ul>
+          <li>When clicked, the text turns into a textbox that allows user to edit.</li>
+          <li>When user hits the Return/Enter or Tab key, take user to the Description field, and turn it into an editable textbox.</li>
+        </ul>
+      </li>
+      <li><strong>Cancel and Done button</strong><br/>
+        <ul>
+          <li>The Cancel and Done button appear parallel to collection name.</li>
+          <li>If a collection has at least a name and one app, selecting the Done button will save the collection and allow user to view it.</li>
+          <li>If a collection doesn’t have at least both of those items, the Done button is disabled and cannot be selected.</li>
+          <li>Selecting the Cancel button will bring user back to the <a href="projectSpecsCollections.html#collectionsdesktop">Collections Page</a>.</li>
+        </ul>
+      </li>
+      
+      <li><strong>Collection graphic</strong><br/>
+        <ul>
+          <li><strong>Size</strong>: 6 columns wide, 264px tall.</li>
+          <li>Selecting the edit icon on the avatar will take user to the Edit Avatar & Display Name interface. <span class="warning">Is this the Edit profile page, or is this an entirely new interface?</span></li>
+          <li>Editing the background image is possible when user has added at least one app in a collection. The Edit Background Image interface should open in a modal, <span class="warning">but a model has not been designed yet</span></li>
+        </ul>
+      </li>
+      
+      <li><strong>Description</strong><br/>
+        <ul>
+          <li>When clicked, the text turns into a textbox that allows user to edit.</li>
+          <li>When user hits the Return/Enter or Tab key, no action is performed.</li>
+        </ul>
+      </li>
+      
+      <li><strong>Visibility toggle</strong><br/>
+      Appears underneath the Description, but is aligned to the right side of the column grid.</li>
+      
+      <li><strong>Add apps</strong><br/>
+        <ul>
+          <li>The add apps interface occupies the same page as Create a new collection. Consequently, there is no Add apps button to click.</li>
+          <li>The search behavior is exactly the same as the Mobile layout, except:
+            <ul>             
+              <li>The user can search by app name or the url of the app on Marketplace. The user can do this on the Mobile layout, too, but it’s significantly harder to perform.</li>
+              <li>The user can clear the search query by selecting the "x" icon in the right side of the search box. On the Mobile layout, the user must hit backspace. <span class="warning">Is there a reason why the Mobile layout cannot have this feature, too?</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li><strong>Filtering app search</strong><br/>
+      After a search query is entered, user can filter search results by all devices, desktop, or mobile. The filter should default to all devices.</li>
+      
+      <li><strong>Search result</strong><br/>
+        <ul>
+          <li>Instead of a checkbox, each list item in the search result has a button that says “Add to collection”.</li>
+          <li>When selected, the list item fades to white and display a confirmation message that the app has been added to collection. This behavior is exacly the same as those found on the Mobile layout.</li>
+        </ul>
+      </li>
+      
+      <li><strong>Added app area</strong><br/>
+      After an app is added, it will appear in this area as a block. Each app block occupies a 4-column space. Therefore, each row can contain up to 3 apps. Fill each row from left to right.</li>
+
+    </ol>
     
     <h3 class="specItem"<a name="createcollectiontablet">Tablet</a></h3>
       
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioncreatetablet.png" alt="Create A New Collection: Tablet" title="" />    
-
-    <h4>Acceptance criteria for creating a collection on tablet</h4>
     
-    <p class="longText"><a href="projectSpecsDesktop.html#createcollectionscreendesktop">Same as for desktop</a>, except:</p>
+    <p class="longText">The layout and behavior of the Tablet layout is almost identical to the <a href="#createcollectiondesktop">Desktop layout</a>, except:</p>
     
-    <ul class="longText">
-      <li>"Cancel" and "Done" should appear above the name of the collection.</li>
-      <li>The description field should appear below the graphic.</li>
-      <li>Apps should appear in two columns.</li>
-    </ul>
+    <ol class="longText">
+      <li><strong>Cancel and Done button</strong><br/>
+      Appear above collection name, instead of parallel to it.</li>
+      <li><strong>Description</strong><br/>
+      Appears below the collection graphic, instead of to the right of it.</li>
+      <li><strong>Added app area</strong><br/>
+      Each app block occupies a 3-column space instead of 4. Therefore, each row can only contain up to 2 app blocks, instead 3.</li>
+    </ol>
 		
 	</div>
 	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
