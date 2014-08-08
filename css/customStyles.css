@@ -22,6 +22,14 @@ ol.letters{
   list-style-type: upper-alpha;
 }
 
+.content ol li {
+  margin: .5em;
+}
+
+.content > img {
+  margin: 1.5em 0 2.5em;
+}
+
 .warning{
   color: #ff0000;
 }
