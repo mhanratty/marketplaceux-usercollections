@@ -9,8 +9,8 @@ h2{
 }
 
 h3.specItem{
-  margin: 2.5em 0px 1.5em;
-  padding-top: 2em;
+  margin: 2em 0px 1em;
+  padding-top: 1.5em;
   border-top: 1px solid #c7c7c7;
 }
 
@@ -26,7 +26,11 @@ ol.letters{
   margin: .5em;
 }
 
-#content > img {
+#content ol li ul li {
+  margin: 0;
+}
+
+#content img {
   margin: 1.5em 0 2.5em;
 }
 
