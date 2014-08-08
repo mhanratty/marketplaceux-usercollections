@@ -1,5 +1,9 @@
 /* Specific style for User Collections Specs */
 
+ul.dropdown-menu li ul li a{
+  color: #262626;
+}
+
 .longText{
   font-size: 1.2em;
 }
