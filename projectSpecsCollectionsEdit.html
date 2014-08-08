@@ -9,7 +9,7 @@ multisequence: twelve
 	<div class="col-sm-3 col-md-3 col-lg-3">
 	
 		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
-			<li>Mobile</a>
+			<li><a href="#editcollectionmobile">Mobile</a>
 			  <ul>
 			    <li><a href="#editcollectionbackgroundmobile">Edit Background Image</a></li>
 			   <li><a href="#editcollectionavatarmobile">Edit Avatar & Display Name</a></li>
@@ -23,79 +23,113 @@ multisequence: twelve
 		
 		<h2>My Account Page &rarr; Collections &rarr; Edit Collection</h2>
 		
-    <h3>Edit Collection Background Image: Mobile</h3>
+		<p class="longText">This interface should appear when user selects the Edit collection button on the Individual collection page.</p>
+		
+		<h3 class="specItem"><a name="editcollectionmobile">Mobile – Accessing the Edit Collection interface</h3>
+		
+		<p class="longText">This method of access works exactly the same way as both the Desktop and Tablet layouts.</p>
+		
+		<img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionedit.png" alt="Accessing the Edit Collection interface: Mobile">
+		
+		<ol class="longText">
+		  <li>Select the user’s avatar, then select “Apps & Collections” menu item on the navigation bar. User is taken to the Collections tab.</li>
+		  <li>Select any collection on the list. User is taken to the Individual collection page.</li>
+		  <li>Select the Edit collection button. User is taken to the Edit collection page.</li>
+		</ol>
+		
+    <h3 class="specItem"><a name="editcollectionbackgroundmobile">Mobile &rarr; Edit Collection Background Image</a></h3>
      
-    <a name="editcollectionbackgroundmobile"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_changecollectionbackground.png" alt="Edit Collection Background Image: Mobile"/></a>
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneditbackground.png" alt="Edit Collection Background Image: Mobile"/>
     
-    <h4>Acceptance criteria for changing the background image of a collection</h4>
+    <ol class="longText">
+      <li><strong>Edit collection page</strong><br/>
+      Select the edit icon on the top-right corner. User is taken to the Choose background screen.</li>
+      <li><strong>Choose background</strong><br/>
+        <ul>
+          <li>The current background is marked as selected. In this example, the background is green, so it’s located on the area of the screen that this screenshot does not cover.</li>
+          <li>User selects new background. New background is marked as selected.</li>
+        </ul>
+      </li>
+      <li><strong>New background selected</strong><br/>
+      When user is done selecting a background, user selects the Done button. User is taken back to the Edit collection page.</li>
+      <li><strong>Edit collection page – new background</strong><br/>
+      The color change should be animated.<br/>
+      <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneditbackground_animation.gif">
+      </li>
+    </ol>
     
-    <ul class="longText">
-      <li>The user can only change the background of a collection if at least 1 app is added to the collection</li>
-      <li>The user clicks an icon in the upper right corner to access the choose background selector.</li>
-      <li>The current color/pattern combination should be selected in the choose background screen.</li>
-      <li>When user hits done she is taken back to create collection screen where the new color pattern combination has been applied to the graphic.</li>
-    </ul>
+    <h3 class="specItem"><a name="editcollectionavatarmobile">Mobile &rarr; Edit Collection Avatar & Display Name</h3>
     
-    <h3>Edit Collection Avatar & Display Name: Mobile</h3>
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneditavatar.png" alt="Edit Collection Avatar & Display Name: Mobile"/>
     
-    <a name="editcollectionavatarmobile"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_editprofile.png" alt="Edit Collection Avatar & Display Name: Mobile"/></a>
-    
-    <h4>Acceptance criteria for editing the avatar and display name for a collection</h4>
-    
-    <ul class="longText">
-      <li>Selecting the user's avatar will take the user to the edit profile screen.</li>
-      <li>To edit the avatar the user selects the avatar. The devices gallery app should open. The user can select a profile image from their gallery.</li>
-      <li>The new avatar should be displayed when the user returns to the edit profile screen.</li>
-      <li>When user selects done she returns to the create collection or edit collection screen with her new avatar displayed.</li>
-    </ul>
+    <ol class="longText">
+      <li><strong>Edit collection page</strong><br/>
+      Select the edit icon on the bottom of the avatar area. User is taken to the Edit profile screen.</li>
+      <li>Edit profile page<br/>
+        <ul>
+          <li>To edit the avatar, select the edit icon on the bottom of the avatar area.</li>
+          <li>The device’s Gallery app should open.</li>
+          <li>The user can select a profile image from the device’s Gallery.</li>
+        </ul>
+      </li>
+      <li><strong>New avatar selected</strong><br/>
+      When user is done selecting an avatar, user selects the Done buton. User is taken back to the Edit collection page.</li>
+      </li>
+      <li><strong>Edit collection page – new avatar</strong></li>
+    </ol>
 
-    <h3><a name="editcollectiondesktop">Edit Collection: Desktop</a></h3>
+    <h3 class="specItem"><a name="editcollectiondesktop">Desktop</a></h3>
+    
+    <p class="longText">Compare and contrast this Edit collection interface with the <a href="projectSpecsCollectionsCreate.html#createcollectiondesktop">Create collection interface</a>.</p>
     
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectioneditdesktop.png" alt="Edit Collection: Desktop" title="" />
     
-    <h4>Acceptance criteria for editing a user collection on desktop</h4>
+    <p class="longText">As you might have noticed, the Collection edit interface on the desktop layout looks and behaves in exactly the same way as the <a href="projectSpecsCollectionsCreate.html#createcollectiondesktop">Create collection interface</a>.</p>
     
-    <ul class="longText">
-      <li>The user should view this screen when she clicks "Edit" on the collection landing screen.</li>
-      <li>The name of the collection is required. </li>
-      <li>When the user clicks on the "Name of collection" field she should be able to enter text. </li>
-      <li>If the user hits the enter or tab button while editing the name field take the user to the "Add description" field.</li>
-      <li>The description field is optional. It should float to the right of the collection graphic.</li>
-      <li>The graphic should be 6 columns and 264px tall on desktop.</li>
-      <li>The user should be able to edit her profile. If the user clicks on their avatar on the collection graphic, take the user to the edit profile screen.</li>
-      <li>The user should be able to edit the background of a collection. If the user clicks on the edit background icon the change background screen should open in a modal.</li>
-      <li>The user should be able to decide whether to make a collection visible on dektop. By default the collection should be visible.</li>
-      <li>The user should be able to search for apps via a search box on desktop.</li>
-      <li>The user can search by an app name or the url of the app on Marketplace.</li>
-      <li>The user should be able to clear a search using the "x" icon in the search box.</li>
-      <li>After the user has entered a search the user should be able to filter their app search by all devices, desktop or mobile. By default it should filter by all devices.</li>
-      <li>Search results should appear below the search bar. The result should have the app icon, app name and a call-to-action to add the app to a collection.</li>
-      <li>The entire line item for the app is a touch target that will select the app.</li>
-      <li>When the app is selected, the icon should appear selected. </li>
-      <li>After x seconds the app listing should fade to white. A message "App add to collection" should appear and remain for x seconds after which the entire listing should disappear (see how apps are added on the <a href="projectSpecsMobile.html#createnewcollectionflow">spec for creating a collection</a>)</li>
-      <li>The user can select multiple apps from the search results to add to the collection.</li>
-      <li>Add apps in 3 columns. The most recently added app should appear first in the list. </li>
-      <li>The apps should show a control to allow the user to move apps in order.</li>
-      <li>The apps should have a "x" icon so they can be removed. For remove interactions see <a href="projectSpecsMobile.html#removeappflow">spec for removing an app</a> </li>
-      <li>The "Done" and "Delete collection" buttons should appear on the same level as the name of the collection field.</li>
-      <li>If the user selects "Delete collection" require a confirmation. If the user confirms, take the user back to the collections screen with feedback that the collection was deleted (see <a href="#deletecollection">spec for deleting a collection</a>) </li>
-      <li>If the user selects "Done" and the user has entered a collection name take the user to the collection landing screen.</li>
-      <li>If the user selects "Done" and has not entered a collection name show the user a warning that the collection needs a name to be saved (see...)</li>
+    <p class="longText">It has a collection name, collection graphic, description, visibility toggle, add apps interface, app search filter, search result and added app area.</p>
+    
+    <p class="longText">With these exceptions:</p>
+    
+    <ol class="longText letters">
+      <li><strong>Delete Collection and Done button</strong><br/>
+        <ul>
+          <li>When you create a collection, your actions are Cancel and Done. But when you edit, your actions are Delete and Done.</li>
+          <li>Selecting the Delete button should open a confirmation dialog that says “Are you sure you would like to delete this collection?”.</li>
+        </ul>
+      </li>
+      <li><strong>Added app area</strong><br/>
+          <ul>
+            <li>Every app inside the collection will appear inside this area as a block.</li>
+            <li>Each app block occupies a 4-column space. Therefore, each row can contain up to 3 apps.</li>
+            <li>Each row is filled from left to right.</li>
+          </ul>
+      </li>
+      <li><strong>Added app area – move and delete controls</strong><br/>
+      In the Edit collection interface, each app box has controls that allows user to move and delete apps from the collection. In view mode, these controls are hidden.</li>
     </ul>
     
-    <h3><a name="editcollectiontablet">Edit Collection: Tablet</a></h3>
+    <h3 class="specItem"><a name="editcollectiontablet">Tablet</a></h3>
     
-    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionedittablet.png" alt="Edit Collection: Tablet" title="" />    
+    <p class="longText">Compare and contrast this Edit collection interface with the <a href="projectSpecsCollectionsCreate.html#createcollectiontablet">Create collection interface</a>.</p>
+    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionedittablet.png" alt="Edit Collection: Tablet" />    
 
     <h4>Acceptance criteria for editing a collection on tablet</h4>
     
-    <p class="longText"><a href="projectSpecsDesktop.html#editcollectionscreendesktop">Same as for desktop</a>, except:</p>
-    
-    <ul class="longText">
-      <li>"Delete collection" and "Done" should appear above the name of the collection.</li>
-      <li>The description field should appear below the graphic.</li>
-      <li>Apps should appear in two columns.</li>
-    </ul>
+    <p class="longText">Identical to the <a href="projectSpecsDesktop.html#editcollectionscreendesktop">Desktop layout</a>, except:</p>
+
+    <ol class="longText">
+      <li><strong>Delete Collection and Done button</strong><br/>
+        <ul>
+          <li>It’s not Cancel and Done, which is used on the Create collection interface.</li>
+          <li>Appear above collection name, not parallel to it.</li>
+        </ul>
+      </li>
+      <li><strong>Description</strong><br/>
+      Appears below the collection graphic, not to the right of it.</li>
+      <li><strong>Added app area</strong><br/>
+      Each app block occupies a 3-column space instead of 4. Therefore, each row can only contain up to 2 app blocks, not 3.</li>
+    </ol>
 
     
 		
