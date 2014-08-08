@@ -23,10 +23,14 @@ ol.letters{
 }
 
 #content ol li {
-  margin: .5em;
+  margin: 1em 0;
 }
 
 #content ol li ul li {
+  margin: .5em;
+}
+
+#content ol li ul li:last-child {
   margin: 0;
 }
 
