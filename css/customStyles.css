@@ -22,11 +22,11 @@ ol.letters{
   list-style-type: upper-alpha;
 }
 
-.content ol li {
+#content ol li {
   margin: .5em;
 }
 
-.content > img {
+#content > img {
   margin: 1.5em 0 2.5em;
 }
 
