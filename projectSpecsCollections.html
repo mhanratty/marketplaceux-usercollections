@@ -3,11 +3,11 @@ layout: MarketplaceUXSpec
 multipage: true
 multiURL: projectSpecsCollections.html
 multisequence: nine
----	
+---
 
 <div class="container">
 	<div class="col-sm-3 col-md-3 col-lg-3">
-	
+
 		<ul class="secondaryMenu" data-spy="affix" data-offset-top="70" data-offset-bottom="200">
 			<li><a href="#collectionsmobile">Mobile</a></li>
 			<li><a href="#collectionsdesktop">Desktop</a></li>
@@ -15,15 +15,15 @@ multisequence: nine
 		</ul>
 	</div>
 	<div class="col-sm-9 col-md-9 col-lg-8">
-		
+
 		<h2>My Account &rarr; Collections</h2>
-		
+
 		<p class="longText">Lists collections that the user has created.</p>
-		
+
     <h3 class="specItem"><a name="collectionsmobile">Mobile</a></h3>
-    
+
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png" alt="Collections Tab: Mobile"/>
-    
+
     <ol class="longText letters">
       <li><strong>Navigation</strong><br/>
       The Collections tab can be accessed by selecting My Account (the user’s avatar), then selecting “Apps & Collections” menu item on the navigation bar. User navigates between Collections, Wishlist and My Apps by selecting different tabs.</li>
@@ -48,11 +48,11 @@ multisequence: nine
           <li>Number of views the collection has received</li>
           <li>Number of upvotes the collection has received</li>
         </ul>
-      
+
       <span class="warning">WARNING: The interface to do this is not yet known. The mechanism to share his/her own collection is also unclear.</span>
-      
+
       </li>
-      
+
       <li><strong>Search bar</strong>
         <ul>
           <li>Only show search when user has created more than 3 collections.</li>
@@ -62,12 +62,14 @@ multisequence: nine
       </li>
     </ol>
 
-    <h3 class="specItem"><a name="collectionsdesktop">Desktop</a></h3>   
+    <h3 class="specItem"><a name="collectionsdesktop">Desktop</a></h3>
 
-    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreendesktop.png" alt="Collections, Wishlist & My Apps Screen: Desktop"/>
-    
+    <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_communityscreendesktop.png" alt="Collections, Wishlist & My Apps Screen: Desktop"/>
+		<br>
+		<img src="http://mhanratty.github.io/marketplaceux-usercollections/img/userAccountCollectionColdStart.png" alt="Collections, Wishlist & My Apps Screen (coldstart): Desktop"/>
+
     <p class="longText">On the desktop layout, collection is a section on a page that also contains <a href="projectSpecsWishlist.html#wishlistdesktop">wishlist</a> and <a href="projectSpecsMyApps.html#myappsdesktop">my apps</a>.</p>
-    
+
     <ol class="longText letters">
       <li><strong>Navigation</strong><br/>
       The Collections, Wishlist and My Apps page can be accessed by selecting My Account (or the user’s avatar), then selecting “Apps & Collections” from the popup menu.</li>
@@ -87,13 +89,13 @@ multisequence: nine
         </ul>
       </li>
     </ol>
-    
+
     <h3 class="specItem"><a name="collectionstablet">Collections, Wishlist & My Apps Screen: Tablet</a></h3>
-      
-    <a name="collectionscreentablet"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionscreentablet.png" alt="he can see so much more" title="" /></a>   
-    
-    <p class="longText">On the desktop layout, collection is a section on a page that also contains <a href="projectSpecsWishlist.html#wishlistdesktop">wishlist</a> and <a href="projectSpecsMyApps.html#myappsdesktop">my apps</a>.</p> 
-    
+
+    <a name="collectionscreentablet"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionscreentablet.png" alt="he can see so much more" title="" /></a>
+
+    <p class="longText">On the desktop layout, collection is a section on a page that also contains <a href="projectSpecsWishlist.html#wishlistdesktop">wishlist</a> and <a href="projectSpecsMyApps.html#myappsdesktop">my apps</a>.</p>
+
     <ol class="longText">
       <li><strong>Search bar</strong><br/>
       Works and is positioned exactly like the mobile layout: below the Create a new collection button.</li>
@@ -105,11 +107,11 @@ multisequence: nine
         </ul>
       </li>
     </ol>
-    
+
     <p class="longText">The rest of the features are exactly the same as the <a href="#collectionsdesktop">Desktop layout</a>.</p>
-		
+
 	</div>
-	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
+	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html.
 		NOTE: This is currently broken in the Jekyll ver of this template.
 		-->
 		{% if page.multipage %}
