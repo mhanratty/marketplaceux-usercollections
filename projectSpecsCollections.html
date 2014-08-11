@@ -20,17 +20,17 @@ multisequence: nine
 		
 		<p class="longText">Lists collections that the user has created.</p>
 		
-    <h3 class="specItem"><a name="collectionstabmobile">Mobile – Collections Tab</a></h3>
+    <h3 class="specItem"><a name="collectionsmobile">Mobile</a></h3>
     
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreen.png" alt="Collections Tab: Mobile"/>
     
     <ol class="longText letters">
       <li><strong>Navigation</strong><br/>
-      The Collections tab can be accessed by selecting the user’s avatar, then selecting “Apps & Collections” menu item on the navigation bar.</li>
+      The Collections tab can be accessed by selecting My Account (the user’s avatar), then selecting “Apps & Collections” menu item on the navigation bar. User navigates between Collections, Wishlist and My Apps by selecting different tabs.</li>
       <li><strong>Create collection message</strong>
         <ul>
-          <li>If user has no collection, show a message that reads “Create collections of your favourite apps! Share your collections with friends and the Marketplace community.”</li>
-          <li>If user has at least one collection, do not show this message.</li>
+          <li>If user has not created a collection, show a message that reads “Create collections of your favourite apps! Share your collections with friends and the Marketplace community.”</li>
+          <li>If user has created at least one collection, do not show this message.</li>
         </ul>
       </li>
       <li><strong>Create a new collection button</strong>
@@ -39,7 +39,7 @@ multisequence: nine
           <li>If user has at least one collection, the button should appear below the Collections/Wishlist/My Apps navigation tabs.</li>
         </ul>
       </li>
-      <li><strong>List of collection</strong><br/>
+      <li><strong>List of Collections – What to Show?</strong><br/>
       Collections should be sorted from the most recently created to the oldest.</li>
       <li><strong>Statistics</strong><br/>
       The collection creator should be able to view the stats for their collection. These stats include:<br/>
@@ -48,47 +48,65 @@ multisequence: nine
           <li>Number of views the collection has received</li>
           <li>Number of upvotes the collection has received</li>
         </ul>
+      
+      <span class="warning">WARNING: The interface to do this is not yet known. The mechanism to share his/her own collection is also unclear.</span>
+      
       </li>
-      <span class="warning">WARNING: The interface to do this is not yet known. The mechanism to share his/her own collection is also unclear. We need to figure this out.</span>
+      
       <li><strong>Search bar</strong>
         <ul>
           <li>Only show search when user has created more than 3 collections.</li>
           <li>Search should appear above the list of collections and below the Create a new collection button</li>
-      <li>The search box should appear just above the list of collections.</li>
+          <li>The search box should appear just above the list of collections.</li>
         </ul>
       </li>
     </ol>
 
-    <h3 class="specItem"><a name="collectionsscreendesktop">Collections, Wishlist & My Apps Screen: Desktop</a> <span class="warning">NOT YET DONE</span></h3>   
+    <h3 class="specItem"><a name="collectionsdesktop">Desktop</a></h3>   
 
     <img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionsscreendesktop.png" alt="Collections, Wishlist & My Apps Screen: Desktop"/>
     
-    <h4>Acceptance criteria for viewing your user collections on desktop</h4>
+    <p class="longText">On the desktop layout, collection is a section on a page that also contains <a href="projectSpecsWishlist.html#wishlistdesktop">wishlist</a> and <a href="projectSpecsMyApps.html#myappsdesktop">my apps</a>.</p>
     
-    <ul class="longText">
-      <li>Collections are visible under “My Account” when the user is signed in. </li>
-      <li>On desktop the user can see Collections, Wishlist and My Apps in one view.</li>
-      <li>On desktop the sections of the page have titles</li>
-      <li>If there are > 3 collections show a search bar so that the user can search through their collections.</li>
-      <li>Create new collection call-to-action should take user to the create a collection screen.</li>
-      <li>Collections are listed from most recently created to oldest in blocks of 6 moving left to right, up to down. </li>
-      <li>The collection graphic should be the same as seen on mobile.</li>
-      <li>If the user has > 6 collections the collections should start being visible as overflow content. A right arrow control should allow the user to scroll through the overflow content.</li>
-      <li>If the user has 0 collections show text to let the user know what collections are. </li>
-    </ul>
+    <ol class="longText letters">
+      <li><strong>Navigation</strong><br/>
+      The Collections, Wishlist and My Apps page can be accessed by selecting My Account (or the user’s avatar), then selecting “Apps & Collections” from the popup menu.</li>
+      <li><strong>Page Title</strong><br/>
+      On the desktop layout, each section of the page has a title. User navigates between Collections, Wishlist and My Apps simply by scrolling down, not by selecting different tabs.</li>
+      <li><strong>Search bar</strong><br/>
+      Works exactly the same as the mobile layout, except it’s located to the side of (not below) the Create a new collection button.</li>
+      <li><strong>Create a new collection button</strong><br/>
+      The button should always appear on the same spot, regardless of how many collections the user has created.</li>
+      <li><strong>List of Collections – What to Show?</strong><br/>
+        <ul>
+          <li><strong>Order:</strong> Exactly the same as the mobile layout. Collections are listed from most recently created to oldest. However, it moves from left to right, top to bottom.</li>
+          <li><strong>Quantity:</strong> Show up to 5 in one row.</li>
+          <li><strong>Size of element:</strong> Each collection block is always 4 columns wide.</li>
+          <li><strong>Horizontal scrolling control:</strong> Show right arrow control only after user has created more than 6 collections. This arrow should allow the user to scroll through the overflow content. Naturally, a left arrow will be displayed present after the user scrolls right.</li>
+          <li><strong>Create collection message:</strong> Exactly the same as the mobile layout. Only show when user has not created a collection. If user has created at least one collection, do not show it.</li>
+        </ul>
+      </li>
+    </ol>
     
-    <h3 class="specItem"><a name="collectionsscreentablet">Collections, Wishlist & My Apps Screen: Tablet</a> <span class="warning">NOT YET DONE</span></h3>
+    <h3 class="specItem"><a name="collectionstablet">Collections, Wishlist & My Apps Screen: Tablet</a></h3>
       
-    <a name="collectionscreentablet"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionscreentablet.png" alt="he can see so much more" title="" /></a>    
-
-    <h4>Acceptance criteria for viewing your user collections on tablet</h4>
+    <a name="collectionscreentablet"><img src="http://mhanratty.github.io/marketplaceux-usercollections/img/usercollections_collectionscreentablet.png" alt="he can see so much more" title="" /></a>   
     
-    <p class="longText"><a href="projectSpecsDesktop.html#collectionspagescreendesktop">Same as for desktop</a>, except:</p>
+    <p class="longText">On the desktop layout, collection is a section on a page that also contains <a href="projectSpecsWishlist.html#wishlistdesktop">wishlist</a> and <a href="projectSpecsMyApps.html#myappsdesktop">my apps</a>.</p> 
     
-    <ul class="longText">
-    <li>Collection search is below Collection title</li>
-    <li>Only 4 collections are visible at a time</li>
-    </ul>
+    <ol class="longText">
+      <li><strong>Search bar</strong><br/>
+      Works and is positioned exactly like the mobile layout: below the Create a new collection button.</li>
+      <li><strong>List of Collections – What to Show?</strong><br/>
+        <ul>
+          <li><strong>Order:</strong> Exactly the same as the mobile layout. Collections are listed from most recently created to oldest. However, it moves from left to right, top to bottom.</li>
+          <li><strong>Quantity:</strong> Show up to 2 in one row. Show up to 4 at a time.</li>
+          <li><strong>Horizontal scrolling control:</strong> Show right arrow control only after user has created more than 4 collections.</li>
+        </ul>
+      </li>
+    </ol>
+    
+    <p class="longText">The rest of the features are exactly the same as the <a href="#collectionsdesktop">Desktop layout</a>.</p>
 		
 	</div>
 	<!-- Pagination. If you have more than one page, set the multipage variable in the Frontmatter to true. Editing the pagination code happens in /_includes/homePagination.html. 
